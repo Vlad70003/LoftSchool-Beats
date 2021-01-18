@@ -23,6 +23,6 @@
   }
   @each $social in (vk, inst, fb, telegramm) {
     .social_#{$social}{
-      background: url(../img/#{$social}.png);
+      background: url(./img/#{$social}.png);
     }
   }
