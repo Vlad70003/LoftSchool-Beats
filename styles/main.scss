@@ -1,5 +1,5 @@
 .main {
-    background: url("../img/headphones_main.png") left 68% top 10% no-repeat, #F5F5F5;
+    background: url("./img/headphones_main.png") left 68% top 10% no-repeat, #F5F5F5;
     position: relative;
   }
   .main__title {
@@ -40,13 +40,13 @@
     margin: 0 10px;
   }
   .noise__mini{
-    background-image: url(../img/noise-mini.png);
+    background-image: url("./img/noise-mini.png");
   }
   .battery__mini{
-    background-image: url(../img/battery-mini.png);
+    background-image: url("./img/battery-mini.png");
   }
   .powersocket__mini{
-    background-image: url(../img/powersocket-mini.png);
+    background-image: url("./img/powersocket-mini.png");
   }
   .main::after{
     content: "";
