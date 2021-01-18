@@ -5,7 +5,7 @@
 .beats__logo {
     width: 40px;
     height: 40px;
-    background-image: url(../img/Logo.png);
+    background-image: url("../img/Logo.png");
 }
   
 .conteiner__header {
@@ -52,7 +52,7 @@
     display: block;
     width: 14px;
     height: 15px;
-    background-image: url(../img/phohe.png);
+    background-image: url("../img/phohe.png");
     position: absolute;
     right: 103%;
     top: 21%;
