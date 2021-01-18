@@ -1,0 +1,16 @@
+.button {
+    padding: 18px 41px;
+    background-color: #E01F3D;
+    color: white;
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    outline: none;
+  }
+  .button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }

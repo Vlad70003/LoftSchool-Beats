@@ -1,0 +1,58 @@
+.offers {
+  background: #F8FAF9;
+  padding-top: 66px;
+  position: relative;
+  padding-bottom: 94px;
+}
+.offer {
+  display: flex;
+  align-items: center;
+}
+.prise__inf {
+  display: flex;
+  padding-top: 25px;
+  align-items: center;
+  justify-content: start;
+}
+.prise{
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    padding-right: 13px;
+  }
+  .offer__title {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    text-transform: uppercase;
+    padding-top: 25px;
+  }
+  .offer__title-desc {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #666666;
+    padding-top: 24px;
+  }
+  .offer__information{
+    display: flex;
+    justify-content: start;
+    padding-top: 25px;
+  }
+  .parameters{
+    margin-right: 85px;
+    display: flex;
+    flex-direction: column;
+  }
+  .parameters__element-name {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+  }
+  .parameters__element {
+    font-weight: 700;
+    font-style: normal;
+    font-style: 18px;
+  }

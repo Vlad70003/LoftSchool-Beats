@@ -1,0 +1,58 @@
+.conteiner__reviews {
+    display: flex;
+    flex-direction: column;
+  }
+  .reviews__title {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+  }
+  .rewiews__persons {
+    display: flex;
+    padding-top: 75px;
+  }
+  .list__review {
+    margin-left: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .review__element__title {
+    font-family: "Play", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .review__element__title-perc {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #666;
+  }
+  .rewiews__persons-name {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .pagginator {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+  }
+  .pagginator__element {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    margin: 40px 6px;
+    cursor: pointer;
+    &:first-child {
+      background: url(../img/photo_billy_ailish_mini.png) center no-repeat;
+    }
+    &:nth-child(2) {
+      background: url(../img/photo_vadim_grachev_mini.png) center no-repeat;
+    }
+    &:last-child {
+      background: url(../img/photo_maria_orlova_mini.png) center no-repeat;
+    }
+  }
+ 

@@ -1,0 +1,59 @@
+.header {
+    background: #F5F5F5;
+}
+
+.beats__logo {
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/Logo.png);
+}
+  
+.conteiner__header {
+    padding: 24px 0 50px;
+    display: flex;
+    align-items: center;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu__list-item {
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    &:last-child(){
+        margin-right: 0;
+    }
+}
+.item__li:hover {
+    cursor: pointer;
+    color: #E01F3D;
+}
+  
+.address {
+    align-self: center;
+}
+
+.telephone {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    position: relative;
+}
+.telephone:hover{
+    cursor: pointer;
+    color: #E01F3D;
+}
+.telephone::before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 15px;
+    background-image: url(../img/phohe.png);
+    position: absolute;
+    right: 103%;
+    top: 21%;
+}

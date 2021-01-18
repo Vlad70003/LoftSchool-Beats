@@ -1,0 +1,61 @@
+.main {
+    background: url("../img/headphones_main.png") left 68% top 10% no-repeat, #F5F5F5;
+    position: relative;
+  }
+  .main__title {
+    font-family: "Play", sans-serif;
+    width: 400px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    padding-top: 13px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+  }
+  .main__title-desc {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    padding-bottom: 36px;
+  }
+  .main__list {
+    padding: 70px 0;
+    display: flex;
+  }
+  .menu__list-item {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+  }
+  .menu__list-item > span {
+    width: 41px;
+    height: 41px;
+    display: block;
+  }
+  .menu__list-item div{
+    width: 114px;
+    margin: 0 10px;
+  }
+  .noise__mini{
+    background-image: url(../img/noise-mini.png);
+  }
+  .battery__mini{
+    background-image: url(../img/battery-mini.png);
+  }
+  .powersocket__mini{
+    background-image: url(../img/powersocket-mini.png);
+  }
+  .main::after{
+    content: "";
+    display: block;
+    width: 46px;
+    height: 10px;
+    background: #C4C4C4;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: 126px;
+    top: 98.5%;
+  }
