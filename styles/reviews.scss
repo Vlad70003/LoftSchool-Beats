@@ -1,35 +1,52 @@
-.conteiner__reviews {
+.reviews{
+  height: 100vh;
+}
+.reviews__conteiner{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: 100%;
   }
-  .reviews__title {
-    font-family: "Play", sans-serif;
-    font-weight: 700;
-    font-size: 48px;
-    text-align: center;
-  }
-  .rewiews__persons {
+  .rewiews__person {
     display: flex;
-    padding-top: 75px;
+    padding: 42px;
+    margin-top: 30px;
+    background: #F8FAF9;
+    position: relative;
+    &::after{
+      content: "";
+      display: block;
+      width: 83px;
+      height: 83px;
+      background: white;
+      border-radius: 50%;
+      position: absolute;
+      left: 47%;
+      top: -17%;
+      z-index: 50;
+    }
   }
-  .list__review {
+  .review__list {
     margin-left: 65px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
-  .review__element__title {
+  .review__title {
     font-family: "Play", sans-serif;
     font-size: 24px;
     font-weight: 700;
   }
-  .review__element__title-perc {
+  .second-title--index{
+    z-index: 100;
+  }
+  .review__title-perc {
     font-family: "Play", sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #666;
   }
-  .rewiews__persons-name {
+  .rewiews__name {
     font-family: "Play", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -53,6 +70,9 @@
     }
     &:last-child {
       background: url("./img/photo_maria_orlova_mini.png") center no-repeat;
+    }
+    &:hover{
+      border: solid 3px #E01F3D;
     }
   }
  

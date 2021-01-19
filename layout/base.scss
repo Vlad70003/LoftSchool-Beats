@@ -8,6 +8,7 @@ body, html{
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 li {
@@ -22,10 +23,18 @@ a {
 .conteiner{
     display: flex;
     justify-content: space-between;
-    max-width: 915px;
-    min-width: 915px;
+    max-width: 940px;
+    min-width: 940px;
     width: 98%;
     margin: 0 auto;
     position: relative;
 }
+.second-title {
+    padding-top: 94px;
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0 auto;
+    text-transform: uppercase;
+  }
 

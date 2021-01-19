@@ -348,6 +348,7 @@ body, html {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 li {
@@ -362,11 +363,20 @@ a {
 .conteiner {
   display: flex;
   justify-content: space-between;
-  max-width: 915px;
-  min-width: 915px;
+  max-width: 940px;
+  min-width: 940px;
   width: 98%;
   margin: 0 auto;
   position: relative;
+}
+
+.second-title {
+  padding-top: 94px;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  margin: 0 auto;
+  text-transform: uppercase;
 }
 
 .wrapper {
@@ -375,18 +385,10 @@ a {
 }
 
 .header {
-  background: #F5F5F5;
-}
-
-.beats__logo {
-  width: 40px;
-  height: 40px;
-  background-image: url("./img/Logo.png");
-}
-
-.conteiner__header {
+  width: 100%;
   padding: 24px 0 50px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -395,22 +397,18 @@ a {
   align-items: center;
 }
 
-.menu__list-item {
+.menu__item {
   margin-right: 20px;
   font-weight: 400;
   font-size: 18px;
 }
-.menu__list-item:last-child() {
+.menu__item:last-child() {
   margin-right: 0;
 }
 
-.item__li:hover {
+.item__link:hover {
   cursor: pointer;
   color: #E01F3D;
-}
-
-.address {
-  align-self: center;
 }
 
 .telephone {
@@ -455,12 +453,7 @@ a {
   opacity: 0.9;
 }
 
-.main {
-  background: url("./img/headphones_main.png") left 68% top 10% no-repeat, #F5F5F5;
-  position: relative;
-}
-
-.main__title {
+.main-title {
   font-family: "Play", sans-serif;
   width: 400px;
   font-style: normal;
@@ -471,19 +464,19 @@ a {
   text-transform: uppercase;
 }
 
-.main__title-desc {
+.main__desc {
   font-weight: 400;
   font-style: normal;
   font-size: 21px;
   padding-bottom: 36px;
 }
 
-.main__list {
+.description__list {
   padding: 70px 0;
   display: flex;
 }
 
-.menu__list-item {
+.description__item {
   font-family: "Play", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -492,26 +485,26 @@ a {
   align-items: center;
 }
 
-.menu__list-item > span {
+span[class^=description__img] {
   width: 41px;
   height: 41px;
   display: block;
 }
 
-.menu__list-item div {
+.description__text {
   width: 114px;
   margin: 0 10px;
 }
 
-.noise__mini {
+.description__img-noise {
   background-image: url("./img/noise-mini.png");
 }
 
-.battery__mini {
+.description__img-battery {
   background-image: url("./img/battery-mini.png");
 }
 
-.powersocket__mini {
+.description__img-powersocket {
   background-image: url("./img/powersocket-mini.png");
 }
 
@@ -523,21 +516,27 @@ a {
   background: #C4C4C4;
   transform: rotate(-45deg);
   position: absolute;
-  right: 126px;
-  top: 98.5%;
+  right: 0px;
+  top: 100%;
 }
 
-.why__beats-conteiner {
+.why-beats {
+  height: 100vh;
+}
+
+.why-beats__conteiner {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  height: 100%;
   position: relative;
 }
 
-.why__beats-conteiner::after {
+.why-beats__conteiner::after {
   content: "";
   display: block;
   position: absolute;
-  top: 98%;
+  top: 100%;
   right: 98%;
   width: 0;
   height: 0;
@@ -548,16 +547,7 @@ a {
   z-index: 100;
 }
 
-.why__beats-title {
-  padding-top: 94px;
-  font-family: "Play", sans-serif;
-  font-weight: 700;
-  font-size: 48px;
-  margin: 0 auto;
-  text-transform: uppercase;
-}
-
-.why__beats-desc {
+.why-beats__desc {
   font-family: "Play", sans-serif;
   padding-top: 18px;
   font-weight: 400;
@@ -570,7 +560,13 @@ a {
 
 .advantages {
   display: flex;
+  justify-content: space-between;
   padding-bottom: 123px;
+}
+
+.advantages__element {
+  display: flex;
+  flex-direction: column;
 }
 
 .advantages__title {
@@ -590,31 +586,47 @@ a {
   color: #666666;
 }
 
-.list__advantages li[class^=img] {
+.advantages__img {
   width: 128px;
   height: 128px;
   border-radius: 50%;
   margin: 0 auto;
   margin-bottom: 24px;
+  background: #F2F5F4;
 }
 
 .img__battery {
   background: url("./img/img_battery.png") center no-repeat, #F2F5F4;
+  position: relative;
+}
+.img__battery::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  display: block;
+  background: url("../img/combo_share.png") center no-repeat;
+  position: absolute;
+  left: 182px;
+  top: 15px;
 }
 
-.img__speaker {
+.img__sound {
   background: url("./img/img_sound.png") center no-repeat, #F2F5F4;
+  position: relative;
+}
+.img__sound::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  display: block;
+  background: url("../img/combo_share.png") center no-repeat;
+  position: absolute;
+  left: 182px;
+  top: 15px;
 }
 
-.img__stopwatch {
+.img__stopwotch {
   background: url("./img/img_stopwotch.png") center no-repeat, #F2F5F4;
-}
-
-.share__combo {
-  margin-top: 64px;
-  width: 230px;
-  height: 21px;
-  background: url("./img/combo_share.png") 100% no-repeat;
 }
 
 .offers {
@@ -761,44 +773,62 @@ a {
   color: #666666;
 }
 
-.conteiner__reviews {
+.reviews {
+  height: 100vh;
+}
+
+.reviews__conteiner {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
-.reviews__title {
-  font-family: "Play", sans-serif;
-  font-weight: 700;
-  font-size: 48px;
-  text-align: center;
-}
-
-.rewiews__persons {
+.rewiews__person {
   display: flex;
-  padding-top: 75px;
+  padding: 42px;
+  margin-top: 30px;
+  background: #F8FAF9;
+  position: relative;
+}
+.rewiews__person::after {
+  content: "";
+  display: block;
+  width: 83px;
+  height: 83px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 47%;
+  top: -17%;
+  z-index: 50;
 }
 
-.list__review {
+.review__list {
   margin-left: 65px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.review__element__title {
+.review__title {
   font-family: "Play", sans-serif;
   font-size: 24px;
   font-weight: 700;
 }
 
-.review__element__title-perc {
+.second-title--index {
+  z-index: 100;
+}
+
+.review__title-perc {
   font-family: "Play", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #666;
 }
 
-.rewiews__persons-name {
+.rewiews__name {
   font-family: "Play", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -826,6 +856,9 @@ a {
 .pagginator__element:last-child {
   background: url("./img/photo_maria_orlova_mini.png") center no-repeat;
 }
+.pagginator__element:hover {
+  border: solid 3px #E01F3D;
+}
 
 .hove__we__work {
   padding-bottom: 105px;
@@ -851,31 +884,33 @@ a {
   margin: 0 auto;
 }
 
-.section__form {
+.form-section {
   background: url("./img/bg_form.png") bottom no-repeat;
   background-size: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: content-box;
 }
 
-.conteiner__form {
+.second-title--white {
+  color: white;
+}
+
+.form__conteiner {
   display: flex;
   flex-direction: column;
 }
 
-.form__title {
-  font-family: "Play", sans-serif;
-  font-weight: 700;
-  font-size: 48px;
-  margin: 65px auto 55px;
-  color: white;
-}
-
 .form {
   display: flex;
+  margin-top: 40px;
 }
 
 .form__column {
   flex: 1;
-  margin-right: 40px;
+  margin-right: 30px;
 }
 .form__column:last-child {
   margin-right: 0;
@@ -888,7 +923,7 @@ a {
 
 .form__label {
   flex: 1;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 .form__label:last-child {
   margin-right: 0;
@@ -915,8 +950,9 @@ a {
 }
 
 .textarea {
-  height: 115px;
+  height: 155px;
   resize: none;
+  margin-bottom: 11px;
 }
 
 .form__control {
@@ -1009,8 +1045,20 @@ a {
   padding-bottom: 85px;
 }
 
-.checkboxlabel {
-  border-radius: 0;
+.checkbox {
+  border-radius: 4px;
+}
+.checkbox::before {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: url(../img/check_mark.png) center no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .radio__titile {
@@ -1022,4 +1070,21 @@ a {
   border: none;
   font-weight: 400;
   font-style: 16px;
+}
+
+.hero {
+  height: 100vh;
+  background: url("../img/headphones_main.png") left 68% center no-repeat, #F5F5F5;
+  background-size: 30%;
+}
+
+.hero__conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.map {
+  height: 100vh;
 }

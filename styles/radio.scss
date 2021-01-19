@@ -41,8 +41,20 @@
     padding-bottom: 85px;
   }
   
-  .checkboxlabel {
-    border-radius: 0;
+  .checkbox {
+    border-radius: 4px;
+    &::before {
+      content: "";
+      display: none;
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: url(../img/check_mark.png) center no-repeat;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
   
   .radio__titile {

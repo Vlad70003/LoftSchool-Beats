@@ -1,0 +1,11 @@
+.hero{
+    height: 100vh;
+    background: url("../img/headphones_main.png") left 68% center no-repeat, #F5F5F5;
+    background-size: 30%;
+}
+.hero__conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}

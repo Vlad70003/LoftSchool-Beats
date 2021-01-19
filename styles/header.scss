@@ -1,16 +1,8 @@
 .header {
-    background: #F5F5F5;
-}
-
-.beats__logo {
-    width: 40px;
-    height: 40px;
-    background-image: url("./img/Logo.png");
-}
-  
-.conteiner__header {
+    width: 100%;
     padding: 24px 0 50px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -19,7 +11,7 @@
     align-items: center;
 }
 
-.menu__list-item {
+.menu__item {
     margin-right: 20px;
     font-weight: 400;
     font-size: 18px;
@@ -27,13 +19,9 @@
         margin-right: 0;
     }
 }
-.item__li:hover {
+.item__link:hover {
     cursor: pointer;
     color: #E01F3D;
-}
-  
-.address {
-    align-self: center;
 }
 
 .telephone {
