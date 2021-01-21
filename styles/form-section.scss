@@ -1,23 +1,24 @@
 .form-section{
     background: url("./img/bg_form.png") bottom no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     box-sizing: content-box;
+    padding-top: 10px;
 }
 .second-title--white{
   color: white;
 }
-.form__conteiner{
+.form-section__conteiner{
     display: flex;
     flex-direction: column;
 }
 
 .form {
     display: flex;
-    margin-top: 40px;
+    margin-top: 72px;
   }
 .form__column {
     flex: 1;

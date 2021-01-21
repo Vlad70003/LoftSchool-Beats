@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=915px, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEATS</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="main.css">
@@ -18,16 +18,16 @@
         <div class="hero">
           <div class="conteiner hero__conteiner">
             <header class="header">
-              <img src="./img/Logo.png" alt="Logo">
+              <img src="./img/Logo.png" alt="Logo" class="logo">
               <nav class="menu">
                 <ul class="menu__list">
-                  <li class="menu__item"><a href="#" class="item__link">О нас</a></li>
-                  <li class="menu__item"><a href="#" class="item__link">Наушники</a></li>
-                  <li class="menu__item"><a href="#" class="item__link">Команда</a></li>
-                  <li class="menu__item"><a href="#" class="item__link">Цвета</a></li>
-                  <li class="menu__item"><a href="#" class="item__link">Отзывы</a></li>
-                  <li class="menu__item"><a href="#" class="item__link">Как мы работаем</a></li>
-                  <li class="menu__item"><a href="#" class="item__link">Контакты</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Наушники</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Команда</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Цвета</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Как мы работаем</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
                 </ul>
               </nav>
               <a href="tel:+78009039090" class="telephone">8 800 903 90 90</a>
@@ -73,7 +73,7 @@
             </p>
             <ul class="advantages">
               <li class="advantages__element">
-                  <div class="advantages__img img__battery"></div>
+                  <div class="advantages__img advantages__battery"></div>
                   <h6 class="advantages__title">40 часов работы</h6>
                   <p class="advantages__title-desc">Наушники Beats Solo3 могут работать
                     до 40 часов без подзарядки, чтобы вы
@@ -81,7 +81,7 @@
                   </p>
               </li>
               <li class="advantages__element">
-                  <div class="advantages__img img__sound"></div>
+                  <div class="advantages__img advantages__sound"></div>
                   <h6 class="advantages__title">Фирменное звучание</h6>
                   <p class="advantages__title-desc">
                     Фирменное звучание Beats в наушниках
@@ -91,7 +91,7 @@
                   </p>
               </li>
               <li class="advantages__element">
-                  <div class="advantages__img img__stopwotch"></div>
+                  <div class="advantages__img advantages__stopwotch"></div>
                   <h6 class="advantages__title">
                     Быстрая зарядка
                   </h6>
@@ -228,14 +228,14 @@
             </section> -->
         <section class="reviews">
           <div class="conteiner reviews__conteiner">
-            <h2 class="second-title second-title--index">ОТЗЫВЫ</h2>
+            <h2 class="second-title second-title">ОТЗЫВЫ</h2>
             <ul class="reviews__persons">
               <li class="rewiews__person">
                 <img class="rewiews__img" src="./img/photo_billy_ailish.png" alt="person__img">
-                <div class="review__list">
-                  <h3 class="review__title">Отличный звук
+                <div class="reviews__list">
+                  <h3 class="reviews__title">Отличный звук
                   </h3>
-                  <p class="review__title-perc">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. </p>
+                  <p class="reviews__title-perc">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. </p>
                   <p class="rewiews__name">Билли Айлиш</p>
                 </div>
               </li>
@@ -255,7 +255,7 @@
           </div>
         </section> -->
         <section class="form-section">
-          <div class="conteiner form__conteiner">
+          <div class="conteiner form-section__conteiner">
             <h2 class="second-title second-title--white">ЗАКАЖИТЕ ДОСТАВКУ</h2>
             <form action="" class="form">
               <div class="form__column">
@@ -322,7 +322,7 @@
                 </div>
                 <div class="form__button">
                   <button class="button">Заказать</button>
-                  <input class="button button-reset" type="reset" value="Очистить">
+                  <input class="button button--reset" type="reset" value="Очистить">
                 </div>
               </div>
             </form>
@@ -347,5 +347,18 @@
         </section>
       </div>
     </div>
+    <nav class="fixed-menu">
+      <ul class="fixed-menu__list">
+        <li class="fixed-menu__element fixed-menu__element--active"><a href="#" class="fixed-menu__link"></a></li>
+        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link"></a></li>
+        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link"></a></li>
+        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link"></a></li>
+        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link"></a></li>
+        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link"></a></li>
+        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link"></a></li>
+        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link"></a></li>
+        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link"></a></li>
+      </ul>
+    </nav>
   </body>
 </html>

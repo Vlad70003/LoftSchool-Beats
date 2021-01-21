@@ -1,5 +1,6 @@
 .why-beats{
   height: 100vh;
+  padding-top: 96px;
 }
 .why-beats__conteiner {
     display: flex;
@@ -40,6 +41,27 @@
   .advantages__element{
     display: flex;
     flex-direction: column;
+    position: relative;
+    &:first-child::after{
+      content: "";
+      width: 100px;
+      height: 100px;
+      display: block;
+      background: url("./img/combo_share.png") center no-repeat;
+      position: absolute;
+      left: 267px;
+      top: 15px;
+    }
+    &:last-child::before{
+      content: "";
+      width: 100px;
+      height: 100px;
+      display: block;
+      background: url("./img/combo_share.png") center no-repeat;
+      position: absolute;
+      left: -70px;
+      top: 15px;
+    }
   }
   .advantages__title{
     font-weight: 700;
@@ -66,34 +88,16 @@
   }
 
   
-  .img__battery {
+  .advantages__battery {
     background: url("./img/img_battery.png") center no-repeat, #F2F5F4;
     position: relative;
-    &::after{
-      content: "";
-      width: 100px;
-      height: 100px;
-      display: block;
-      background: url("../img/combo_share.png") center no-repeat;
-      position: absolute;
-      left: 182px;
-      top: 15px;
-    }
+    
   }
-  .img__sound {
+  .advantages__sound {
     background: url("./img/img_sound.png") center no-repeat, #F2F5F4;
     position: relative;
-    &::after{
-      content: "";
-      width: 100px;
-      height: 100px;
-      display: block;
-      background: url("../img/combo_share.png") center no-repeat;
-      position: absolute;
-      left: 182px;
-      top: 15px;
-    }
+    
   }
-  .img__stopwotch{
+  .advantages__stopwotch{
     background: url("./img/img_stopwotch.png") center no-repeat, #F2F5F4;
   }

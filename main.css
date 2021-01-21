@@ -345,6 +345,10 @@ body, html {
   width: 100%;
 }
 
+html {
+  font-size: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -371,7 +375,6 @@ a {
 }
 
 .second-title {
-  padding-top: 94px;
   font-family: "Play", sans-serif;
   font-weight: 700;
   font-size: 48px;
@@ -398,7 +401,7 @@ a {
 }
 
 .menu__item {
-  margin-right: 20px;
+  margin-right: 27px;
   font-weight: 400;
   font-size: 18px;
 }
@@ -406,9 +409,10 @@ a {
   margin-right: 0;
 }
 
-.item__link:hover {
+.menu__link:hover {
   cursor: pointer;
   color: #E01F3D;
+  transition: all ease-in-out 0.2s;
 }
 
 .telephone {
@@ -417,6 +421,7 @@ a {
   font-style: normal;
   font-size: 18px;
   position: relative;
+  margin-right: 25px;
 }
 
 .telephone:hover {
@@ -451,6 +456,7 @@ a {
 .button:hover {
   cursor: pointer;
   opacity: 0.9;
+  transition: all ease-in-out 0.2s;
 }
 
 .main-title {
@@ -508,20 +514,9 @@ span[class^=description__img] {
   background-image: url("./img/powersocket-mini.png");
 }
 
-.main::after {
-  content: "";
-  display: block;
-  width: 46px;
-  height: 10px;
-  background: #C4C4C4;
-  transform: rotate(-45deg);
-  position: absolute;
-  right: 0px;
-  top: 100%;
-}
-
 .why-beats {
   height: 100vh;
+  padding-top: 96px;
 }
 
 .why-beats__conteiner {
@@ -567,6 +562,27 @@ span[class^=description__img] {
 .advantages__element {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.advantages__element:first-child::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  display: block;
+  background: url("./img/combo_share.png") center no-repeat;
+  position: absolute;
+  left: 267px;
+  top: 15px;
+}
+.advantages__element:last-child::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  display: block;
+  background: url("./img/combo_share.png") center no-repeat;
+  position: absolute;
+  left: -70px;
+  top: 15px;
 }
 
 .advantages__title {
@@ -595,37 +611,17 @@ span[class^=description__img] {
   background: #F2F5F4;
 }
 
-.img__battery {
+.advantages__battery {
   background: url("./img/img_battery.png") center no-repeat, #F2F5F4;
   position: relative;
 }
-.img__battery::after {
-  content: "";
-  width: 100px;
-  height: 100px;
-  display: block;
-  background: url("../img/combo_share.png") center no-repeat;
-  position: absolute;
-  left: 182px;
-  top: 15px;
-}
 
-.img__sound {
+.advantages__sound {
   background: url("./img/img_sound.png") center no-repeat, #F2F5F4;
   position: relative;
 }
-.img__sound::after {
-  content: "";
-  width: 100px;
-  height: 100px;
-  display: block;
-  background: url("../img/combo_share.png") center no-repeat;
-  position: absolute;
-  left: 182px;
-  top: 15px;
-}
 
-.img__stopwotch {
+.advantages__stopwotch {
   background: url("./img/img_stopwotch.png") center no-repeat, #F2F5F4;
 }
 
@@ -775,6 +771,7 @@ span[class^=description__img] {
 
 .reviews {
   height: 100vh;
+  padding-top: 52px;
 }
 
 .reviews__conteiner {
@@ -784,12 +781,17 @@ span[class^=description__img] {
   height: 100%;
 }
 
+.reviews__persons {
+  padding-bottom: 10px;
+}
+
 .rewiews__person {
   display: flex;
   padding: 42px;
   margin-top: 30px;
   background: #F8FAF9;
   position: relative;
+  overflow: hidden;
 }
 .rewiews__person::after {
   content: "";
@@ -804,24 +806,21 @@ span[class^=description__img] {
   z-index: 50;
 }
 
-.review__list {
-  margin-left: 65px;
+.reviews__list {
+  margin-left: 34px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  line-height: 18, 5px;
 }
 
-.review__title {
+.reviews__title {
   font-family: "Play", sans-serif;
   font-size: 24px;
   font-weight: 700;
 }
 
-.second-title--index {
-  z-index: 100;
-}
-
-.review__title-perc {
+.reviews__title-perc {
   font-family: "Play", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -837,6 +836,7 @@ span[class^=description__img] {
 .pagginator {
   display: flex;
   justify-content: center;
+  margin: 0 6px;
   padding-bottom: 60px;
 }
 
@@ -844,8 +844,8 @@ span[class^=description__img] {
   width: 74px;
   height: 74px;
   border-radius: 50%;
-  margin: 40px 6px;
   cursor: pointer;
+  margin-right: 10px;
 }
 .pagginator__element:first-child {
   background: url("./img/photo_billy_ailish_mini.png") center no-repeat;
@@ -886,26 +886,27 @@ span[class^=description__img] {
 
 .form-section {
   background: url("./img/bg_form.png") bottom no-repeat;
-  background-size: 100%;
+  background-size: cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   box-sizing: content-box;
+  padding-top: 10px;
 }
 
 .second-title--white {
   color: white;
 }
 
-.form__conteiner {
+.form-section__conteiner {
   display: flex;
   flex-direction: column;
 }
 
 .form {
   display: flex;
-  margin-top: 40px;
+  margin-top: 72px;
 }
 
 .form__column {
@@ -1055,7 +1056,7 @@ span[class^=description__img] {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background: url(../img/check_mark.png) center no-repeat;
+  background: url(./img/check_mark.png) center no-repeat;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1065,7 +1066,7 @@ span[class^=description__img] {
   padding-left: 5px;
 }
 
-.button-reset {
+.button--reset {
   background: transparent;
   border: none;
   font-weight: 400;
@@ -1074,7 +1075,7 @@ span[class^=description__img] {
 
 .hero {
   height: 100vh;
-  background: url("../img/headphones_main.png") left 68% center no-repeat, #F5F5F5;
+  background: url("./img/headphones_main.png") left 70% top 66% no-repeat, #F5F5F5;
   background-size: 30%;
 }
 
@@ -1085,6 +1086,57 @@ span[class^=description__img] {
   height: 100%;
 }
 
+.hero::after {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 10px;
+  background: #C4C4C4;
+  transform: rotate(-45deg);
+  position: absolute;
+  right: 12%;
+  top: 100%;
+}
+
 .map {
   height: 100vh;
+}
+
+.fixed-menu {
+  position: fixed;
+  right: 3%;
+  top: 44%;
+}
+
+.fixed-menu__element {
+  margin-bottom: 12px;
+}
+.fixed-menu__element--active .fixed-menu__link {
+  border-color: #E01F3D;
+}
+.fixed-menu__element--active .fixed-menu__link::before {
+  background: #E01F3D;
+  opacity: 1;
+}
+
+.fixed-menu__link {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+  position: relative;
+}
+.fixed-menu__link::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  background: #000;
+  opacity: 0.6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

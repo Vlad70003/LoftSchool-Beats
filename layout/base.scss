@@ -4,7 +4,9 @@ body, html{
     min-height: 100%;
     width: 100%;
 }
-
+html{
+    font-size: 16px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -30,7 +32,6 @@ a {
     position: relative;
 }
 .second-title {
-    padding-top: 94px;
     font-family: "Play", sans-serif;
     font-weight: 700;
     font-size: 48px;

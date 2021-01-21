@@ -45,14 +45,4 @@
   .description__img-powersocket{
     background-image: url("./img/powersocket-mini.png");
   }
-  .main::after{
-    content: "";
-    display: block;
-    width: 46px;
-    height: 10px;
-    background: #C4C4C4;
-    transform: rotate(-45deg);
-    position: absolute;
-    right: 0px;
-    top: 100%;
-  }
+  

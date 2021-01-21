@@ -1,5 +1,6 @@
 .reviews{
   height: 100vh;
+  padding-top: 52px;
 }
 .reviews__conteiner{
     display: flex;
@@ -7,12 +8,16 @@
     justify-content: center;
     height: 100%;
   }
+  .reviews__persons{
+    padding-bottom: 10px;
+  }
   .rewiews__person {
     display: flex;
     padding: 42px;
     margin-top: 30px;
     background: #F8FAF9;
     position: relative;
+    overflow: hidden;
     &::after{
       content: "";
       display: block;
@@ -26,21 +31,19 @@
       z-index: 50;
     }
   }
-  .review__list {
-    margin-left: 65px;
+  .reviews__list {
+    margin-left: 34px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    line-height: 18,5px;
   }
-  .review__title {
+  .reviews__title {
     font-family: "Play", sans-serif;
     font-size: 24px;
     font-weight: 700;
   }
-  .second-title--index{
-    z-index: 100;
-  }
-  .review__title-perc {
+  .reviews__title-perc {
     font-family: "Play", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -54,14 +57,15 @@
   .pagginator {
     display: flex;
     justify-content: center;
+    margin: 0 6px;
     padding-bottom: 60px;
   }
   .pagginator__element {
     width: 74px;
     height: 74px;
     border-radius: 50%;
-    margin: 40px 6px;
     cursor: pointer;
+    margin-right: 10px;
     &:first-child {
       background: url("./img/photo_billy_ailish_mini.png") center no-repeat;
     }

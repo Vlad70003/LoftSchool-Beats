@@ -13,4 +13,5 @@
   .button:hover {
     cursor: pointer;
     opacity: 0.9;
+    transition: all ease-in-out .2s;
   }
