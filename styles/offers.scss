@@ -1,8 +1,8 @@
 .offers {
   background: #F8FAF9;
-  padding-top: 66px;
+  padding-top: rem(66px);
   position: relative;
-  padding-bottom: 94px;
+  padding-bottom: rem(94px);
 }
 .offer {
   display: flex;
@@ -10,49 +10,49 @@
 }
 .prise__inf {
   display: flex;
-  padding-top: 25px;
+  padding-top: rem(25px);
   align-items: center;
   justify-content: start;
 }
 .prise{
     font-family: "Play", sans-serif;
     font-weight: 400;
-    font-size: 36px;
-    padding-right: 13px;
+    font-size: rem(36px);
+    padding-right: rem(13px);
   }
   .offer__title {
     font-family: "Play", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 36px;
+    font-size: rem(36px);
     text-transform: uppercase;
-    padding-top: 25px;
+    padding-top: rem(25px);
   }
   .offer__title-desc {
     font-family: "Play", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: rem(16px);
     color: #666666;
-    padding-top: 24px;
+    padding-top: rem(24px);
   }
   .offer__information{
     display: flex;
     justify-content: start;
-    padding-top: 25px;
+    padding-top: rem(25px);
   }
   .parameters{
-    margin-right: 85px;
+    margin-right: rem(85px);
     display: flex;
     flex-direction: column;
   }
   .parameters__element-name {
     font-family: "Play", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: rem(14px);
     color: #666666;
   }
   .parameters__element {
     font-weight: 700;
     font-style: normal;
-    font-style: 18px;
+    font-style: rem(18px);
   }

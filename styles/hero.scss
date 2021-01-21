@@ -12,8 +12,8 @@
 .hero::after{
     content: "";
     display: block;
-    width: 46px;
-    height: 10px;
+    width: rem(46px);
+    height: rem(10px);
     background: #C4C4C4;
     transform: rotate(-45deg);
     position: absolute;

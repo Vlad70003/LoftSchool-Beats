@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    padding: 24px 0 50px;
+    padding: rem(24px) 0 rem(50px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,9 +12,9 @@
 }
 
 .menu__item {
-    margin-right: 27px;
+    margin-right: rem(27px);
     font-weight: 400;
-    font-size: 18px;
+    font-size: rem(18px);
     &:last-child(){
         margin-right: 0;
     }
@@ -29,9 +29,9 @@
     font-family: "Play", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: rem(18px);
     position: relative;
-    margin-right: 25px;
+    margin-right: rem(25px);
 }
 .telephone:hover{
     cursor: pointer;
@@ -40,8 +40,8 @@
 .telephone::before {
     content: "";
     display: block;
-    width: 14px;
-    height: 15px;
+    width: rem(14px);
+    height: rem(15px);
     background-image: url("./img/phohe.png");
     position: absolute;
     right: 103%;

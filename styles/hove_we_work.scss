@@ -1,5 +1,5 @@
 .hove__we__work{
-    padding-bottom: 105px;
+    padding-bottom: rem(105px);
     background: #F8FAF9;
   }
 .conteiner__hove__we__work {
@@ -7,14 +7,14 @@
     flex-direction: column;
 }
   .hove__we__work-title {
-    padding: 58px 0 44px;
+    padding: rem(58px )0 rem(44px);
     font-weight: 800;
-    font-size: 48px;
+    font-size: rem(48px);
     text-align: center;
-    letter-spacing: 5px;
-    word-spacing: -5px;
+    letter-spacing: rem(5px);
+    word-spacing: rem(-5px);
   }
   .img__hove__we__work {
-    width: 662px;
+    width: rem(662px);
     margin: 0 auto;
   }

@@ -1,6 +1,6 @@
 .reviews{
   height: 100vh;
-  padding-top: 52px;
+  padding-top: rem(52px);
 }
 .reviews__conteiner{
     display: flex;
@@ -9,20 +9,20 @@
     height: 100%;
   }
   .reviews__persons{
-    padding-bottom: 10px;
+    padding-bottom: rem(10px);
   }
   .rewiews__person {
     display: flex;
-    padding: 42px;
-    margin-top: 30px;
+    padding: rem(42px);
+    margin-top: rem(30px);
     background: #F8FAF9;
     position: relative;
     overflow: hidden;
     &::after{
       content: "";
       display: block;
-      width: 83px;
-      height: 83px;
+      width: rem(83px);
+      height: rem(83px);
       background: white;
       border-radius: 50%;
       position: absolute;
@@ -32,40 +32,40 @@
     }
   }
   .reviews__list {
-    margin-left: 34px;
+    margin-left: rem(34px);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    line-height: 18,5px;
+    line-height: rem(18,5px);
   }
   .reviews__title {
     font-family: "Play", sans-serif;
-    font-size: 24px;
+    font-size: rem(24px);
     font-weight: 700;
   }
   .reviews__title-perc {
     font-family: "Play", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: rem(16px);
     color: #666;
   }
   .rewiews__name {
     font-family: "Play", sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: rem(18px);
   }
   .pagginator {
     display: flex;
     justify-content: center;
-    margin: 0 6px;
-    padding-bottom: 60px;
+    margin: 0 rem(6px);
+    padding-bottom: rem(60px);
   }
   .pagginator__element {
-    width: 74px;
-    height: 74px;
+    width: rem(74px);
+    height: rem(74px);
     border-radius: 50%;
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: rem(10px);
     &:first-child {
       background: url("./img/photo_billy_ailish_mini.png") center no-repeat;
     }
@@ -76,7 +76,7 @@
       background: url("./img/photo_maria_orlova_mini.png") center no-repeat;
     }
     &:hover{
-      border: solid 3px #E01F3D;
+      border: solid rem(3px) #E01F3D;
     }
   }
  

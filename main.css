@@ -441,15 +441,15 @@ a {
 }
 
 .button {
-  padding: 18px 41px;
+  padding: 1.125rem 2.5625rem;
   background-color: #E01F3D;
   color: white;
   font-family: "Play", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 16px;
-  border: 1px solid transparent;
-  border-radius: 100px;
+  font-size: 1rem;
+  border: 0.0625rem solid transparent;
+  border-radius: 6.25rem;
   outline: none;
 }
 
@@ -892,7 +892,7 @@ span[class^=description__img] {
   flex-direction: column;
   justify-content: center;
   box-sizing: content-box;
-  padding-top: 10px;
+  padding-top: 0.625rem;
 }
 
 .second-title--white {
@@ -906,12 +906,12 @@ span[class^=description__img] {
 
 .form {
   display: flex;
-  margin-top: 72px;
+  margin-top: 4.5rem;
 }
 
 .form__column {
   flex: 1;
-  margin-right: 30px;
+  margin-right: 1.875rem;
 }
 .form__column:last-child {
   margin-right: 0;
@@ -919,12 +919,12 @@ span[class^=description__img] {
 
 .form__row {
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
 }
 
 .form__label {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 .form__label:last-child {
   margin-right: 0;
@@ -933,9 +933,9 @@ span[class^=description__img] {
 .form__input {
   width: 100%;
   border: none;
-  padding: 18px 0px 18px 12px;
-  border: 3px solid transparent;
-  border-radius: 4px;
+  padding: 1.125rem 0px 1.125rem 0.75rem;
+  border: 0.1875rem solid transparent;
+  border-radius: 0.25rem;
 }
 
 .form__input:focus {
@@ -946,14 +946,14 @@ span[class^=description__img] {
 .form__label-element {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   color: white;
 }
 
 .textarea {
-  height: 155px;
+  height: 9.6875rem;
   resize: none;
-  margin-bottom: 11px;
+  margin-bottom: 0.6875rem;
 }
 
 .form__control {
@@ -963,7 +963,7 @@ span[class^=description__img] {
 
 .conteiner__footer {
   display: flex;
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 
 .footer__inf {
@@ -973,16 +973,16 @@ span[class^=description__img] {
 .footer__inf-element {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
 }
 
 .social {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   background: #000;
   display: inline-flex;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 .social:hover {
   cursor: pointer;
@@ -1109,7 +1109,7 @@ span[class^=description__img] {
 }
 
 .fixed-menu__element {
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 .fixed-menu__element--active .fixed-menu__link {
   border-color: #E01F3D;
@@ -1120,17 +1120,17 @@ span[class^=description__img] {
 }
 
 .fixed-menu__link {
-  width: 18px;
-  height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent;
   display: block;
   position: relative;
 }
 .fixed-menu__link::before {
   content: "";
-  width: 9px;
-  height: 9px;
+  width: 0.5625rem;
+  height: 0.5625rem;
   display: block;
   position: absolute;
   border-radius: 50%;

@@ -1,12 +1,12 @@
 .conteiner_team {
   display: flex;
   flex-direction: column;
-  padding-bottom: 50px;
+  padding-bottom: rem(50px);
   &::before{
   content: "";
   display: block;
-  width: 24px;
-  height: 24px;
+  width: rem(24px);
+  height: rem(24px);
   background: #292929;
   position: absolute;
   transform: rotate(20deg);
@@ -18,16 +18,16 @@
   .team__title {
     font-family: "Play", sans-serif;
     font-weight: 700;
-    font-size: 48px;
+    font-size: rem(48px);
     text-align: center;
-    padding: 70px 0 50px;
+    padding: rem(70px) 0 rem(50px);
     text-transform: uppercase;
   }
   .team__persons {
     display: flex;
   }
   .team__person {
-    margin: 10px;
+    margin: rem(10px);
   }
   .person__ellement {
     text-align: center;
@@ -35,8 +35,8 @@
   .person__name {
     font-family: "Play", sans-serif;
     font-weight: 700;
-    font-size: 18px;
-    padding-top: 25px;
+    font-size: rem(18px);
+    padding-top: rem(25px);
   }
   .name__ellement {
     position: relative;
@@ -46,7 +46,7 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 9px 4.5px 0 4.5px;
+    border-width: rem(9px) rem(4.5px) 0 rem(4.5px);
     border-color: #e01f3c transparent transparent transparent;
     position: absolute;
     left: 103%;
@@ -57,13 +57,13 @@
 .person__prof {
     font-family: "Play", sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    padding-top: 11px;
+    font-size: rem(16px);
+    padding-top: rem(11px);
   }
   .person__duties {
     font-family: "Play", sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    padding-top: 11px;
+    font-size: rem(16px);
+    padding-top: rem(11px);
     color: #666666;
   }

@@ -1,6 +1,6 @@
 .why-beats{
   height: 100vh;
-  padding-top: 96px;
+  padding-top: rem(96px);
 }
 .why-beats__conteiner {
     display: flex;
@@ -18,25 +18,25 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 4px 24px 31px 12px;
+    border-width: rem(4px) rem(24px) rem(31px) rem(12px);
     border-color: transparent transparent #E01F3D transparent;
     transform: rotate(109deg);
     z-index: 100;
   }
   .why-beats__desc {
     font-family: "Play", sans-serif;
-    padding-top: 18px;
+    padding-top: rem(18px);
     font-weight: 400;
-    font-size: 16px;
+    font-size: rem(16px);
     text-align: center;
     margin: 0 auto;
     color: #666666;
-    padding-bottom: 60px;
+    padding-bottom: rem(60px);
   }
   .advantages{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 123px;
+    padding-bottom: rem(123px);
   }
   .advantages__element{
     display: flex;
@@ -44,46 +44,46 @@
     position: relative;
     &:first-child::after{
       content: "";
-      width: 100px;
-      height: 100px;
+      width: rem(100px);
+      height: rem(100px);
       display: block;
       background: url("./img/combo_share.png") center no-repeat;
       position: absolute;
-      left: 267px;
-      top: 15px;
+      left: rem(267px);
+      top: rem(15px);
     }
     &:last-child::before{
       content: "";
-      width: 100px;
-      height: 100px;
+      width: rem(100px);
+      height: rem(100px);
       display: block;
       background: url("./img/combo_share.png") center no-repeat;
       position: absolute;
-      left: -70px;
-      top: 15px;
+      left: rem(-70px);
+      top: rem(15px);
     }
   }
   .advantages__title{
     font-weight: 700;
     font-family: "Play", sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: rem(24px);
     text-align: center;
-    padding-bottom: 7px;
+    padding-bottom: rem(7px);
   }
   .advantages__title-desc {
     font-family: "Play", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: rem(16px);
     text-align: center;
     color: #666666;
   }
 .advantages__img {
-    width: 128px;
-    height: 128px;
+    width: rem(128px);
+    height: rem(128px);
     border-radius: 50%;
     margin: 0 auto;
-    margin-bottom: 24px;
+    margin-bottom: rem(24px);
     background: #F2F5F4;
   }
 

@@ -1,39 +1,39 @@
   .main-title {
     font-family: "Play", sans-serif;
-    width: 400px;
+    width: rem(400px);
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
-    padding-top: 13px;
-    margin-bottom: 14px;
+    font-size: rem(48px);
+    padding-top: rem(13px);
+    margin-bottom: rem(14px);
     text-transform: uppercase;
   }
   .main__desc {
     font-weight: 400;
     font-style: normal;
-    font-size: 21px;
-    padding-bottom: 36px;
+    font-size: rem(21px);
+    padding-bottom: rem(36px);
   }
   .description__list {
-    padding: 70px 0;
+    padding: rem(70px) 0;
     display: flex;
   }
   .description__item {
     font-family: "Play", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: rem(16px);
     font-style: normal;
     display: flex;
     align-items: center;
   }
   span[class^="description__img"] {
-    width: 41px;
-    height: 41px;
+    width: rem(41px);
+    height: rem(41px);
     display: block;
   }
   .description__text{
-    width: 114px;
-    margin: 0 10px;
+    width: rem(114px);
+    margin: 0 rem(10px);
   }
 
   .description__img-noise{

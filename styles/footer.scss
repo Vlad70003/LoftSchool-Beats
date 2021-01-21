@@ -1,6 +1,6 @@
 .conteiner__footer {
     display: flex;
-    padding: 20px 0;
+    padding: rem(20px) 0;
   }
   .footer__inf {
     justify-content: start;
@@ -8,15 +8,15 @@
   .footer__inf-element{
     font-family: "Play", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: rem(18px);
     font-style: normal;
   }
 .social {
-    width: 30px;
-    height: 30px;
+    width: rem(30px);
+    height: rem(30px);
     background: #000;
     display: inline-flex;
-    margin-right: 10px;
+    margin-right: rem(10px);
     &:hover {
       cursor: pointer;
     }
