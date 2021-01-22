@@ -4,9 +4,10 @@ $baseFontSize: 16px;
 // colors
 $black: #292929;
 $red: #E01F3D;
-@import "rem";
-@import "layout/normalize";
+
+@import "./rem";
 @import "layout/base";
+@import "layout/normalize";
 @import "styles/wrapper";
 @import "styles/header";
 @import "styles/button";

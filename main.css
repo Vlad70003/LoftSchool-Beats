@@ -368,7 +368,6 @@ a {
   display: flex;
   justify-content: space-between;
   max-width: 940px;
-  min-width: 940px;
   width: 98%;
   margin: 0 auto;
   position: relative;
@@ -389,7 +388,7 @@ a {
 
 .header {
   width: 100%;
-  padding: 24px 0 50px;
+  padding: rem(24px) 0 rem(50px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -401,9 +400,9 @@ a {
 }
 
 .menu__item {
-  margin-right: 27px;
+  margin-right: rem(27px);
   font-weight: 400;
-  font-size: 18px;
+  font-size: rem(18px);
 }
 .menu__item:last-child() {
   margin-right: 0;
@@ -419,9 +418,9 @@ a {
   font-family: "Play", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
+  font-size: rem(18px);
   position: relative;
-  margin-right: 25px;
+  margin-right: rem(25px);
 }
 
 .telephone:hover {
@@ -432,8 +431,8 @@ a {
 .telephone::before {
   content: "";
   display: block;
-  width: 14px;
-  height: 15px;
+  width: rem(14px);
+  height: rem(15px);
   background-image: url("./img/phohe.png");
   position: absolute;
   right: 103%;
@@ -441,15 +440,15 @@ a {
 }
 
 .button {
-  padding: 1.125rem 2.5625rem;
+  padding: rem(18px) rem(41px);
   background-color: #E01F3D;
   color: white;
   font-family: "Play", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1rem;
-  border: 0.0625rem solid transparent;
-  border-radius: 6.25rem;
+  font-size: rem(16px);
+  border: 1px solid transparent;
+  border-radius: rem(100px);
   outline: none;
 }
 
@@ -461,45 +460,45 @@ a {
 
 .main-title {
   font-family: "Play", sans-serif;
-  width: 400px;
+  width: rem(400px);
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
-  padding-top: 13px;
-  margin-bottom: 14px;
+  font-size: rem(48px);
+  padding-top: rem(13px);
+  margin-bottom: rem(14px);
   text-transform: uppercase;
 }
 
 .main__desc {
   font-weight: 400;
   font-style: normal;
-  font-size: 21px;
-  padding-bottom: 36px;
+  font-size: rem(21px);
+  padding-bottom: rem(36px);
 }
 
 .description__list {
-  padding: 70px 0;
+  padding: rem(70px) 0;
   display: flex;
 }
 
 .description__item {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: rem(16px);
   font-style: normal;
   display: flex;
   align-items: center;
 }
 
 span[class^=description__img] {
-  width: 41px;
-  height: 41px;
+  width: rem(41px);
+  height: rem(41px);
   display: block;
 }
 
 .description__text {
-  width: 114px;
-  margin: 0 10px;
+  width: rem(114px);
+  margin: 0 rem(10px);
 }
 
 .description__img-noise {
@@ -516,7 +515,7 @@ span[class^=description__img] {
 
 .why-beats {
   height: 100vh;
-  padding-top: 96px;
+  padding-top: rem(96px);
 }
 
 .why-beats__conteiner {
@@ -536,7 +535,7 @@ span[class^=description__img] {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 4px 24px 31px 12px;
+  border-width: rem(4px) rem(24px) rem(31px) rem(12px);
   border-color: transparent transparent #E01F3D transparent;
   transform: rotate(109deg);
   z-index: 100;
@@ -544,19 +543,19 @@ span[class^=description__img] {
 
 .why-beats__desc {
   font-family: "Play", sans-serif;
-  padding-top: 18px;
+  padding-top: rem(18px);
   font-weight: 400;
-  font-size: 16px;
+  font-size: rem(16px);
   text-align: center;
   margin: 0 auto;
   color: #666666;
-  padding-bottom: 60px;
+  padding-bottom: rem(60px);
 }
 
 .advantages {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 123px;
+  padding-bottom: rem(123px);
 }
 
 .advantages__element {
@@ -566,48 +565,48 @@ span[class^=description__img] {
 }
 .advantages__element:first-child::after {
   content: "";
-  width: 100px;
-  height: 100px;
+  width: rem(100px);
+  height: rem(100px);
   display: block;
   background: url("./img/combo_share.png") center no-repeat;
   position: absolute;
-  left: 267px;
-  top: 15px;
+  left: rem(267px);
+  top: rem(15px);
 }
 .advantages__element:last-child::before {
   content: "";
-  width: 100px;
-  height: 100px;
+  width: rem(100px);
+  height: rem(100px);
   display: block;
   background: url("./img/combo_share.png") center no-repeat;
   position: absolute;
-  left: -70px;
-  top: 15px;
+  left: rem(-70px);
+  top: rem(15px);
 }
 
 .advantages__title {
   font-weight: 700;
   font-family: "Play", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: rem(24px);
   text-align: center;
-  padding-bottom: 7px;
+  padding-bottom: rem(7px);
 }
 
 .advantages__title-desc {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: rem(16px);
   text-align: center;
   color: #666666;
 }
 
 .advantages__img {
-  width: 128px;
-  height: 128px;
+  width: rem(128px);
+  height: rem(128px);
   border-radius: 50%;
   margin: 0 auto;
-  margin-bottom: 24px;
+  margin-bottom: rem(24px);
   background: #F2F5F4;
 }
 
@@ -627,9 +626,9 @@ span[class^=description__img] {
 
 .offers {
   background: #F8FAF9;
-  padding-top: 66px;
+  padding-top: rem(66px);
   position: relative;
-  padding-bottom: 94px;
+  padding-bottom: rem(94px);
 }
 
 .offer {
@@ -639,7 +638,7 @@ span[class^=description__img] {
 
 .prise__inf {
   display: flex;
-  padding-top: 25px;
+  padding-top: rem(25px);
   align-items: center;
   justify-content: start;
 }
@@ -647,35 +646,35 @@ span[class^=description__img] {
 .prise {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: 36px;
-  padding-right: 13px;
+  font-size: rem(36px);
+  padding-right: rem(13px);
 }
 
 .offer__title {
   font-family: "Play", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 36px;
+  font-size: rem(36px);
   text-transform: uppercase;
-  padding-top: 25px;
+  padding-top: rem(25px);
 }
 
 .offer__title-desc {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: rem(16px);
   color: #666666;
-  padding-top: 24px;
+  padding-top: rem(24px);
 }
 
 .offer__information {
   display: flex;
   justify-content: start;
-  padding-top: 25px;
+  padding-top: rem(25px);
 }
 
 .parameters {
-  margin-right: 85px;
+  margin-right: rem(85px);
   display: flex;
   flex-direction: column;
 }
@@ -683,26 +682,26 @@ span[class^=description__img] {
 .parameters__element-name {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: rem(14px);
   color: #666666;
 }
 
 .parameters__element {
   font-weight: 700;
   font-style: normal;
-  font-style: 18px;
+  font-style: rem(18px);
 }
 
 .conteiner_team {
   display: flex;
   flex-direction: column;
-  padding-bottom: 50px;
+  padding-bottom: rem(50px);
 }
 .conteiner_team::before {
   content: "";
   display: block;
-  width: 24px;
-  height: 24px;
+  width: rem(24px);
+  height: rem(24px);
   background: #292929;
   position: absolute;
   transform: rotate(20deg);
@@ -713,9 +712,9 @@ span[class^=description__img] {
 .team__title {
   font-family: "Play", sans-serif;
   font-weight: 700;
-  font-size: 48px;
+  font-size: rem(48px);
   text-align: center;
-  padding: 70px 0 50px;
+  padding: rem(70px) 0 rem(50px);
   text-transform: uppercase;
 }
 
@@ -724,7 +723,7 @@ span[class^=description__img] {
 }
 
 .team__person {
-  margin: 10px;
+  margin: rem(10px);
 }
 
 .person__ellement {
@@ -734,8 +733,8 @@ span[class^=description__img] {
 .person__name {
   font-family: "Play", sans-serif;
   font-weight: 700;
-  font-size: 18px;
-  padding-top: 25px;
+  font-size: rem(18px);
+  padding-top: rem(25px);
 }
 
 .name__ellement {
@@ -747,7 +746,7 @@ span[class^=description__img] {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 9px 4.5px 0 4.5px;
+  border-width: rem(9px) rem(4.5px) 0 rem(4.5px);
   border-color: #e01f3c transparent transparent transparent;
   position: absolute;
   left: 103%;
@@ -757,21 +756,21 @@ span[class^=description__img] {
 .person__prof {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  padding-top: 11px;
+  font-size: rem(16px);
+  padding-top: rem(11px);
 }
 
 .person__duties {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  padding-top: 11px;
+  font-size: rem(16px);
+  padding-top: rem(11px);
   color: #666666;
 }
 
 .reviews {
   height: 100vh;
-  padding-top: 52px;
+  padding-top: rem(52px);
 }
 
 .reviews__conteiner {
@@ -782,13 +781,13 @@ span[class^=description__img] {
 }
 
 .reviews__persons {
-  padding-bottom: 10px;
+  padding-bottom: rem(10px);
 }
 
 .rewiews__person {
   display: flex;
-  padding: 42px;
-  margin-top: 30px;
+  padding: rem(42px);
+  margin-top: rem(30px);
   background: #F8FAF9;
   position: relative;
   overflow: hidden;
@@ -796,8 +795,8 @@ span[class^=description__img] {
 .rewiews__person::after {
   content: "";
   display: block;
-  width: 83px;
-  height: 83px;
+  width: rem(83px);
+  height: rem(83px);
   background: white;
   border-radius: 50%;
   position: absolute;
@@ -807,45 +806,45 @@ span[class^=description__img] {
 }
 
 .reviews__list {
-  margin-left: 34px;
+  margin-left: rem(34px);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  line-height: 18, 5px;
+  line-height: rem(18, 5px);
 }
 
 .reviews__title {
   font-family: "Play", sans-serif;
-  font-size: 24px;
+  font-size: rem(24px);
   font-weight: 700;
 }
 
 .reviews__title-perc {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: rem(16px);
   color: #666;
 }
 
 .rewiews__name {
   font-family: "Play", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: rem(18px);
 }
 
 .pagginator {
   display: flex;
   justify-content: center;
-  margin: 0 6px;
-  padding-bottom: 60px;
+  margin: 0 rem(6px);
+  padding-bottom: rem(60px);
 }
 
 .pagginator__element {
-  width: 74px;
-  height: 74px;
+  width: rem(74px);
+  height: rem(74px);
   border-radius: 50%;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: rem(10px);
 }
 .pagginator__element:first-child {
   background: url("./img/photo_billy_ailish_mini.png") center no-repeat;
@@ -857,11 +856,11 @@ span[class^=description__img] {
   background: url("./img/photo_maria_orlova_mini.png") center no-repeat;
 }
 .pagginator__element:hover {
-  border: solid 3px #E01F3D;
+  border: solid rem(3px) #E01F3D;
 }
 
 .hove__we__work {
-  padding-bottom: 105px;
+  padding-bottom: rem(105px);
   background: #F8FAF9;
 }
 
@@ -871,16 +870,16 @@ span[class^=description__img] {
 }
 
 .hove__we__work-title {
-  padding: 58px 0 44px;
+  padding: rem(58px) 0 rem(44px);
   font-weight: 800;
-  font-size: 48px;
+  font-size: rem(48px);
   text-align: center;
-  letter-spacing: 5px;
-  word-spacing: -5px;
+  letter-spacing: rem(5px);
+  word-spacing: rem(-5px);
 }
 
 .img__hove__we__work {
-  width: 662px;
+  width: rem(662px);
   margin: 0 auto;
 }
 
@@ -892,7 +891,7 @@ span[class^=description__img] {
   flex-direction: column;
   justify-content: center;
   box-sizing: content-box;
-  padding-top: 0.625rem;
+  padding-top: rem(10px);
 }
 
 .second-title--white {
@@ -906,12 +905,12 @@ span[class^=description__img] {
 
 .form {
   display: flex;
-  margin-top: 4.5rem;
+  margin-top: rem(72px);
 }
 
 .form__column {
   flex: 1;
-  margin-right: 1.875rem;
+  margin-right: rem(30px);
 }
 .form__column:last-child {
   margin-right: 0;
@@ -919,12 +918,12 @@ span[class^=description__img] {
 
 .form__row {
   display: flex;
-  margin-bottom: 1.125rem;
+  margin-bottom: rem(18px);
 }
 
 .form__label {
   flex: 1;
-  margin-right: 1.25rem;
+  margin-right: rem(20px);
 }
 .form__label:last-child {
   margin-right: 0;
@@ -933,9 +932,9 @@ span[class^=description__img] {
 .form__input {
   width: 100%;
   border: none;
-  padding: 1.125rem 0px 1.125rem 0.75rem;
-  border: 0.1875rem solid transparent;
-  border-radius: 0.25rem;
+  padding: rem(18px) 0px rem(18px) rem(12px);
+  border: rem(3px) solid transparent;
+  border-radius: rem(4px);
 }
 
 .form__input:focus {
@@ -946,14 +945,14 @@ span[class^=description__img] {
 .form__label-element {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: rem(16px);
   color: white;
 }
 
 .textarea {
-  height: 9.6875rem;
+  height: rem(155px);
   resize: none;
-  margin-bottom: 0.6875rem;
+  margin-bottom: rem(11px);
 }
 
 .form__control {
@@ -963,7 +962,7 @@ span[class^=description__img] {
 
 .conteiner__footer {
   display: flex;
-  padding: 1.25rem 0;
+  padding: rem(20px) 0;
 }
 
 .footer__inf {
@@ -973,16 +972,16 @@ span[class^=description__img] {
 .footer__inf-element {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: 1.125rem;
+  font-size: rem(18px);
   font-style: normal;
 }
 
 .social {
-  width: 1.875rem;
-  height: 1.875rem;
+  width: rem(30px);
+  height: rem(30px);
   background: #000;
   display: inline-flex;
-  margin-right: 0.625rem;
+  margin-right: rem(10px);
 }
 .social:hover {
   cursor: pointer;
@@ -1007,8 +1006,8 @@ span[class^=description__img] {
 .radio {
   display: flex;
   align-items: center;
-  padding-right: 10px;
-  padding-bottom: 20px;
+  padding-right: rem(10px);
+  padding-bottom: rem(20px);
 }
 .radio:hover {
   cursor: pointer;
@@ -1023,8 +1022,8 @@ span[class^=description__img] {
 }
 
 .radio__visible {
-  width: 24px;
-  height: 24px;
+  width: rem(24px);
+  height: rem(24px);
   position: relative;
   background: white;
   border-radius: 50%;
@@ -1033,8 +1032,8 @@ span[class^=description__img] {
   content: "";
   display: none;
   position: absolute;
-  width: 13px;
-  height: 13px;
+  width: rem(13px);
+  height: rem(13px);
   border-radius: 50%;
   background: #E01F3D;
   top: 50%;
@@ -1043,18 +1042,18 @@ span[class^=description__img] {
 }
 
 .form__button {
-  padding-bottom: 85px;
+  padding-bottom: rem(85px);
 }
 
 .checkbox {
-  border-radius: 4px;
+  border-radius: rem(4px);
 }
 .checkbox::before {
   content: "";
   display: none;
   position: absolute;
-  width: 13px;
-  height: 13px;
+  width: rem(13px);
+  height: rem(13px);
   border-radius: 50%;
   background: url(./img/check_mark.png) center no-repeat;
   top: 50%;
@@ -1063,14 +1062,14 @@ span[class^=description__img] {
 }
 
 .radio__titile {
-  padding-left: 5px;
+  padding-left: rem(5px);
 }
 
 .button--reset {
   background: transparent;
   border: none;
   font-weight: 400;
-  font-style: 16px;
+  font-style: rem(16px);
 }
 
 .hero {
@@ -1089,8 +1088,8 @@ span[class^=description__img] {
 .hero::after {
   content: "";
   display: block;
-  width: 46px;
-  height: 10px;
+  width: rem(46px);
+  height: rem(10px);
   background: #C4C4C4;
   transform: rotate(-45deg);
   position: absolute;
@@ -1109,7 +1108,7 @@ span[class^=description__img] {
 }
 
 .fixed-menu__element {
-  margin-bottom: 0.75rem;
+  margin-bottom: rem(12px);
 }
 .fixed-menu__element--active .fixed-menu__link {
   border-color: #E01F3D;
@@ -1120,17 +1119,17 @@ span[class^=description__img] {
 }
 
 .fixed-menu__link {
-  width: 1.125rem;
-  height: 1.125rem;
+  width: rem(18px);
+  height: rem(18px);
   border-radius: 50%;
-  border: 0.0625rem solid transparent;
+  border: rem(1px) solid transparent;
   display: block;
   position: relative;
 }
 .fixed-menu__link::before {
   content: "";
-  width: 0.5625rem;
-  height: 0.5625rem;
+  width: rem(9px);
+  height: rem(9px);
   display: block;
   position: absolute;
   border-radius: 50%;
