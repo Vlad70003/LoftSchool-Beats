@@ -56,13 +56,15 @@
 .telephone::before {
     content: "";
     display: block;
-    width: rem(16px);
-    height: rem(16px);
-    background-image: url("./img/phohe.png");
+    width: rem(14px);
+    height: rem(14px);
+    background: url("./img/phohe.png") center no-repeat;
     position: absolute;
     right: 103%;
     top: 40%;
     @include phones{
+        width: rem(16px);
+        height: rem(16px);
         right: 74%;
     }
 }
