@@ -6,6 +6,13 @@ body, html{
 }
 html{
     font-size: $baseFontSize;
+
+    @include tablets{
+        font-size: $baseFontSize - 1px;
+    }
+    @include phones{
+        font-size: $baseFontSize - 2px;
+    }
 }
 *{
     margin: 0;
@@ -20,6 +27,7 @@ li {
 a {
     text-decoration: none;
     color: #292929;
+    white-space: nowrap;
 }
 
 .conteiner{

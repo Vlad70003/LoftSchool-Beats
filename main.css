@@ -1,3 +1,57 @@
+body, html {
+  padding: 0px;
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #292929;
+  white-space: nowrap;
+}
+
+.conteiner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 940px;
+  width: 98%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.second-title {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -338,49 +392,6 @@ template {
   display: none;
 }
 
-body, html {
-  padding: 0px;
-  margin: 0px;
-  min-height: 100%;
-  width: 100%;
-}
-
-html {
-  font-size: 16px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #292929;
-}
-
-.conteiner {
-  display: flex;
-  justify-content: space-between;
-  max-width: 940px;
-  width: 98%;
-  margin: 0 auto;
-  position: relative;
-}
-
-.second-title {
-  font-family: "Play", sans-serif;
-  font-weight: 700;
-  font-size: 48px;
-  margin: 0 auto;
-  text-transform: uppercase;
-}
-
 .wrapper {
   font-family: "Alegreya Sans", sans-serif;
   color: #292929;
@@ -388,24 +399,37 @@ a {
 
 .header {
   width: 100%;
-  padding: rem(24px) 0 rem(50px);
+  padding: 1.5rem 0 3.125rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu__list {
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .menu__item {
-  margin-right: rem(27px);
+  margin-right: 1.6875rem;
   font-weight: 400;
-  font-size: rem(18px);
+  font-size: 1.125rem;
+  padding-top: 10px;
 }
 .menu__item:last-child() {
-  margin-right: 0;
+  margin-right: 0px;
 }
 
 .menu__link:hover {
@@ -418,9 +442,16 @@ a {
   font-family: "Play", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: rem(18px);
+  font-size: 1.125rem;
   position: relative;
-  margin-right: rem(25px);
+  margin-right: 1.5625rem;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__telephone {
+    display: none;
+  }
 }
 
 .telephone:hover {
@@ -431,24 +462,49 @@ a {
 .telephone::before {
   content: "";
   display: block;
-  width: rem(14px);
-  height: rem(15px);
+  width: 1rem;
+  height: 1rem;
   background-image: url("./img/phohe.png");
   position: absolute;
   right: 103%;
-  top: 21%;
+  top: 40%;
+}
+@media screen and (max-width: 480px) {
+  .telephone::before {
+    right: 74%;
+  }
+}
+
+.hamburger {
+  width: 25px;
+  height: 25px;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+  margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: inline-flex;
+  }
+}
+
+.hamburger__element {
+  height: 5px;
+  background: #292929;
+  border-radius: 10px;
 }
 
 .button {
-  padding: rem(18px) rem(41px);
+  padding: 1.4375rem 3.125rem;
   background-color: #E01F3D;
   color: white;
   font-family: "Play", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: rem(16px);
+  font-size: 1rem;
   border: 1px solid transparent;
-  border-radius: rem(100px);
+  border-radius: 6.25rem;
   outline: none;
 }
 
@@ -458,47 +514,100 @@ a {
   transition: all ease-in-out 0.2s;
 }
 
+@media screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .main::before {
+    content: "";
+    width: 20.9375rem;
+    height: 20.9375rem;
+    display: block;
+    background: url("./img/headphones_main.png") center no-repeat;
+    background-size: contain;
+    padding-bottom: 20px;
+  }
+}
+
 .main-title {
   font-family: "Play", sans-serif;
-  width: rem(400px);
+  width: 25rem;
   font-style: normal;
   font-weight: 700;
-  font-size: rem(48px);
-  padding-top: rem(13px);
-  margin-bottom: rem(14px);
+  font-size: 3rem;
+  padding-top: 0.8125rem;
+  margin-bottom: 0.875rem;
   text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .main-title {
+    width: 100%;
+    padding: 0 10%;
+    margin-bottom: 0.75rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-title {
+    padding: 0 15%;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 70px;
+  }
 }
 
 .main__desc {
   font-weight: 400;
   font-style: normal;
-  font-size: rem(21px);
-  padding-bottom: rem(36px);
+  font-size: 1.3125rem;
+  padding-bottom: 2.25rem;
+}
+@media screen and (max-width: 768px) {
+  .main__desc {
+    width: 100%;
+    padding: 0 25% 1.25rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main__desc {
+    padding: 0 10%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .description {
+    display: none;
+  }
 }
 
 .description__list {
-  padding: rem(70px) 0;
+  padding: 4.375rem 0;
   display: flex;
 }
 
 .description__item {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: rem(16px);
+  font-size: 1rem;
   font-style: normal;
   display: flex;
   align-items: center;
 }
 
 span[class^=description__img] {
-  width: rem(41px);
-  height: rem(41px);
+  width: 2.5625rem;
+  height: 2.5625rem;
   display: block;
 }
 
 .description__text {
-  width: rem(114px);
-  margin: 0 rem(10px);
+  width: 7.125rem;
+  margin: 0 0.625rem;
 }
 
 .description__img-noise {
@@ -515,7 +624,14 @@ span[class^=description__img] {
 
 .why-beats {
   height: 100vh;
-  padding-top: rem(96px);
+  padding-top: 6rem;
+}
+
+@media screen and (max-width: 480px) {
+  .why-beats__title {
+    padding: 0 8%;
+    font-size: 32px;
+  }
 }
 
 .why-beats__conteiner {
@@ -535,7 +651,7 @@ span[class^=description__img] {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: rem(4px) rem(24px) rem(31px) rem(12px);
+  border-width: 0.25rem 1.5rem 1.9375rem 0.75rem;
   border-color: transparent transparent #E01F3D transparent;
   transform: rotate(109deg);
   z-index: 100;
@@ -543,71 +659,133 @@ span[class^=description__img] {
 
 .why-beats__desc {
   font-family: "Play", sans-serif;
-  padding-top: rem(18px);
+  padding-top: 1.125rem;
   font-weight: 400;
-  font-size: rem(16px);
+  font-size: 1rem;
   text-align: center;
   margin: 0 auto;
   color: #666666;
-  padding-bottom: rem(60px);
+  padding-bottom: 3.75rem;
+}
+@media screen and (max-width: 480px) {
+  .why-beats__desc {
+    padding: 0 5%;
+    font-size: 16px;
+    padding-top: 1.125rem;
+    padding-bottom: 3.75rem;
+  }
 }
 
 .advantages {
   display: flex;
   justify-content: space-between;
-  padding-bottom: rem(123px);
+  padding-bottom: 7.6875rem;
+}
+@media screen and (max-width: 480px) {
+  .advantages {
+    flex-direction: column;
+  }
 }
 
 .advantages__element {
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-right: 1.1875rem;
 }
-.advantages__element:first-child::after {
+.advantages__element:last-child {
+  margin-right: 0;
+}
+.advantages__element:nth-child(2):before {
   content: "";
-  width: rem(100px);
-  height: rem(100px);
+  width: 6.25rem;
+  height: 6.25rem;
   display: block;
   background: url("./img/combo_share.png") center no-repeat;
   position: absolute;
-  left: rem(267px);
-  top: rem(15px);
+  left: -2.37rem;
+  top: 0.9375rem;
+}
+@media screen and (max-width: 768px) {
+  .advantages__element:nth-child(2):before {
+    display: none;
+  }
 }
 .advantages__element:last-child::before {
   content: "";
-  width: rem(100px);
-  height: rem(100px);
+  width: 6.25rem;
+  height: 6.25rem;
   display: block;
   background: url("./img/combo_share.png") center no-repeat;
   position: absolute;
-  left: rem(-70px);
-  top: rem(15px);
+  left: -4.375rem;
+  top: 0.9375rem;
+}
+@media screen and (max-width: 768px) {
+  .advantages__element:last-child::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantages__element {
+    flex-direction: row;
+    margin-bottom: 0.9375rem;
+  }
+  .advantages__element:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__title {
   font-weight: 700;
   font-family: "Play", sans-serif;
   font-weight: 700;
-  font-size: rem(24px);
+  font-size: 1.5rem;
   text-align: center;
-  padding-bottom: rem(7px);
+  padding-bottom: 0.4375rem;
+}
+@media screen and (max-width: 480px) {
+  .advantages__title {
+    text-align: left;
+  }
 }
 
 .advantages__title-desc {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: rem(16px);
+  font-size: 1rem;
   text-align: center;
   color: #666666;
 }
+@media screen and (max-width: 768px) {
+  .advantages__title-desc {
+    margin-top: 0.625rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantages__title-desc {
+    text-align: left;
+  }
+}
 
 .advantages__img {
-  width: rem(128px);
-  height: rem(128px);
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
   margin: 0 auto;
-  margin-bottom: rem(24px);
+  margin-bottom: 1.5rem;
   background: #F2F5F4;
+}
+@media screen and (max-width: 480px) {
+  .advantages__img {
+    min-width: 8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .advantages__content {
+    margin-left: 0.625rem;
+  }
 }
 
 .advantages__battery {
@@ -626,9 +804,9 @@ span[class^=description__img] {
 
 .offers {
   background: #F8FAF9;
-  padding-top: rem(66px);
+  padding-top: 4.125rem;
   position: relative;
-  padding-bottom: rem(94px);
+  padding-bottom: 5.875rem;
 }
 
 .offer {
@@ -638,7 +816,7 @@ span[class^=description__img] {
 
 .prise__inf {
   display: flex;
-  padding-top: rem(25px);
+  padding-top: 1.5625rem;
   align-items: center;
   justify-content: start;
 }
@@ -646,35 +824,35 @@ span[class^=description__img] {
 .prise {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: rem(36px);
-  padding-right: rem(13px);
+  font-size: 2.25rem;
+  padding-right: 0.8125rem;
 }
 
 .offer__title {
   font-family: "Play", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: rem(36px);
+  font-size: 2.25rem;
   text-transform: uppercase;
-  padding-top: rem(25px);
+  padding-top: 1.5625rem;
 }
 
 .offer__title-desc {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: rem(16px);
+  font-size: 1rem;
   color: #666666;
-  padding-top: rem(24px);
+  padding-top: 1.5rem;
 }
 
 .offer__information {
   display: flex;
   justify-content: start;
-  padding-top: rem(25px);
+  padding-top: 1.5625rem;
 }
 
 .parameters {
-  margin-right: rem(85px);
+  margin-right: 5.3125rem;
   display: flex;
   flex-direction: column;
 }
@@ -682,26 +860,26 @@ span[class^=description__img] {
 .parameters__element-name {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: rem(14px);
+  font-size: 0.875rem;
   color: #666666;
 }
 
 .parameters__element {
   font-weight: 700;
   font-style: normal;
-  font-style: rem(18px);
+  font-style: 1.125rem;
 }
 
 .conteiner_team {
   display: flex;
   flex-direction: column;
-  padding-bottom: rem(50px);
+  padding-bottom: 3.125rem;
 }
 .conteiner_team::before {
   content: "";
   display: block;
-  width: rem(24px);
-  height: rem(24px);
+  width: 1.5rem;
+  height: 1.5rem;
   background: #292929;
   position: absolute;
   transform: rotate(20deg);
@@ -712,9 +890,9 @@ span[class^=description__img] {
 .team__title {
   font-family: "Play", sans-serif;
   font-weight: 700;
-  font-size: rem(48px);
+  font-size: 3rem;
   text-align: center;
-  padding: rem(70px) 0 rem(50px);
+  padding: 4.375rem 0 3.125rem;
   text-transform: uppercase;
 }
 
@@ -723,7 +901,7 @@ span[class^=description__img] {
 }
 
 .team__person {
-  margin: rem(10px);
+  margin: 0.625rem;
 }
 
 .person__ellement {
@@ -733,8 +911,8 @@ span[class^=description__img] {
 .person__name {
   font-family: "Play", sans-serif;
   font-weight: 700;
-  font-size: rem(18px);
-  padding-top: rem(25px);
+  font-size: 1.125rem;
+  padding-top: 1.5625rem;
 }
 
 .name__ellement {
@@ -746,7 +924,7 @@ span[class^=description__img] {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: rem(9px) rem(4.5px) 0 rem(4.5px);
+  border-width: 0.5625rem 0.28125rem 0 0.28125rem;
   border-color: #e01f3c transparent transparent transparent;
   position: absolute;
   left: 103%;
@@ -756,21 +934,21 @@ span[class^=description__img] {
 .person__prof {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: rem(16px);
-  padding-top: rem(11px);
+  font-size: 1rem;
+  padding-top: 0.6875rem;
 }
 
 .person__duties {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: rem(16px);
-  padding-top: rem(11px);
+  font-size: 1rem;
+  padding-top: 0.6875rem;
   color: #666666;
 }
 
 .reviews {
   height: 100vh;
-  padding-top: rem(52px);
+  padding-top: 3.25rem;
 }
 
 .reviews__conteiner {
@@ -780,14 +958,23 @@ span[class^=description__img] {
   height: 100%;
 }
 
+.reviews__second-title {
+  font-size: 32px;
+}
+
 .reviews__persons {
-  padding-bottom: rem(10px);
+  padding-bottom: 0.625rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__persons {
+    margin-top: 20px;
+  }
 }
 
 .rewiews__person {
   display: flex;
-  padding: rem(42px);
-  margin-top: rem(30px);
+  padding: 2.625rem;
+  margin-top: 1.875rem;
   background: #F8FAF9;
   position: relative;
   overflow: hidden;
@@ -795,8 +982,8 @@ span[class^=description__img] {
 .rewiews__person::after {
   content: "";
   display: block;
-  width: rem(83px);
-  height: rem(83px);
+  width: 5.1875rem;
+  height: 5.1875rem;
   background: white;
   border-radius: 50%;
   position: absolute;
@@ -804,47 +991,96 @@ span[class^=description__img] {
   top: -17%;
   z-index: 50;
 }
+@media screen and (max-width: 768px) {
+  .rewiews__person::after {
+    left: 45%;
+    top: -15%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .rewiews__person::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .rewiews__person {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0.625rem 1.25rem 1.875rem;
+  }
+}
+
+.rewiews__img {
+  width: 15.8125rem;
+  height: 16.5rem;
+}
+@media screen and (max-width: 768px) {
+  .rewiews__img {
+    width: 8.4375rem;
+    max-height: 8.4375rem;
+    margin: 1.25rem auto 2.1875rem;
+  }
+}
 
 .reviews__list {
-  margin-left: rem(34px);
+  margin-left: 2.125rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  line-height: rem(18, 5px);
+  line-height: 1.15625rem;
 }
 
 .reviews__title {
   font-family: "Play", sans-serif;
-  font-size: rem(24px);
+  font-size: 1.5rem;
   font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .reviews__title {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .reviews__title-perc {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: rem(16px);
+  font-size: 1rem;
   color: #666;
+}
+@media screen and (max-width: 768px) {
+  .reviews__title-perc {
+    margin: 1.25rem 0 2.5rem;
+  }
 }
 
 .rewiews__name {
   font-family: "Play", sans-serif;
   font-weight: 700;
-  font-size: rem(18px);
+  font-size: 1.125rem;
+}
+@media screen and (max-width: 768px) {
+  .rewiews__name {
+    font-weight: 400;
+  }
 }
 
 .pagginator {
   display: flex;
   justify-content: center;
-  margin: 0 rem(6px);
-  padding-bottom: rem(60px);
+  margin: 0 0.375rem;
+  padding-bottom: 3.75rem;
 }
 
 .pagginator__element {
-  width: rem(74px);
-  height: rem(74px);
+  width: 4.625rem;
+  height: 4.625rem;
   border-radius: 50%;
   cursor: pointer;
-  margin-right: rem(10px);
+  margin-right: 0.625rem;
 }
 .pagginator__element:first-child {
   background: url("./img/photo_billy_ailish_mini.png") center no-repeat;
@@ -856,11 +1092,11 @@ span[class^=description__img] {
   background: url("./img/photo_maria_orlova_mini.png") center no-repeat;
 }
 .pagginator__element:hover {
-  border: solid rem(3px) #E01F3D;
+  border: solid 0.1875rem #E01F3D;
 }
 
 .hove__we__work {
-  padding-bottom: rem(105px);
+  padding-bottom: 6.5625rem;
   background: #F8FAF9;
 }
 
@@ -870,16 +1106,16 @@ span[class^=description__img] {
 }
 
 .hove__we__work-title {
-  padding: rem(58px) 0 rem(44px);
+  padding: 3.625rem 0 2.75rem;
   font-weight: 800;
-  font-size: rem(48px);
+  font-size: 3rem;
   text-align: center;
-  letter-spacing: rem(5px);
-  word-spacing: rem(-5px);
+  letter-spacing: 0.3125rem;
+  word-spacing: -0.3125rem;
 }
 
 .img__hove__we__work {
-  width: rem(662px);
+  width: 41.375rem;
   margin: 0 auto;
 }
 
@@ -891,11 +1127,21 @@ span[class^=description__img] {
   flex-direction: column;
   justify-content: center;
   box-sizing: content-box;
-  padding-top: rem(10px);
+  padding-top: 0.625rem;
 }
 
 .second-title--white {
   color: white;
+}
+@media screen and (max-width: 768px) {
+  .second-title--white {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .second-title--white {
+    font-size: 32px;
+  }
 }
 
 .form-section__conteiner {
@@ -905,25 +1151,42 @@ span[class^=description__img] {
 
 .form {
   display: flex;
-  margin-top: rem(72px);
+  margin-top: 4.5rem;
+}
+@media screen and (max-width: 768px) {
+  .form {
+    flex-direction: column;
+    padding: 0 18%;
+    margin-top: 1.875rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form {
+    padding: 20px 2%;
+  }
 }
 
 .form__column {
   flex: 1;
-  margin-right: rem(30px);
+  margin-right: 1.875rem;
 }
 .form__column:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 768px) {
+  .form__column {
+    margin-right: 0;
+  }
+}
 
 .form__row {
   display: flex;
-  margin-bottom: rem(18px);
+  margin-bottom: 1.125rem;
 }
 
 .form__label {
   flex: 1;
-  margin-right: rem(20px);
+  margin-right: 1.25rem;
 }
 .form__label:last-child {
   margin-right: 0;
@@ -932,9 +1195,15 @@ span[class^=description__img] {
 .form__input {
   width: 100%;
   border: none;
-  padding: rem(18px) 0px rem(18px) rem(12px);
-  border: rem(3px) solid transparent;
-  border-radius: rem(4px);
+  padding: 1.125rem 0px 1.125rem 0.75rem;
+  border: 0.1875rem solid transparent;
+  border-radius: 0.25rem;
+}
+@media screen and (max-width: 768px) {
+  .form__input {
+    padding: 0.5rem 0px 0.5rem 0.625rem;
+    margin-top: 0.3125rem;
+  }
 }
 
 .form__input:focus {
@@ -945,72 +1214,51 @@ span[class^=description__img] {
 .form__label-element {
   font-family: "Play", sans-serif;
   font-weight: 400;
-  font-size: rem(16px);
+  font-size: 1rem;
   color: white;
 }
 
 .textarea {
-  height: rem(155px);
+  height: 9.6875rem;
   resize: none;
-  margin-bottom: rem(11px);
+  margin-bottom: 0.6875rem;
+}
+@media screen and (max-width: 768px) {
+  .textarea {
+    height: 5rem;
+    margin-bottom: 1.875rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .textarea {
+    height: 6.25rem;
+  }
 }
 
 .form__control {
   display: flex;
   flex-wrap: wrap;
 }
-
-.conteiner__footer {
-  display: flex;
-  padding: rem(20px) 0;
-}
-
-.footer__inf {
-  justify-content: start;
-}
-
-.footer__inf-element {
-  font-family: "Play", sans-serif;
-  font-weight: 400;
-  font-size: rem(18px);
-  font-style: normal;
-}
-
-.social {
-  width: rem(30px);
-  height: rem(30px);
-  background: #000;
-  display: inline-flex;
-  margin-right: rem(10px);
-}
-.social:hover {
-  cursor: pointer;
-}
-
-.social_vk {
-  background: url(./img/vk.png);
-}
-
-.social_inst {
-  background: url(./img/inst.png);
-}
-
-.social_fb {
-  background: url(./img/fb.png);
-}
-
-.social_telegramm {
-  background: url(./img/telegramm.png);
+@media screen and (max-width: 480px) {
+  .form__control {
+    justify-content: center;
+    margin-bottom: 5px;
+  }
 }
 
 .radio {
   display: flex;
   align-items: center;
-  padding-right: rem(10px);
-  padding-bottom: rem(20px);
+  padding-right: 0.625rem;
+  padding-bottom: 1.25rem;
 }
 .radio:hover {
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .radio {
+    padding-right: 1.5625rem;
+  }
 }
 
 .radio__elem {
@@ -1022,8 +1270,8 @@ span[class^=description__img] {
 }
 
 .radio__visible {
-  width: rem(24px);
-  height: rem(24px);
+  width: 1.5rem;
+  height: 1.5rem;
   position: relative;
   background: white;
   border-radius: 50%;
@@ -1032,8 +1280,8 @@ span[class^=description__img] {
   content: "";
   display: none;
   position: absolute;
-  width: rem(13px);
-  height: rem(13px);
+  width: 0.8125rem;
+  height: 0.8125rem;
   border-radius: 50%;
   background: #E01F3D;
   top: 50%;
@@ -1042,18 +1290,23 @@ span[class^=description__img] {
 }
 
 .form__button {
-  padding-bottom: rem(85px);
+  padding-bottom: 5.3125rem;
+}
+@media screen and (max-width: 768px) {
+  .form__button {
+    text-align: center;
+  }
 }
 
 .checkbox {
-  border-radius: rem(4px);
+  border-radius: 0.25rem;
 }
 .checkbox::before {
   content: "";
   display: none;
   position: absolute;
-  width: rem(13px);
-  height: rem(13px);
+  width: 0.8125rem;
+  height: 0.8125rem;
   border-radius: 50%;
   background: url(./img/check_mark.png) center no-repeat;
   top: 50%;
@@ -1062,20 +1315,29 @@ span[class^=description__img] {
 }
 
 .radio__titile {
-  padding-left: rem(5px);
+  padding-left: 0.3125rem;
 }
 
 .button--reset {
   background: transparent;
   border: none;
   font-weight: 400;
-  font-style: rem(16px);
+  font-style: 1rem;
+}
+.button--reset:hover {
+  color: #E01F3D;
+  transition: all ease-in-out 0.2s;
 }
 
 .hero {
   height: 100vh;
   background: url("./img/headphones_main.png") left 70% top 66% no-repeat, #F5F5F5;
-  background-size: 30%;
+  background-size: 80vh 80vh;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    background: none, #F5F5F5;
+  }
 }
 
 .hero__conteiner {
@@ -1088,8 +1350,8 @@ span[class^=description__img] {
 .hero::after {
   content: "";
   display: block;
-  width: rem(46px);
-  height: rem(10px);
+  width: 2.875rem;
+  height: 0.625rem;
   background: #C4C4C4;
   transform: rotate(-45deg);
   position: absolute;
@@ -1099,16 +1361,109 @@ span[class^=description__img] {
 
 .map {
   height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.map__google {
+  height: 100vh;
+}
+
+.footer__conteiner {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem 0;
+  background: #fff;
+  top: 0%;
+}
+@media screen and (max-width: 480px) {
+  .footer__conteiner {
+    flex-direction: column;
+  }
+}
+
+.footer__list {
+  justify-content: start;
+}
+
+.footer__element {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  font-style: normal;
+}
+@media screen and (max-width: 768px) {
+  .footer__element {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__element {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .footer__element:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.social {
+  width: 2rem;
+  height: 2rem;
+  background: #000;
+  display: inline-flex;
+  margin-right: 0.625rem;
+}
+.social:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .social {
+    width: 2.1875rem;
+    height: 2.1875rem;
+  }
+}
+
+.telephone__footer {
+  margin-left: 20px;
+}
+@media screen and (max-width: 768px) {
+  .telephone__footer {
+    font-size: 18px;
+  }
+}
+
+.social_vk {
+  background: url(./img/vk.png) center no-repeat;
+}
+
+.social_inst {
+  background: url(./img/inst.png) center no-repeat;
+}
+
+.social_fb {
+  background: url(./img/fb.png) center no-repeat;
+}
+
+.social_telegramm {
+  background: url(./img/telegramm.png) center no-repeat;
 }
 
 .fixed-menu {
+  display: block;
   position: fixed;
   right: 3%;
   top: 44%;
 }
+@media screen and (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
+}
 
 .fixed-menu__element {
-  margin-bottom: rem(12px);
+  margin-bottom: 0.75rem;
 }
 .fixed-menu__element--active .fixed-menu__link {
   border-color: #E01F3D;
@@ -1119,17 +1474,17 @@ span[class^=description__img] {
 }
 
 .fixed-menu__link {
-  width: rem(18px);
-  height: rem(18px);
+  width: 1.125rem;
+  height: 1.125rem;
   border-radius: 50%;
-  border: rem(1px) solid transparent;
+  border: 0.0625rem solid transparent;
   display: block;
   position: relative;
 }
 .fixed-menu__link::before {
   content: "";
-  width: rem(9px);
-  height: rem(9px);
+  width: 0.5625rem;
+  height: 0.5625rem;
   display: block;
   position: absolute;
   border-radius: 50%;

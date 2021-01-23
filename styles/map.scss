@@ -1,3 +1,64 @@
 .map{
     height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
+
+.map__google{
+  height: 100vh;
+}
+.footer__conteiner {
+    display: flex;
+    align-items: center;
+    padding: rem(20px) 0;
+    background: #fff;
+    top: 0%;
+    @include phones{
+      flex-direction: column;
+    }
+  }
+  .footer__list {
+    justify-content: start;
+  }
+  .footer__element{
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-size: rem(18px);
+    font-style: normal;
+    @include tablets{
+      font-size: 21px;
+    }
+    @include phones{
+      margin: 20px 0;
+      text-align: center;
+      &:last-child{
+        margin-bottom: 20px;
+      }
+    }
+  }
+.social {
+    width: rem(32px);
+    height: rem(32px);
+    background: #000;
+    display: inline-flex;
+    margin-right: rem(10px);
+    &:hover {
+      cursor: pointer;
+    }
+    @include phones{
+      width: rem(35px);
+    height: rem(35px);
+    }
+  }
+  .telephone__footer{
+    margin-left: 20px;
+    @include tablets{
+      font-size: 18px;
+    }
+  }
+  @each $social in (vk, inst, fb, telegramm) {
+    .social_#{$social}{
+      background: url(./img/#{$social}.png) center no-repeat;
+    }
+  }

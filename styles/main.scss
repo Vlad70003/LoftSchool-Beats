@@ -1,3 +1,22 @@
+  .main{
+    @include tablets{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      height: 100%;
+      &::before{
+        content: "";
+        width: rem(335px);
+        height: rem(335px);
+        display: block;
+        background: url("./img/headphones_main.png") center no-repeat;
+        background-size: contain;
+        padding-bottom: 20px;
+      }
+    }
+  }
   .main-title {
     font-family: "Play", sans-serif;
     width: rem(400px);
@@ -7,12 +26,36 @@
     padding-top: rem(13px);
     margin-bottom: rem(14px);
     text-transform: uppercase;
+    @include tablets{
+      width: 100%;
+      padding: 0 10%;
+      margin-bottom: rem(12px);
+    }
+    @include phones{
+      padding: 0 15%;
+      text-align: center;
+      font-size: 32px;
+      margin-top: 70px;
+    }
   }
   .main__desc {
     font-weight: 400;
     font-style: normal;
     font-size: rem(21px);
     padding-bottom: rem(36px);
+    @include tablets{
+      width: 100%;
+      padding: 0 25% rem(20px);
+    }
+    @include phones{
+      padding: 0 10%;
+      margin-bottom: 30px;
+    }
+  }
+  .description{
+    @include tablets{
+      display: none;
+    }
   }
   .description__list {
     padding: rem(70px) 0;

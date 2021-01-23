@@ -6,6 +6,9 @@
     &:hover {
       cursor: pointer;
     }
+    @include tablets{
+      padding-right: rem(25px);
+    }
   }
 
   
@@ -39,6 +42,9 @@
   
   .form__button {
     padding-bottom: rem(85px);
+    @include tablets{
+      text-align: center;
+    }
   }
   
   .checkbox {
@@ -66,4 +72,8 @@
     border: none;
     font-weight: 400;
     font-style: rem(16px);
+    &:hover{
+      color: $red;
+      transition: all ease-in-out .2s;
+    }
   }

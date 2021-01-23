@@ -1,7 +1,11 @@
 .hero{
     height: 100vh;
     background: url("./img/headphones_main.png") left 70% top 66% no-repeat, #F5F5F5;
-    background-size: 30%;
+    background-size: 80vh 80vh;
+
+    @include tablets{
+        background: none, #F5F5F5;
+    }
 }
 .hero__conteiner{
     display: flex;

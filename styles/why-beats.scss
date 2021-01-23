@@ -2,6 +2,12 @@
   height: 100vh;
   padding-top: rem(96px);
 }
+.why-beats__title{
+  @include phones{
+    padding: 0 8%;
+    font-size: 32px;
+  }
+}
 .why-beats__conteiner {
     display: flex;
     flex-direction: column;
@@ -32,25 +38,43 @@
     margin: 0 auto;
     color: #666666;
     padding-bottom: rem(60px);
+    @include phones{
+      padding: 0 5%;
+      font-size: 16px;
+      padding-top: rem(18px);
+      padding-bottom: rem(60px);
+    }
+
   }
   .advantages{
     display: flex;
     justify-content: space-between;
     padding-bottom: rem(123px);
+    @include phones{
+      flex-direction: column;
+    }
   }
+
   .advantages__element{
     display: flex;
     flex-direction: column;
     position: relative;
-    &:first-child::after{
+    margin-right: rem(19px);
+    &:last-child{
+      margin-right: 0;
+    }
+    &:nth-child(2):before{
       content: "";
       width: rem(100px);
       height: rem(100px);
       display: block;
       background: url("./img/combo_share.png") center no-repeat;
       position: absolute;
-      left: rem(267px);
+      left: -2.37rem;
       top: rem(15px);
+      @include tablets{
+        display: none;
+      }
     }
     &:last-child::before{
       content: "";
@@ -61,6 +85,16 @@
       position: absolute;
       left: rem(-70px);
       top: rem(15px);
+      @include tablets{
+        display: none;
+      }
+    }
+    @include phones{
+      flex-direction: row;
+      margin-bottom: rem(15px);
+      &:last-child{
+        margin-bottom: 0;
+      }
     }
   }
   .advantages__title{
@@ -70,6 +104,9 @@
     font-size: rem(24px);
     text-align: center;
     padding-bottom: rem(7px);
+    @include phones{
+      text-align: left;
+    }
   }
   .advantages__title-desc {
     font-family: "Play", sans-serif;
@@ -77,6 +114,12 @@
     font-size: rem(16px);
     text-align: center;
     color: #666666;
+    @include tablets{
+      margin-top: rem(10px);
+    }
+    @include phones{
+      text-align: left;
+    }
   }
 .advantages__img {
     width: rem(128px);
@@ -85,9 +128,16 @@
     margin: 0 auto;
     margin-bottom: rem(24px);
     background: #F2F5F4;
+    @include phones{
+      min-width: rem(128px);
+    }
   }
 
-  
+  .advantages__content{
+    @include phones{
+      margin-left: rem(10px);
+    }
+  }
   .advantages__battery {
     background: url("./img/img_battery.png") center no-repeat, #F2F5F4;
     position: relative;
