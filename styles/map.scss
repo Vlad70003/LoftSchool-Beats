@@ -5,15 +5,12 @@
     flex-direction: column;
 }
 
-.map__google{
-  height: 100vh;
-}
 .footer__conteiner {
     display: flex;
     align-items: center;
     padding: rem(20px) 0;
     background: #fff;
-    top: 0%;
+
     @include phones{
       flex-direction: column;
     }
@@ -37,7 +34,10 @@
       }
     }
   }
-.social {
+.socials{
+  display: flex;
+}
+.socials__link {
     width: rem(32px);
     height: rem(32px);
     background: #000;
@@ -58,7 +58,7 @@
     }
   }
   @each $social in (vk, inst, fb, telegramm) {
-    .social_#{$social}{
+    .social__#{$social}{
       background: url(./img/#{$social}.png) center no-repeat;
     }
   }

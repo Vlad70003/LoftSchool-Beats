@@ -1,6 +1,5 @@
 .reviews{
   height: 100vh;
-  padding-top: rem(52px);
 }
 .reviews__conteiner{
     display: flex;
@@ -83,7 +82,7 @@
     font-size: rem(16px);
     color: #666;
     @include tablets{
-      margin: rem(20px) 0 rem(40px);
+      margin: rem(20px) rem(-25px) rem(40px);
     }
   }
   .rewiews__name {
@@ -98,7 +97,6 @@
     display: flex;
     justify-content: center;
     margin: 0 rem(6px);
-    padding-bottom: rem(60px);
   }
   .pagginator__element {
     width: rem(74px);
@@ -115,7 +113,7 @@
     &:last-child {
       background: url("./img/photo_maria_orlova_mini.png") center no-repeat;
     }
-    &:hover{
+    &--active{
       border: solid rem(3px) #E01F3D;
     }
   }

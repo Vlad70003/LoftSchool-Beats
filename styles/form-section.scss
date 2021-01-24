@@ -6,7 +6,6 @@
     flex-direction: column;
     justify-content: center;
     box-sizing: content-box;
-    padding-top: rem(10px);
 }
 .second-title--white{
   color: white;
@@ -32,6 +31,7 @@
     }
     @include phones{
       padding: 20px 2%;
+      margin-top: 0;
     }
   }
 .form__column {

@@ -8,8 +8,8 @@
       height: 100%;
       &::before{
         content: "";
-        width: rem(335px);
-        height: rem(335px);
+        width: 22.9375rem;
+        height: 15.9375rem;
         display: block;
         background: url("./img/headphones_main.png") center no-repeat;
         background-size: contain;
@@ -23,19 +23,19 @@
     font-style: normal;
     font-weight: 700;
     font-size: rem(48px);
-    padding-top: rem(13px);
-    margin-bottom: rem(14px);
+    padding-top: 13px;
+    margin-bottom: 14px;
     text-transform: uppercase;
     @include tablets{
       width: 100%;
       padding: 0 10%;
-      margin-bottom: rem(12px);
+      margin-bottom: 12px;
     }
     @include phones{
       padding: 0 15%;
       text-align: center;
       font-size: 32px;
-      margin-top: 70px;
+      margin-top: 36px;
     }
   }
   .main__desc {
@@ -49,7 +49,7 @@
     }
     @include phones{
       padding: 0 10%;
-      margin-bottom: 30px;
+      margin-bottom: 23px;
     }
   }
   .description{

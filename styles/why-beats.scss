@@ -1,8 +1,10 @@
 .why-beats{
   height: 100vh;
-  padding-top: rem(96px);
 }
 .why-beats__title{
+  @include tablets{
+    font-size: 48px;
+  }
   @include phones{
     padding: 0 8%;
     font-size: 32px;
@@ -49,7 +51,6 @@
   .advantages{
     display: flex;
     justify-content: space-between;
-    padding-bottom: rem(123px);
     @include phones{
       flex-direction: column;
     }
@@ -91,7 +92,7 @@
     }
     @include phones{
       flex-direction: row;
-      margin-bottom: rem(15px);
+      margin-bottom: rem(25px);
       &:last-child{
         margin-bottom: 0;
       }
@@ -126,7 +127,6 @@
     height: rem(128px);
     border-radius: 50%;
     margin: 0 auto;
-    margin-bottom: rem(24px);
     background: #F2F5F4;
     @include phones{
       min-width: rem(128px);
