@@ -35,7 +35,7 @@
       }
     }
   }
-.socials{
+.socials__list{
   display: flex;
 }
 .footer__telephone{
@@ -44,14 +44,17 @@
       font-size: 18px;
     }
 }
+.socials__item{
+  margin-right: 5px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
 .vk-icon, .fb-icon, .inst-icon, .telegramm-icon{
   width: 30px;
   height: 30px;
   fill: #B3B3B3;
-  margin-right: 8px;
-  &:last-child{
-    margin-right: 0;
-  }
+
   &:hover{
     fill: black;
     cursor: pointer;
