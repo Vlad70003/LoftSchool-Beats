@@ -1,10 +1,11 @@
 .map{
     height: 100vh;
-    position: relative;
     display: flex;
     flex-direction: column;
 }
-
+.map__google{
+  height: 100vh;
+}
 .footer__conteiner {
     display: flex;
     align-items: center;
@@ -15,7 +16,7 @@
       flex-direction: column;
     }
   }
-  .footer__list {
+  .footer__contacts {
     justify-content: start;
   }
   .footer__element{
@@ -37,28 +38,23 @@
 .socials{
   display: flex;
 }
-.socials__link {
-    width: rem(32px);
-    height: rem(32px);
-    background: #000;
-    display: inline-flex;
-    margin-right: rem(10px);
-    &:hover {
-      cursor: pointer;
-    }
-    @include phones{
-      width: rem(35px);
-    height: rem(35px);
-    }
-  }
-  .telephone__footer{
+.footer__telephone{
     margin-left: 20px;
     @include tablets{
       font-size: 18px;
     }
+}
+.vk-icon, .fb-icon, .inst-icon, .telegramm-icon{
+  width: 30px;
+  height: 30px;
+  fill: #B3B3B3;
+  margin-right: 8px;
+  &:last-child{
+    margin-right: 0;
   }
-  @each $social in (vk, inst, fb, telegramm) {
-    .social__#{$social}{
-      background: url(./img/#{$social}.png) center no-repeat;
-    }
+  &:hover{
+    fill: black;
+    cursor: pointer;
+    transition: all ease-in-out .2s;
   }
+}
