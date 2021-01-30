@@ -1,10 +1,35 @@
 .offers {
+  height: 100vh;
   background: #F8FAF9;
-  padding-top: rem(66px);
   position: relative;
-  padding-bottom: rem(94px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.offer {
+.offers__list{
+  position: relative;
+  &::before{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 30px;
+    background: url(../img/vector_Before.png) center no-repeat;
+    position: absolute;
+    right: 105%;
+    top: 50%;
+  }
+  &::after{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 30px;
+    background: url(../img/vector_After.png) center no-repeat;
+    position: absolute;
+    left: 105%;
+    top: 50%;
+  }
+}
+.offer__item {
   display: flex;
   align-items: center;
 }
@@ -56,3 +81,148 @@
     font-style: normal;
     font-style: rem(18px);
   }
+  .settings__gear{
+    width: 91px;
+    height: 91px;
+    background: url("./img/gear.png") center no-repeat;
+    position: relative;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .settings{
+    display: flex;
+  }
+  .settings__list{
+    background: white;
+    opacity: .8;
+    position: absolute;
+    left: 100%;
+    padding-bottom: 28px;
+    display: none;
+    &::before{
+      content: "";
+      display: block;
+      width: 91px;
+      height: 70px;
+      background: transparent;
+      position: absolute;
+      top: 34%;
+      right: 100%;
+      z-index: 100;
+    }
+  }
+  .settings__item{
+    padding-left: 68px;
+    padding-top: 28px;
+    padding-right: 63px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Play", sans-serif;
+  }
+.settings__item-bluetooth{
+  &:before{
+  content: "";
+      display: block;
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      right: 70%;
+      top: 42%;
+      background: url(../img/bluetooth.png) center no-repeat;
+}
+  &::after{
+    content: "4.0";
+    margin-left: 30px;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 61%;
+    
+  }
+}
+.settings__item-range{
+  &:before{
+  content: "";
+      display: block;
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      right: 70%;
+      top: 42%;
+  background: url(../img/range.png) center no-repeat;
+}
+&::after{
+  content: "12 м";
+  margin-left: 30px;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 61%;
+  
+}
+}
+.settings__item-charging{
+  &::before{
+  content: "";
+      display: block;
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      right: 70%;
+      top: 42%;
+  background: url(../img/charging.png) center no-repeat;
+}
+&::after{
+  content: "3 ч";
+  margin-left: 30px;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 61%;
+  
+}
+}
+.settings__item-weight{
+  &::before{
+  content: "";
+      display: block;
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      right: 70%;
+      top: 42%;
+  background: url(../img/weight.png) center no-repeat;
+}
+&::after{
+  content: "215 гр";
+  margin-left: 30px;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 61%;
+  
+}
+}
+.settings__item-guarantee{
+&::before{
+  content: "";
+      display: block;
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      right: 70%;
+      top: 48%;
+  background: url(../img/guarantee.png) center no-repeat;
+}
+&::after{
+  content: "1 год";
+  margin-left: 30px;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 61%;
+  
+}
+}
