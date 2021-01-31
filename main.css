@@ -816,28 +816,34 @@ span[class^=description__img] {
   justify-content: center;
 }
 
+.img__offer {
+  max-height: 28.25rem;
+}
+
 .offers__list {
   position: relative;
 }
 .offers__list::before {
   content: "";
   display: block;
-  width: 16px;
-  height: 30px;
+  width: 1rem;
+  height: 1.875rem;
   background: url(../img/vector_Before.png) center no-repeat;
   position: absolute;
   right: 105%;
   top: 50%;
+  margin-left: 20px;
 }
 .offers__list::after {
   content: "";
   display: block;
-  width: 16px;
-  height: 30px;
+  width: 1rem;
+  height: 1.875rem;
   background: url(../img/vector_After.png) center no-repeat;
   position: absolute;
   left: 105%;
   top: 50%;
+  margin-right: 20px;
 }
 
 .offer__item {
@@ -850,6 +856,7 @@ span[class^=description__img] {
   padding-top: 1.5625rem;
   align-items: center;
   justify-content: start;
+  flex-wrap: wrap;
 }
 
 .prise {
@@ -857,6 +864,7 @@ span[class^=description__img] {
   font-weight: 400;
   font-size: 2.25rem;
   padding-right: 0.8125rem;
+  white-space: nowrap;
 }
 
 .offer__title {
@@ -899,6 +907,7 @@ span[class^=description__img] {
   font-weight: 700;
   font-style: normal;
   font-style: 1.125rem;
+  white-space: nowrap;
 }
 
 .settings__gear {
@@ -936,11 +945,11 @@ span[class^=description__img] {
 }
 
 .settings__item {
-  padding-left: 68px;
-  padding-top: 28px;
-  padding-right: 63px;
+  padding-left: 4.25rem;
+  padding-top: 1.75rem;
+  padding-right: 3.9375rem;
   position: relative;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: "Play", sans-serif;
 }
@@ -1036,7 +1045,7 @@ span[class^=description__img] {
   margin-left: 30px;
   display: block;
   position: absolute;
-  right: 10px;
+  right: 0.625rem;
   top: 61%;
 }
 
@@ -1656,6 +1665,7 @@ span[class^=description__img] {
   left: 0;
   background: rgba(0, 0, 0, 0.9);
   display: none;
+  z-index: 200;
 }
 
 .hide-menu__list {

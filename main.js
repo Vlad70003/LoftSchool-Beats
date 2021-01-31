@@ -28,5 +28,5 @@ hamburger.addEventListener("click", function(event){
 hideMenuClose.addEventListener("click", function(event){
     if(event){
         hideMenu.style.display = "none";
-    }  
+    }
 })

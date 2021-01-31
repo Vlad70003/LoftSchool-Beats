@@ -6,27 +6,32 @@
   flex-direction: column;
   justify-content: center;
 }
+.img__offer{
+  max-height: rem(452px);
+}
 .offers__list{
   position: relative;
   &::before{
     content: "";
     display: block;
-    width: 16px;
-    height: 30px;
+    width: rem(16px);
+    height: rem(30px);
     background: url(../img/vector_Before.png) center no-repeat;
     position: absolute;
     right: 105%;
     top: 50%;
+    margin-left: 20px;
   }
   &::after{
     content: "";
     display: block;
-    width: 16px;
-    height: 30px;
+    width: rem(16px);
+    height: rem(30px);
     background: url(../img/vector_After.png) center no-repeat;
     position: absolute;
     left: 105%;
     top: 50%;
+    margin-right: 20px;
   }
 }
 .offer__item {
@@ -38,12 +43,14 @@
   padding-top: rem(25px);
   align-items: center;
   justify-content: start;
+  flex-wrap: wrap;
 }
 .prise{
     font-family: "Play", sans-serif;
     font-weight: 400;
     font-size: rem(36px);
     padding-right: rem(13px);
+    white-space: nowrap;
   }
   .offer__title {
     font-family: "Play", sans-serif;
@@ -80,6 +87,7 @@
     font-weight: 700;
     font-style: normal;
     font-style: rem(18px);
+    white-space: nowrap;
   }
   .settings__gear{
     width: 91px;
@@ -113,11 +121,11 @@
     }
   }
   .settings__item{
-    padding-left: 68px;
-    padding-top: 28px;
-    padding-right: 63px;
+    padding-left: rem(68px);
+    padding-top: rem(28px);
+    padding-right: rem(63px);
     position: relative;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 400;
     font-family: "Play", sans-serif;
   }
@@ -221,7 +229,7 @@
   margin-left: 30px;
   display: block;
   position: absolute;
-  right: 10px;
+  right: rem(10px);
   top: 61%;
   
 }
