@@ -830,7 +830,7 @@ span[class^=description__img] {
 }
 @media screen and (max-width: 480px) {
   .img__offer {
-    max-height: 22.5rem;
+    max-height: 20.5rem;
   }
 }
 
@@ -922,6 +922,11 @@ span[class^=description__img] {
   justify-content: start;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 480px) {
+  .prise__inf {
+    flex-wrap: nowrap;
+  }
+}
 
 .prise {
   font-family: "Play", sans-serif;
@@ -944,12 +949,19 @@ span[class^=description__img] {
     text-align: center;
   }
 }
+@media screen and (max-width: 480px) {
+  .offer__title {
+    font-size: 22px;
+    text-align: center;
+  }
+}
 
 .offer__title-desc {
   font-family: "Play", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   color: #666666;
+  padding: 10px 0;
 }
 @media screen and (max-width: 768px) {
   .offer__title-desc {
@@ -957,10 +969,17 @@ span[class^=description__img] {
     text-align: center;
   }
 }
+@media screen and (max-width: 480px) {
+  .offer__title-desc {
+    font-size: 12px;
+    text-align: center;
+  }
+}
 
 .offer__information {
   display: flex;
   justify-content: start;
+  padding-bottom: 10px;
 }
 
 .parameters {
@@ -1004,7 +1023,7 @@ span[class^=description__img] {
 
 .settings__list {
   background: white;
-  opacity: 0.8;
+  opacity: 0.9;
   position: absolute;
   left: 100%;
   padding-bottom: 28px;
@@ -1693,7 +1712,13 @@ span[class^=description__img] {
   display: block;
   position: fixed;
   right: 3%;
-  top: 44%;
+  top: 32%;
+}
+@media screen and (max-width: 1070px) {
+  .fixed-menu {
+    top: 5%;
+    right: 1%;
+  }
 }
 @media screen and (max-width: 768px) {
   .fixed-menu {

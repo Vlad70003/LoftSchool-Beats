@@ -15,7 +15,7 @@
     max-height: 24.75rem;
   }
   @include phones{
-    max-height: 22.5rem;
+    max-height: 20.5rem;
   }
 }
 
@@ -89,6 +89,9 @@
   align-items: center;
   justify-content: start;
   flex-wrap: wrap;
+  @include phones{
+    flex-wrap: nowrap;
+  }
 }
 .prise{
     font-family: "Play", sans-serif;
@@ -107,20 +110,30 @@
       font-size: 28px;
       text-align: center;
     }
+    @include phones{
+      font-size: 22px;
+      text-align: center;
+    }
   }
   .offer__title-desc {
     font-family: "Play", sans-serif;
     font-weight: 400;
     font-size: rem(16px);
     color: #666666;
+    padding: 10px 0;
     @include tablets{
       font-size: 16px;
+      text-align: center;
+    }
+    @include phones{
+      font-size: 12px;
       text-align: center;
     }
   }
   .offer__information{
     display: flex;
     justify-content: start;
+    padding-bottom: 10px;
   }
   .parameters{
     margin-right: rem(85px);
@@ -156,7 +169,7 @@
   }
   .settings__list{
     background: white;
-    opacity: .8;
+    opacity: .9;
     position: absolute;
     left: 100%;
     padding-bottom: 28px;
