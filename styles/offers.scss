@@ -3,14 +3,42 @@
   background: #F8FAF9;
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+}
+.offers__conteiner{
+  height: 100%;
+  align-items: center;
+  width: 95%;
 }
 .img__offer{
-  max-height: rem(452px);
+  max-height: rem(440px);
+  @include tablets{
+    max-height: 24.75rem;
+  }
+  @include phones{
+    max-height: 22.5rem;
+  }
+}
+
+.offers__content{
+  padding-right: 7px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @include tablets{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 rem(30px);
+  }
 }
 .offers__list{
   position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding: 18% 0;
   &::before{
     content: "";
     display: block;
@@ -18,29 +46,46 @@
     height: rem(30px);
     background: url(../img/vector_Before.png) center no-repeat;
     position: absolute;
-    right: 105%;
-    top: 50%;
-    margin-left: 20px;
+    left: -2%;
+    top: 47%;
+    @include tablets{
+      top: 30%;
+    }
+    }
+    &::after{
+      content: "";
+      display: block;
+      width: rem(16px);
+      height: rem(30px);
+      background: url(../img/vector_After.png) center no-repeat;
+      position: absolute;
+      right: 0%;
+      top: 47%;
+      @include tablets{
+        top: 30%;
+      }
+    }
+    @include tablets{
+      padding: 7% 0;
+    }
+    @include tablets{
+      padding: 15% 0;
+    }
   }
-  &::after{
-    content: "";
-    display: block;
-    width: rem(16px);
-    height: rem(30px);
-    background: url(../img/vector_After.png) center no-repeat;
-    position: absolute;
-    left: 105%;
-    top: 50%;
-    margin-right: 20px;
-  }
-}
 .offer__item {
   display: flex;
   align-items: center;
+  @include tablets{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @include phones{
+    padding: 0 20px;
+  }
 }
 .prise__inf {
   display: flex;
-  padding-top: rem(25px);
   align-items: center;
   justify-content: start;
   flex-wrap: wrap;
@@ -58,19 +103,24 @@
     font-style: normal;
     font-size: rem(36px);
     text-transform: uppercase;
-    padding-top: rem(25px);
+    @include tablets{
+      font-size: 28px;
+      text-align: center;
+    }
   }
   .offer__title-desc {
     font-family: "Play", sans-serif;
     font-weight: 400;
     font-size: rem(16px);
     color: #666666;
-    padding-top: rem(24px);
+    @include tablets{
+      font-size: 16px;
+      text-align: center;
+    }
   }
   .offer__information{
     display: flex;
     justify-content: start;
-    padding-top: rem(25px);
   }
   .parameters{
     margin-right: rem(85px);
@@ -96,6 +146,9 @@
     position: relative;
     &:hover{
       cursor: pointer;
+    }
+    @include tablets{
+      display: none;
     }
   }
   .settings{
