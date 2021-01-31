@@ -44,7 +44,7 @@
     display: block;
     width: rem(16px);
     height: rem(30px);
-    background: url(../img/vector_Before.png) center no-repeat;
+    background: url(./img/vector_Before.png) center no-repeat;
     position: absolute;
     left: -2%;
     top: 47%;
@@ -57,7 +57,7 @@
       display: block;
       width: rem(16px);
       height: rem(30px);
-      background: url(../img/vector_After.png) center no-repeat;
+      background: url(./img/vector_After.png) center no-repeat;
       position: absolute;
       right: 0%;
       top: 47%;
@@ -191,7 +191,7 @@
       position: absolute;
       right: 70%;
       top: 42%;
-      background: url(../img/bluetooth.png) center no-repeat;
+      background: url(./img/bluetooth.png) center no-repeat;
 }
   &::after{
     content: "4.0";
@@ -212,7 +212,7 @@
       position: absolute;
       right: 70%;
       top: 42%;
-  background: url(../img/range.png) center no-repeat;
+  background: url(./img/range.png) center no-repeat;
 }
 &::after{
   content: "12 м";
@@ -233,7 +233,7 @@
       position: absolute;
       right: 70%;
       top: 42%;
-  background: url(../img/charging.png) center no-repeat;
+  background: url(./img/charging.png) center no-repeat;
 }
 &::after{
   content: "3 ч";
@@ -254,7 +254,7 @@
       position: absolute;
       right: 70%;
       top: 42%;
-  background: url(../img/weight.png) center no-repeat;
+  background: url(./img/weight.png) center no-repeat;
 }
 &::after{
   content: "215 гр";
@@ -275,7 +275,7 @@
       position: absolute;
       right: 70%;
       top: 48%;
-  background: url(../img/guarantee.png) center no-repeat;
+  background: url(./img/guarantee.png) center no-repeat;
 }
 &::after{
   content: "1 год";

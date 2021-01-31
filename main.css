@@ -863,7 +863,7 @@ span[class^=description__img] {
   display: block;
   width: 1rem;
   height: 1.875rem;
-  background: url(../img/vector_Before.png) center no-repeat;
+  background: url(./img/vector_Before.png) center no-repeat;
   position: absolute;
   left: -2%;
   top: 47%;
@@ -878,7 +878,7 @@ span[class^=description__img] {
   display: block;
   width: 1rem;
   height: 1.875rem;
-  background: url(../img/vector_After.png) center no-repeat;
+  background: url(./img/vector_After.png) center no-repeat;
   position: absolute;
   right: 0%;
   top: 47%;
@@ -1040,7 +1040,7 @@ span[class^=description__img] {
   position: absolute;
   right: 70%;
   top: 42%;
-  background: url(../img/bluetooth.png) center no-repeat;
+  background: url(./img/bluetooth.png) center no-repeat;
 }
 .settings__item-bluetooth::after {
   content: "4.0";
@@ -1059,7 +1059,7 @@ span[class^=description__img] {
   position: absolute;
   right: 70%;
   top: 42%;
-  background: url(../img/range.png) center no-repeat;
+  background: url(./img/range.png) center no-repeat;
 }
 .settings__item-range::after {
   content: "12 м";
@@ -1078,7 +1078,7 @@ span[class^=description__img] {
   position: absolute;
   right: 70%;
   top: 42%;
-  background: url(../img/charging.png) center no-repeat;
+  background: url(./img/charging.png) center no-repeat;
 }
 .settings__item-charging::after {
   content: "3 ч";
@@ -1097,7 +1097,7 @@ span[class^=description__img] {
   position: absolute;
   right: 70%;
   top: 42%;
-  background: url(../img/weight.png) center no-repeat;
+  background: url(./img/weight.png) center no-repeat;
 }
 .settings__item-weight::after {
   content: "215 гр";
@@ -1116,7 +1116,7 @@ span[class^=description__img] {
   position: absolute;
   right: 70%;
   top: 48%;
-  background: url(../img/guarantee.png) center no-repeat;
+  background: url(./img/guarantee.png) center no-repeat;
 }
 .settings__item-guarantee::after {
   content: "1 год";
@@ -1778,7 +1778,7 @@ span[class^=description__img] {
 .hide-menu__close {
   width: 20px;
   height: 20px;
-  background: url(../img/hide-menu__close.png) center no-repeat;
+  background: url(./img/hide-menu__close.png) center no-repeat;
   position: absolute;
   left: 90%;
   top: 5%;
