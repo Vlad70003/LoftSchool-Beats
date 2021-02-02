@@ -3,11 +3,7 @@
     position: fixed;
     right: 3%;
     top: 32%;
-    @media screen and (max-width: 1070px){
-        top: 5%;
-        right: 1%;
-    }
-    @include tablets{
+    @media screen and (max-width: 865px){
         display: none;
     }
 }
