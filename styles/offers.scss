@@ -15,7 +15,7 @@
     max-height: 22.75rem;
   }
   @include phones{
-    max-height: 20.5rem;
+    max-height: 17.5rem;
   }
 }
 
@@ -41,7 +41,7 @@
   height: 100%;
   margin: 0 50px;
   @include phones{
-    margin: 0 35px;
+    margin: 0;
   }
 }
 .arrow-left{
@@ -60,7 +60,8 @@
       left: -3%;
     }
     @include phones{
-      top: 33%;
+      top: 29%;
+      left: 6%;
     }
 }
 .arrow-right{
@@ -79,7 +80,8 @@
       right: -3%;
     }
     @include phones{
-      top: 33%;
+      top: 29%;
+      right: 6px;
     }
   }
 .offer__item {

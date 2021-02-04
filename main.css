@@ -829,7 +829,7 @@ span[class^=description__img] {
 }
 @media screen and (max-width: 480px) {
   .offer__img {
-    max-height: 20.5rem;
+    max-height: 17.5rem;
   }
 }
 
@@ -860,7 +860,7 @@ span[class^=description__img] {
 }
 @media screen and (max-width: 480px) {
   .offers__list {
-    margin: 0 35px;
+    margin: 0;
   }
 }
 
@@ -886,7 +886,8 @@ span[class^=description__img] {
 }
 @media screen and (max-width: 480px) {
   .arrow-left {
-    top: 33%;
+    top: 29%;
+    left: 6%;
   }
 }
 
@@ -912,7 +913,8 @@ span[class^=description__img] {
 }
 @media screen and (max-width: 480px) {
   .arrow-right {
-    top: 33%;
+    top: 29%;
+    right: 6px;
   }
 }
 
@@ -1110,12 +1112,36 @@ span[class^=description__img] {
   height: 14px;
 }
 
-.conteiner_team {
+.team {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .team {
+    display: none;
+  }
+}
+
+.team-tablets {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .team-tablets {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.team__conteiner {
   display: flex;
   flex-direction: column;
   padding-bottom: 3.125rem;
 }
-.conteiner_team::before {
+.team__conteiner::before {
   content: "";
   display: block;
   width: 1.5rem;
@@ -1123,42 +1149,53 @@ span[class^=description__img] {
   background: #292929;
   position: absolute;
   transform: rotate(20deg);
-  top: -2%;
+  top: -26%;
   left: 85%;
 }
 
-.team__title {
-  font-family: "Play", sans-serif;
-  font-weight: 700;
-  font-size: 3rem;
-  text-align: center;
-  padding: 4.375rem 0 3.125rem;
-  text-transform: uppercase;
-}
-
-.team__persons {
+.team__list {
   display: flex;
+  justify-content: space-around;
+  margin-top: 3.125rem;
+}
+@media screen and (max-width: 768px) {
+  .team__list {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
-.team__person {
-  margin: 0.625rem;
+.team__img {
+  display: block;
+  max-width: 290px;
 }
 
-.person__ellement {
+.team__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   text-align: center;
+  margin-right: 15px;
+  position: relative;
+}
+.team__item:last-child {
+  margin-right: 0;
 }
 
-.person__name {
+.team__link {
+  display: inline-block;
   font-family: "Play", sans-serif;
   font-weight: 700;
   font-size: 1.125rem;
   padding-top: 1.5625rem;
-}
-
-.name__ellement {
   position: relative;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
 }
-.name__ellement::after {
+.team__link:after {
   content: "";
   display: block;
   width: 0;
@@ -1168,22 +1205,43 @@ span[class^=description__img] {
   border-color: #e01f3c transparent transparent transparent;
   position: absolute;
   left: 103%;
-  top: 31%;
+  top: 70%;
 }
 
-.person__prof {
+.team__prof {
   font-family: "Play", sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  padding-top: 0.6875rem;
+  padding-top: 0.8125rem;
 }
 
-.person__duties {
+.team__duties {
   font-family: "Play", sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  padding-top: 0.6875rem;
+  padding-top: 0.5625rem;
   color: #666666;
+}
+
+.team__transform-element {
+  position: relative;
+}
+
+.hidden-conteiner {
+  height: 0px;
+  overflow: hidden;
+  transition: all linear 0.5s 0.1s;
+  position: absolute;
+  top: 100%;
+}
+@media screen and (max-width: 768px) {
+  .hidden-conteiner {
+    position: static;
+  }
+}
+
+.hidden-conteiner__block {
+  max-height: 600px;
 }
 
 .reviews {
@@ -1203,6 +1261,8 @@ span[class^=description__img] {
 
 .reviews__persons {
   padding-bottom: 0.625rem;
+  position: relative;
+  min-height: 380px;
 }
 @media screen and (max-width: 768px) {
   .reviews__persons {
@@ -1212,11 +1272,17 @@ span[class^=description__img] {
 
 .rewiews__person {
   display: flex;
-  padding: 2.625rem;
+  padding: 2.1875rem 2.625rem 0.625rem 2.625rem;
   margin-top: 1.875rem;
   background: #F8FAF9;
-  position: relative;
+  margin-bottom: 16px;
+  position: absolute;
   overflow: hidden;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
 }
 .rewiews__person::after {
   content: "";
@@ -1227,7 +1293,7 @@ span[class^=description__img] {
   border-radius: 50%;
   position: absolute;
   left: 47%;
-  top: -17%;
+  top: -1%;
   z-index: 50;
 }
 @media screen and (max-width: 768px) {
@@ -1313,24 +1379,36 @@ span[class^=description__img] {
   margin: 0 0.375rem;
 }
 
-.pagginator__element {
+.pagginator__link {
+  box-sizing: content-box;
+  border: 5px solid transparent;
   width: 4.625rem;
   height: 4.625rem;
+  display: block;
   border-radius: 50%;
   cursor: pointer;
   margin-right: 0.625rem;
 }
-.pagginator__element:first-child {
+
+.pagginator__link-one {
   background: url("./img/photo_billy_ailish_mini.png") center no-repeat;
 }
-.pagginator__element:nth-child(2) {
+
+.pagginator__link-two {
   background: url("./img/photo_vadim_grachev_mini.png") center no-repeat;
 }
-.pagginator__element:last-child {
+
+.pagginator__link-three {
   background: url("./img/photo_maria_orlova_mini.png") center no-repeat;
 }
-.pagginator__element--active {
-  border: solid 0.1875rem #E01F3D;
+
+.pagginator__element.active .pagginator__link {
+  border-color: #E01F3D;
+}
+
+.isActive {
+  position: static;
+  opacity: 1;
 }
 
 .hove__we__work {
