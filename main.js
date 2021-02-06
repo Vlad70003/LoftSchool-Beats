@@ -68,7 +68,7 @@
 
 // Отзывы
     let findBlock = (block) => {
-        return $(".rewiews__person").filter( (item) => {
+        return $(".rewiews__person").filter( (index, item) => {
             return $(item).attr("data-view") == block;
         })
     }
@@ -78,10 +78,9 @@
         e.preventDefault();
 
         let click = $(e.currentTarget);
-        let dataOpen = click.attr("data-open");
+        let dataOpen = click.children(".pagginator__link").attr("data-open");
         let currentBlock = findBlock(dataOpen);
         let currentTarget =  click.closest(".pagginator__element");
-        console.log(dataOpen);
         currentBlock.addClass("isActive").siblings().removeClass("isActive");
         currentTarget.addClass("active").siblings().removeClass("active");
     })

@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: column;
   padding-bottom: rem(50px);
+  justify-content: center;
   &::before{
   content: "";
   display: block;
@@ -38,12 +39,19 @@
     margin-top: rem(50px);
     @include tablets{
       flex-direction: column;
-      justify-content: center;
+      justify-content: start;
+      height: 400px;
     }
   }
   .team__img{
     display: block;
     max-width: 290px;
+    @media screen and (max-width: 1060px){
+      max-width: 175px;
+    }
+    @include tablets{
+      margin: 0 auto;
+    }
   }
   .team__item {
     display: flex;
@@ -105,6 +113,9 @@
   position: absolute;
   top: 100%;
   @include tablets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: static;
   }
 }

@@ -1,5 +1,6 @@
 .reviews{
   height: 100vh;
+  position: relative;
 }
 .reviews__conteiner{
     display: flex;
@@ -43,8 +44,10 @@
       top: -1%;
       z-index: 50;
       @include tablets{
+        width: 4.1875rem;
+        height: 4.1875rem;
         left: 45%;
-        top: -15%;
+        top: -4%;
       }
       @include phones{
         display: none;
@@ -79,7 +82,7 @@
     font-size: rem(24px);
     font-weight: 700;
     @include tablets{
-      font-size: 24px;
+      font-size: 22px;
       margin-top: 10px;
       margin-bottom: 10px;
     }
@@ -91,6 +94,7 @@
     color: #666;
     @include tablets{
       margin: rem(20px) rem(-25px) rem(40px);
+      font-size: rem(15px);
     }
   }
   .rewiews__name {
@@ -99,16 +103,33 @@
     font-size: rem(18px);
     @include tablets{
       font-weight: 400;
+      font-size: rem(16px);
     }
+    @include phones{
+      font-size: rem(15px);
+    }
+
   }
   .pagginator {
     display: flex;
     justify-content: center;
     margin: 0 rem(6px);
+    @include tablets{
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    @include phones{
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
   .pagginator__link {
     box-sizing: content-box;
-    border: 5px solid transparent;
+    border: 3px solid transparent;
     width: rem(74px);
     height: rem(74px);
     display: block;
