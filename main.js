@@ -84,3 +84,7 @@
         currentBlock.addClass("isActive").siblings().removeClass("isActive");
         currentTarget.addClass("active").siblings().removeClass("active");
     })
+
+    //Слайлер
+
+    $('.offers__list').bxSlider();

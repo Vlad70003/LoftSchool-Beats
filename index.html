@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BEATS</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -116,8 +117,11 @@
         </section>
         <section class="offers">
           <div class="conteiner offers__conteiner">
-            <ul class="offers__list">
+            <div class="offers__arrows">
               <a href="#" class="arrow-left"></a>
+              <a href="#" class="arrow-right"></a>
+            </div>
+            <ul class="offers__list">  
               <li class="offer__item">
                 <img src="./img/headphones_second.png" alt="img_offer" class="offer__img">
                 <div class="offers__content">
@@ -193,7 +197,81 @@
                   </div>
                 </div>
               </li>
-              <a href="#" class="arrow-right"></a>
+              <li class="offer__item">
+                <img src="./img/headphones_second.png" alt="img_offer" class="offer__img">
+                <div class="offers__content">
+                  <div class="settings">
+                    <div class="settings__gear">
+                      <ul class="settings__list">
+                        <li class="settings__item">
+                          <svg class="settings__img">
+                            <use xlink:href="./img/sprite.svg#bluetooth"></use>
+                          </svg>
+                          <div class="settings__text">Bluetooth</div>
+                          <svg class="settings__value">
+                            <use xlink:href="./img/sprite.svg#bluetooth__text"></use>
+                          </svg>
+                        </li>
+                        <li class="settings__item">
+                          <svg class="settings__img">
+                            <use xlink:href="./img/sprite.svg#road"></use>
+                          </svg>
+                          <div class="settings__text">Дальность</div>
+                          <svg class="settings__value">
+                            <use xlink:href="./img/sprite.svg#road__text"></use>
+                          </svg>
+                        </li>
+                        <li class="settings__item">
+                          <svg class="settings__img">
+                            <use xlink:href="./img/sprite.svg#almond"></use>
+                          </svg>
+                          <div class="settings__text">Зарядка</div>
+                          <svg class="settings__value">
+                            <use xlink:href="./img/sprite.svg#almond__text"></use>
+                          </svg>
+                        </li>
+                        <li class="settings__item">
+                          <svg class="settings__img">
+                            <use xlink:href="./img/sprite.svg#weight"></use>
+                          </svg>
+                          <div class="settings__text">Вес</div>
+                          <svg class="settings__value">
+                            <use xlink:href="./img/sprite.svg#weight__text"></use>
+                          </svg>
+                        </li>
+
+                        <li class="settings__item">
+                          <svg class="settings__img">
+                            <use xlink:href="./img/sprite.svg#patent"></use>
+                          </svg>
+                          <div class="settings__text">Гарантия</div>
+                          <svg class="settings__value">
+                            <use xlink:href="./img/sprite.svg#patent__text"></use>
+                          </svg>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h3 class="offer__title">beats solo 3. цвет
+                    «атласное серебро»
+                  </h3>
+                  <p class="offer__title-desc">Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</p>
+                  <div class="offer__information">
+                    <div class="parameters">
+                      <div class="parameters__element-name">Зарядка</div>
+                      <div class="parameters__element">2 часа</div>
+                    </div>
+                    <div class="parameters">
+                      <div class="parameters__element-name">Вес</div>
+                      <div class="parameters__element">215 грамм</div>
+                    </div>
+                  </div>
+                  <div class="prise">
+                    <div class="prise__value">14 990 ₽</div>
+                    <button class="button">Заказать</button>
+                  </div>
+                </div>
+              </li>            
             </ul>
           </div>
         </section>
@@ -486,6 +564,8 @@
         </ul>
         <span class="hide-menu__close"></span>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./main.js"></script>
     </body>

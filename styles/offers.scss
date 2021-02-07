@@ -37,7 +37,6 @@
 }
 .offers__list{
   position: relative;
-  display: flex;
   align-items: center;
   height: 100%;
   margin: 0 50px;
@@ -51,17 +50,17 @@
     height: rem(30px);
     background: url(./img/vector_Before.png) center no-repeat;
     position: absolute;
-    left: -40px;
+    left: 3px;
     top: 47%;
     @media screen and (max-width: 865px){
-      top: 30%;
+      top: 34%;
       left: 8%;
     }
     @media screen and (max-width: 675px){
-      left: -3%;
+      left: 6%;
     }
     @include phones{
-      top: 29%;
+      top: 36%;
       left: 6%;
     }
 }
@@ -71,17 +70,17 @@
     height: rem(30px);
     background: url(./img/vector_After.png) center no-repeat;
     position: absolute;
-    right: -20px;
+    right: 33px;
     top: 47%;
     @media screen and (max-width: 865px){
-      top: 30%;
+      top: 34%;
       right: 8%;
     }
     @media screen and (max-width: 675px){
-      right: -3%;
+      right: 6%;
     }
     @include phones{
-      top: 29%;
+      top: 36%;
       right: 6px;
     }
   }
