@@ -9,6 +9,9 @@
     border: 1px solid transparent;
     border-radius: rem(100px);
     outline: none;
+    &:--close{
+      padding: rem(7px) rem(30px);
+    }
   }
   .button:hover {
     cursor: pointer;

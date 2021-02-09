@@ -87,4 +87,29 @@
 
     //Слайлер
 
-    $('.offers__list').bxSlider();
+const slider = $('.offers__list').bxSlider({
+    pager: false,
+    controls: false,
+    slideMargin: 100,
+    shrinkItems: true,
+});
+$(".arrow-left").on("click", e => {
+    e.preventDefault();
+    slider.goToPrevSlide();
+})
+
+$(".arrow-right").on("click", e => {
+    e.preventDefault();
+    slider.goToNextSlide();
+})
+
+    //Модальное окно формы
+
+$(".form").submit(e => {
+    e.preventDefault();
+    
+    $.fancybox.open({
+        src: "#modal",
+        type: "inline"
+    })
+})

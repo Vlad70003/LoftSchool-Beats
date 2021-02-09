@@ -4,18 +4,29 @@
   position: relative;
   display: flex;
 }
+.bx-wrapper{
+  box-shadow: none;
+  border: 0;
+  background: transparent;
+}
+.bx-clone{
+  width: 475px;
+}
 .offers__conteiner{
   height: 100%;
   align-items: center;
-  width: 98%;
+  width: 88%;
   position: relative;
+  @include tablets {
+    width: 95%;
+  }
 }
 .offer__img{
   max-height: rem(440px);
   @media screen and (max-width: 1010px){
     max-height: 22.75rem;
   }
-  @include phones{
+  @media screen and (max-width: 750px){
     max-height: 17.5rem;
   }
 }
@@ -52,6 +63,11 @@
     position: absolute;
     left: 3px;
     top: 47%;
+    z-index: 200;
+    @media screen and (max-width: 1270px){
+    left: -15px;
+    top: 47%;
+    }
     @media screen and (max-width: 865px){
       top: 34%;
       left: 8%;
@@ -70,8 +86,13 @@
     height: rem(30px);
     background: url(./img/vector_After.png) center no-repeat;
     position: absolute;
-    right: 33px;
+    right: -60px;
     top: 47%;
+    z-index: 200;
+    @media screen and (max-width: 1270px){
+    right: -20px;
+    top: 47%;
+    }
     @media screen and (max-width: 865px){
       top: 34%;
       right: 8%;
@@ -98,6 +119,7 @@
   align-items: center;
   justify-content: start;
   flex-wrap: wrap;
+  padding-right: 50px;
   @media screen and (max-width: 865px){
     flex-wrap: nowrap;
     margin-left: -50px;
@@ -123,6 +145,7 @@
     font-size: rem(36px);
     text-transform: uppercase;
     margin: rem(25px) 0;
+    padding-right: 36px;
     @media screen and (max-width: 865px){
       font-size: 28px;
       text-align: center;
@@ -138,6 +161,7 @@
     font-size: rem(16px);
     color: #666666;
     margin-bottom: rem(25px);
+    padding-right: 43px;
     @media screen and (max-width: 865px){
       font-size: 13px;
       text-align: center;
