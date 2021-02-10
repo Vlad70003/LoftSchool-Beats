@@ -1937,7 +1937,6 @@ span[class^=description__img] {
   left: 0;
   background: rgba(0, 0, 0, 0.9);
   display: none;
-  z-index: 200;
 }
 
 .send-complate__conteiner {
@@ -1958,6 +1957,7 @@ span[class^=description__img] {
 
 .send-complate__title {
   font-family: "Play", sans-serif;
+  text-align: center;
   font-weight: 400;
   font-size: 1.125rem;
   color: black;
