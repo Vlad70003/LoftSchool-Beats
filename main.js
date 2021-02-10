@@ -113,3 +113,7 @@ $(".form").submit(e => {
         type: "inline"
     })
 })
+$(".js-button").on("click", e => {
+    e.preventDefault();
+    $.fancybox.close();
+})
