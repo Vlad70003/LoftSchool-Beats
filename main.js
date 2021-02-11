@@ -1,15 +1,29 @@
 // всплывающее меню секции offers
-    let settingGear = document.querySelector(".settings__gear");
-    let settingList = document.querySelector(".settings__list");
+    let settingGearOne = document.querySelector("#settings__gear-one");
+    let settingListOne = document.querySelector("#settings__list-one");
 
-    settingGear.addEventListener("mouseover", function(event){
+    settingGearOne.addEventListener("mouseover", function(event){
      if(event){
-            settingList.style.display = "block";
+        settingListOne.style.display = "block";
         }  
     })
-    settingGear.addEventListener("mouseout", function(event){
+    settingGearOne.addEventListener("mouseout", function(event){
      if(event){
-         settingList.style.display = "none";
+        settingListOne.style.display = "none";
+      }  
+    })
+
+    let settingGearTwo = document.querySelector("#settings__gear-two");
+    let settingListTwo = document.querySelector("#settings__list-two");
+
+    settingGearTwo.addEventListener("mouseover", function(event){
+     if(event){
+        settingListTwo.style.display = "block";
+        }  
+    })
+    settingGearTwo.addEventListener("mouseout", function(event){
+     if(event){
+        settingListTwo.style.display = "none";
       }  
     })
 
@@ -33,8 +47,8 @@
 //Всплывающее меню Команда
     let openItem = item => {
         let conteiner = item.closest(".team__item");
-        let contentBlock = conteiner.find(".hidden-conteiner");
-        let textBlock = contentBlock.find(".hidden-conteiner__block");
+        let contentBlock = conteiner.find(".team__hidden-conteiner");
+        let textBlock = contentBlock.find(".team__hidden-conteiner__block");
         let reqHeight = textBlock.height();
 
 
@@ -43,7 +57,7 @@
     }
 
     let closeItem = conteiner => {
-        let item = conteiner.find(".hidden-conteiner");
+        let item = conteiner.find(".team__hidden-conteiner");
         let itemConteiner = conteiner.find(".team__item");
 
         itemConteiner.removeClass("active");
@@ -162,6 +176,7 @@ if(isValid){
                 src: "#modal",
                 type: "inline"
             })
+            jQuery('.form')[0].reset();
         },
         error: data => {
             let message = data.responseJSON.message;

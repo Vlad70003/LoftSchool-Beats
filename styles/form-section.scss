@@ -66,14 +66,17 @@
     padding: rem(18px) 0px rem(18px) rem(12px);
     border: rem(3px) solid transparent;
     border-radius: rem(4px);
+    &:focus {
+      border-color: #E01F3D;
+      outline: none;
+    }
     @include tablets{
       padding: rem(8px) 0px rem(8px) rem(10px);
       margin-top: rem(5px);
     }
   }
-.form__input:focus {
+  .input-error{
     border-color: #E01F3D;
-    outline: none;
   }
   .form__label-element {
     font-family: "Play", sans-serif;

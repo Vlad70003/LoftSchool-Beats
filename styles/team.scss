@@ -3,17 +3,26 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
+}
+.team__list{
+  display: flex;
+  justify-content: space-around;
+  margin-top: rem(50px);
   @include tablets{
     display: none;
   }
 }
-.team-tablets{
+.team__list--tablets{
   display: none;
   @include tablets{
     display: flex;
     height: 100vh;
     flex-direction: column;
     justify-content: center;
+    flex-direction: column;
+    justify-content: start;
+    height: 400px;
   }
 }
 .team__conteiner {
@@ -33,16 +42,6 @@
   left: 85%;
   }
 }
-  .team__list {
-    display: flex;
-    justify-content: space-around;
-    margin-top: rem(50px);
-    @include tablets{
-      flex-direction: column;
-      justify-content: start;
-      height: 400px;
-    }
-  }
   .team__img{
     display: block;
     max-width: 290px;
@@ -88,10 +87,13 @@
       left: 103%;
       top: 70%;
     }
+    @include tablets{
+      margin-bottom: 15px;
+    }
   }
 .team__prof {
     font-family: "Play", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: rem(16px);
     padding-top: rem(13px);
   }
@@ -106,7 +108,7 @@
   position: relative;
 }
 
-.hidden-conteiner{
+.team__hidden-conteiner{
   height: 0px;
   overflow: hidden;
   transition: all linear .5s .1s;
@@ -119,7 +121,11 @@
     position: static;
   }
 }
-.hidden-conteiner__block{
+.team__hidden-conteiner__block{
   max-height: 600px;
 }
 
+.team__item.active .team__link::after{
+  transform: rotateX(180deg);
+  transition: all linear .5s .1s;
+}

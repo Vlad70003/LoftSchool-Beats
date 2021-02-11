@@ -114,18 +114,6 @@
     display: flex;
     justify-content: center;
     margin: 0 rem(6px);
-    @include tablets{
-      position: absolute;
-      bottom: 50px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    @include phones{
-      position: absolute;
-      bottom: 50px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
   }
   .pagginator__link {
     box-sizing: content-box;
