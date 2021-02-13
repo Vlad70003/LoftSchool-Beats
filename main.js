@@ -1,32 +1,22 @@
 // всплывающее меню секции offers
-    let settingGearOne = document.querySelector("#settings__gear-one");
-    let settingListOne = document.querySelector("#settings__list-one");
+let offersList = document.querySelector(".offers__list");
 
-    settingGearOne.addEventListener("mouseover", function(event){
-     if(event){
-        settingListOne.style.display = "block";
-        }  
-    })
-    settingGearOne.addEventListener("mouseout", function(event){
-     if(event){
-        settingListOne.style.display = "none";
-      }  
-    })
+offersList.addEventListener("click", function(event) {
+    let $this = $(event.target);
+    
 
-    let settingGearTwo = document.querySelector("#settings__gear-two");
-    let settingListTwo = document.querySelector("#settings__list-two");
-
-    settingGearTwo.addEventListener("mouseover", function(event){
-     if(event){
-        settingListTwo.style.display = "block";
-        }  
-    })
-    settingGearTwo.addEventListener("mouseout", function(event){
-     if(event){
-        settingListTwo.style.display = "none";
-      }  
-    })
-
+    if($this.hasClass("block")){
+        $this.removeClass("block");
+    }
+    else{
+        let conteiner = $this.closest(".offers__list");
+        let findClass = conteiner.find(".settings__gear");
+        findClass.removeClass("block");
+        $this.addClass("block");
+    }
+    
+})
+    
 // всплывающее меню Гамбургер
     let hamburger = document.querySelector(".hamburger");
     let hideMenu = document.querySelector(".hide-menu");
@@ -116,7 +106,6 @@ $(".arrow-right").on("click", e => {
     e.preventDefault();
     slider.goToNextSlide();
 })
-
     //Модальное окно формы
 
 const validateFilds = (form, fieldsArray) => {
