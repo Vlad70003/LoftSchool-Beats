@@ -1,8 +1,6 @@
 body, html {
   padding: 0px;
   margin: 0px;
-  min-height: 100%;
-  width: 100%;
 }
 
 html {
@@ -399,6 +397,13 @@ template {
 .wrapper {
   font-family: "Alegreya Sans", sans-serif;
   color: #292929;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper__conteiner {
+  height: 100%;
 }
 
 .header {
@@ -1959,4 +1964,75 @@ span[class^=description__img] {
   font-size: 1.125rem;
   color: black;
   padding-bottom: 18px;
+}
+
+.colors {
+  position: relative;
+  height: 100vh;
+  background: url(../img/color_bg.png) center no-repeat;
+  background-size: cover;
+}
+
+.colors__conteiner {
+  height: 100%;
+}
+
+.colors__list {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.color__item {
+  display: flex;
+  height: 100%;
+}
+
+.color__link {
+  width: 100px;
+  height: 100%;
+  display: block;
+  text-align: center;
+  display: block;
+  font-family: "Alegreya Sans", sans-serif;
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+}
+
+.color__item-title {
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 175px;
+  left: -93px;
+}
+
+.color__item-desc {
+  margin: 20px;
+  line-height: 24px;
+}
+
+.colors__hidden-conteiner {
+  width: 0px;
+  background: #333537;
+  overflow: hidden;
+  font-family: "Alegreya Sans", sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0;
+  transition: 1s;
+}
+
+.bg-grey {
+  background: #999999;
+}
+
+.bg-black {
+  background: #292929;
+}
+
+.bg-red {
+  background: #E01F3D;
 }
