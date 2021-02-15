@@ -1486,28 +1486,123 @@ span[class^=description__img] {
   opacity: 1;
 }
 
-.hove__we__work {
-  padding-bottom: 6.5625rem;
+.video-section {
+  height: 100vh;
   background: #F8FAF9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.conteiner__hove__we__work {
+.video-section__conteiner {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.hove__we__work-title {
+.video-section__title {
   padding: 3.625rem 0 2.75rem;
+  text-transform: uppercase;
   font-weight: 800;
   font-size: 3rem;
   text-align: center;
   letter-spacing: 0.3125rem;
   word-spacing: -0.3125rem;
+  padding-bottom: 50px;
 }
 
-.img__hove__we__work {
-  width: 41.375rem;
-  margin: 0 auto;
+.player {
+  width: 660px;
+  height: 390px;
+  background: none;
+  position: relative;
+}
+
+.player__controls {
+  position: absolute;
+  width: 100%;
+  height: 35px;
+  background: #151515;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.player__conteiner {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.player__start {
+  width: 0;
+  height: 0;
+  border-top: 10px solid #151515;
+  border-left: 15px solid #fff;
+  border-bottom: 10px solid #151515;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 27%;
+  left: 20px;
+}
+
+.player__playback {
+  width: 440px;
+  height: 4px;
+  background: #333333;
+  border: none;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  top: 46%;
+  left: 60px;
+}
+
+.player.paused .player__start {
+  background: transparent;
+  position: relative;
+  border: none;
+}
+.player.paused .player__start::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 5px;
+  height: 17px;
+  background: #fff;
+  left: 10px;
+}
+.player.paused .player__start::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 5px;
+  height: 17px;
+  background: #fff;
+  right: -5px;
+}
+
+.player__playback-button {
+  width: 10px;
+  height: 10px;
+  background: #E01F3D;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.player__duration {
+  position: absolute;
+  top: 25%;
+  right: 20px;
+  color: white;
 }
 
 .form-section {
