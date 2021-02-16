@@ -26,6 +26,10 @@
   height: 390px;
   background: none;
   position: relative;
+  @include tablets{
+    width: 300px;
+    height: 150px;
+  }
 }
 .player__controls{
   position: absolute;

@@ -4,7 +4,10 @@
     position: relative;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 .wrapper__conteiner{
     height: 100%;
+    transition: transform 1s;
+    will-change: transform;
 }
