@@ -19,19 +19,19 @@
   <body>
     <div class="wrapper">
       <div class="wrapper__conteiner">
-        <div class="hero">
+        <section class="section hero" data-section-id="hero">
           <div class="conteiner hero__conteiner">
             <header class="section header">
               <img src="./img/Logo.png" alt="Logo" class="logo">
               <nav class="menu">
                 <ul class="menu__list">
-                  <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-                  <li class="menu__item"><a href="#" class="menu__link">Наушники</a></li>
-                  <li class="menu__item"><a href="#" class="menu__link">Команда</a></li>
-                  <li class="menu__item"><a href="#" class="menu__link">Цвета</a></li>
-                  <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
-                  <li class="menu__item"><a href="#" class="menu__link">Как мы работаем</a></li>
-                  <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link" data-scroll-to="why-beats">О нас</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link" data-scroll-to="offers">Наушники</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link" data-scroll-to="team">Команда</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link" data-scroll-to="colors">Цвета</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link" data-scroll-to="reviews">Отзывы</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link" data-scroll-to="video-section">Как мы работаем</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link" data-scroll-to="map-section">Контакты</a></li>
                 </ul>
               </nav>
               <a href="tel:+78009039090" class="telephone header__telephone">8 800 903 90 90</a>
@@ -46,7 +46,7 @@
                 <h1 class="main-title">Беспроводные наушники Beats Solo 3</h1>
                 <p class="main__desc">Встречайте новую версию наушников<br>
                   из линейки Powerbeats.</p>
-                <button class="button">Заказать</button>
+                <button class="button" data-scroll-to="form">Заказать</button>
               </div>             
             </section>
             <section class="section description">
@@ -72,8 +72,8 @@
               </ul>
             </section>
           </div>
-        </div>
-        <section class="section why-beats">
+        </section>
+        <section class="section why-beats" data-section-id="why-beats">
           <div class="conteiner why-beats__conteiner">
             <h2 class="second-title why-beats__title">почему beats solo 3?</h2>
             <p class="why-beats__desc">Процессор W1 работает невероятно эффективно и позволяет легко<br>
@@ -118,7 +118,7 @@
             </ul>
           </div>
         </section>
-        <section class="section offers">
+        <section class="section offers" data-section-id="offers">
           <div class="conteiner offers__conteiner">
             <div class="offers__arrows">
               <a href="#" class="arrow-left"></a>
@@ -196,7 +196,7 @@
                   </div>
                   <div class="prise">
                     <div class="prise__value">14 990 ₽</div>
-                    <button class="button">Заказать</button>
+                    <button class="button" data-scroll-to="form">Заказать</button>
                   </div>
                 </div>
               </li>
@@ -270,14 +270,14 @@
                   </div>
                   <div class="prise">
                     <div class="prise__value">14 990 ₽</div>
-                    <button class="button">Заказать</button>
+                    <button class="button" data-scroll-to="form">Заказать</button>
                   </div>
                 </div>
               </li>            
             </ul>
           </div>
         </section>
-        <section class="section team">
+        <section class="section team" data-section-id="team">
           <div class="conteiner team__conteiner">
             <h3 class="second-title">команда</h3>
             <ul class="team__list">
@@ -354,7 +354,7 @@
             </ul>
           </div>
         </section>
-        <section class="section colors">
+        <section class="section colors" data-section-id="colors">
           <div class="colors__conteiner">
             <!-- <h3 class="second-title">Цвета</h3> -->
             <ul class="colors__list">
@@ -382,7 +382,7 @@
             </ul>
           </div>
         </section>
-        <section class="section reviews">
+        <section class="section reviews" data-section-id="reviews">
           <div class="conteiner reviews__conteiner">
             <h2 class="second-title reviews__second-title">ОТЗЫВЫ</h2>
             <ul class="reviews__persons">
@@ -422,7 +422,7 @@
           </div>
 
         </section>
-        <section class="section video-section">
+        <section class="section video-section" data-section-id="video-section">
           <div class="container video-section__conteiner">
             <h2 class="video-section__title">Как мы работаем</h2>
             <div class="player-section__container active">
@@ -446,9 +446,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          <!-- </div> -->
         </section>
-        <section class="section form-section">
+        <section class="section form-section" data-section-id="form-section">
           <div class="conteiner form-section__conteiner">
             <h2 class="second-title second-title--white">ЗАКАЖИТЕ ДОСТАВКУ</h2>
             <form action="" class="form">
@@ -516,14 +516,14 @@
                   </label>
                 </div>
                 <div class="form__button">
-                  <button class="button">Заказать</button>
+                  <button class="button" data-scroll-to="form">Заказать</button>
                   <input class="button button--reset" type="reset" value="Очистить">
                 </div>
               </div>
             </form>
           </div>
         </section>
-        <section class="section map-section">
+        <section class="section map-section" data-section-id="map-section">
           <div id="map"></div>
           <footer class="footer">
             <div class="footer__conteiner">
@@ -572,15 +572,15 @@
     </div>
     <nav class="fixed-menu">
       <ul class="fixed-menu__list">
-        <li class="fixed-menu__element fixed-menu__element--active"><a href="#" class="fixed-menu__link"></a></li>
-        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link"></a></li>
-        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link"></a></li>
-        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link"></a></li>
-        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link"></a></li>
-        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link"></a></li>
-        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link"></a></li>
-        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link"></a></li>
-        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link"></a></li>
+        <li class="fixed-menu__element fixed-menu__element--active"><a href="#" class="fixed-menu__link" data-scroll-to="hero"></a></li>
+        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link" data-scroll-to="why-beats"></a></li>
+        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link" data-scroll-to="offers"></a></li>
+        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link" data-scroll-to="team"></a></li>
+        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link" data-scroll-to="colors"></a></li>
+        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link" data-scroll-to="reviews"></a></li>
+        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link" data-scroll-to="video-section"></a></li>
+        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link" data-scroll-to="form-section"></a></li>
+        <li class="fixed-menu__element"><a href="#" class="fixed-menu__link" data-scroll-to="map-section"></a></li>
       </ul>
     </nav>
     <div class="hide-menu">

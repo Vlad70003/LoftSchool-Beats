@@ -374,4 +374,82 @@ function init(){
 }
 
 // Scrol
+let section = $(".section");
+let wrapper = $(".wrapper__conteiner");
+let inScroll = false;
 
+
+section.first().addClass("active");
+
+
+let performTransition = (sectionEq) => {
+    if(inScroll == false){
+    inScroll = true;
+
+    let position = sectionEq * -100;
+    wrapper.css({
+
+        transform: `translateY(${position}%)`
+    });
+
+    section.eq(sectionEq).addClass("active").siblings().removeClass("active");
+
+    setTimeout(() => {
+        inScroll = false;
+    }, 1300)
+    }
+    
+    
+}
+
+let scrollViewport = (direction) => {
+    let activeSection = section.filter(".active");
+    let nextSection = activeSection.next();
+    let prevSection = activeSection.prev();
+
+    if(direction == "next" && nextSection.length){
+        performTransition(nextSection.index());
+    }
+    if(direction == "prev" && prevSection.length){
+        performTransition(prevSection.index());
+    }
+}
+
+$(window).on("wheel", e => {
+    let deltaY = e.originalEvent.deltaY;
+
+    if(deltaY > 0 ){
+        scrollViewport("next");
+    }
+    if(deltaY < 0){
+        scrollViewport("prev");
+    }
+})
+
+$(window).on("keydown", e => {
+
+    let tagName = e.target.tagName.toLowerCase();
+
+    if(tagName !== "input" && tagName !== "textarea"){
+        switch(e.keyCode){
+            case 38:
+            scrollViewport("prev");
+            break;
+    
+        case 40:
+            scrollViewport("next");
+            break;
+        } 
+    }
+
+})
+
+$("[data-scroll-to]").click(e => {
+    e.preventDefault();
+
+    let $this = $(e.currentTarget);
+    let target = $this.attr("data-scroll-to");
+    let reqSection = $(`[data-section-id=${target}]`);
+
+    performTransition(reqSection.index());
+})
