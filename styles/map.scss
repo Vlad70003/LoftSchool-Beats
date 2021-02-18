@@ -1,5 +1,6 @@
 .map-section{
-    height: 100vh;
+    // height: 100vh;
+    height: 100%;
     position: relative;
 }
 #map{
@@ -14,14 +15,18 @@
   right: 0;
 
 }
-.footer__conteiner {
+.footer__conteiner-main {
     display: flex;
     align-items: center;
     padding: rem(20px) 0;
     background: #fff;
 
+  }
+  .footer__conteiner-second{
     @include phones{
       flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
     }
   }
   .footer__contacts {

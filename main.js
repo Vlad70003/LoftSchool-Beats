@@ -374,73 +374,118 @@ function init(){
 }
 
 // Scrol
+
+    //Переменные
 let section = $(".section");
 let wrapper = $(".wrapper__conteiner");
+let sideMenu = $(".fixed-menu");
+let fixedMenu = sideMenu.find(".fixed-menu__element");
+
 let inScroll = false;
 
+    // Функция "Смена Позиции"
+let countSectionPosition = sectionEq => {
+    let position = sectionEq * -100;
+
+    if(isNaN(position)){
+        console.error("Передано не верное значение countSectionPosition")
+        return 0;
+    }
+    return position;
+}
+
+    //Функция "Смена цвета Фиксировонного меню"
+let changeMenuColorSection = sectionEq => {
+    let currentSection = section.eq(sectionEq);
+    let sectionColor = currentSection.attr("data-color-theme");
+    let activeClass = "fixed-menu--color";
+
+    if (sectionColor == "white"){
+        sideMenu.addClass("activeClass");
+    }else{
+        sideMenu.removeClass("activeClass");
+    }
+}
+
+    //Функция "Сброс Класса"
+let resetActiveClassForItem = (items, itemEq, activeClass) => {
+    items.eq(itemEq).addClass(activeClass).siblings().removeClass(activeClass);
+}
 
 section.first().addClass("active");
 
-
 let performTransition = (sectionEq) => {
-    if(inScroll == false){
+    if(inScroll) return;
+    let transitionOver = 1000;
+    let mouseInertiaOver = 300;
     inScroll = true;
 
-    let position = sectionEq * -100;
-    wrapper.css({
+    let position = countSectionPosition(sectionEq);
 
+    changeMenuColorSection(sectionEq);
+
+    wrapper.css({
         transform: `translateY(${position}%)`
     });
 
-    section.eq(sectionEq).addClass("active").siblings().removeClass("active");
+    resetActiveClassForItem(section, sectionEq, "active");
+
+    
 
     setTimeout(() => {
         inScroll = false;
-    }, 1300)
-    }
-    
+        resetActiveClassForItem(fixedMenu, sectionEq, "fixed-menu__element--active"); 
+    }, transitionOver + mouseInertiaOver)  
     
 }
 
-let scrollViewport = (direction) => {
+let viewportScroller = () => {
     let activeSection = section.filter(".active");
     let nextSection = activeSection.next();
     let prevSection = activeSection.prev();
 
-    if(direction == "next" && nextSection.length){
-        performTransition(nextSection.index());
-    }
-    if(direction == "prev" && prevSection.length){
-        performTransition(prevSection.index());
-    }
+    return {
+        next(){
+            if(nextSection.length){
+                performTransition(nextSection.index());
+            }
+        },
+        prev(){
+            if(prevSection.length){
+                performTransition(prevSection.index());
+            }
+        }
+    }   
 }
 
 $(window).on("wheel", e => {
     let deltaY = e.originalEvent.deltaY;
+    let scroller = viewportScroller()
 
     if(deltaY > 0 ){
-        scrollViewport("next");
+        scroller.next();
     }
     if(deltaY < 0){
-        scrollViewport("prev");
+        scroller.prev();
     }
 })
 
 $(window).on("keydown", e => {
-
     let tagName = e.target.tagName.toLowerCase();
+    let userTypingInInputs = tagName === "input" || tagName === "textarea";
+    let scroller = viewportScroller()
 
-    if(tagName !== "input" && tagName !== "textarea"){
+    if(userTypingInInputs) return;
+
         switch(e.keyCode){
             case 38:
-            scrollViewport("prev");
+            scroller.prev();
             break;
     
         case 40:
-            scrollViewport("next");
+            scroller.next();
             break;
         } 
-    }
 
 })
 
@@ -453,3 +498,13 @@ $("[data-scroll-to]").click(e => {
 
     performTransition(reqSection.index());
 })
+
+//Свайп
+
+$(function() {
+    $("body").swipe( {
+      swipe:function(event, direction) {
+        alert(direction);
+      }
+    });
+  });

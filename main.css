@@ -642,7 +642,7 @@ span[class^=description__img] {
 }
 
 .why-beats {
-  height: 100vh;
+  height: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -824,7 +824,7 @@ span[class^=description__img] {
 }
 
 .offers {
-  height: 100vh;
+  height: 100%;
   background: #F8FAF9;
   position: relative;
   display: flex;
@@ -1162,7 +1162,7 @@ span[class^=description__img] {
 }
 
 .team {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1315,7 +1315,7 @@ span[class^=description__img] {
 }
 
 .reviews {
-  height: 100vh;
+  height: 100%;
   position: relative;
 }
 
@@ -1492,7 +1492,7 @@ span[class^=description__img] {
 }
 
 .video-section {
-  height: 100vh;
+  height: 100%;
   background: #F8FAF9;
   display: flex;
   align-items: center;
@@ -1518,15 +1518,21 @@ span[class^=description__img] {
 }
 
 .player {
-  width: 660px;
-  height: 390px;
+  max-width: 660px;
+  max-height: 390px;
   background: none;
   position: relative;
 }
 @media screen and (max-width: 768px) {
   .player {
     width: 300px;
-    height: 150px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .player {
+    width: 200px;
+    height: 140px;
   }
 }
 
@@ -1619,7 +1625,7 @@ span[class^=description__img] {
 .form-section {
   background: url("./img/bg_form.png") bottom no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1832,7 +1838,7 @@ span[class^=description__img] {
 }
 
 .hero {
-  height: 100vh;
+  height: 100%;
   background: url("./img/headphones_main.png") left 70% top 66% no-repeat, #F5F5F5;
   background-size: 60vh 60vh;
   position: relative;
@@ -1863,7 +1869,7 @@ span[class^=description__img] {
 }
 
 .map-section {
-  height: 100vh;
+  height: 100%;
   position: relative;
 }
 
@@ -1880,15 +1886,18 @@ span[class^=description__img] {
   right: 0;
 }
 
-.footer__conteiner {
+.footer__conteiner-main {
   display: flex;
   align-items: center;
   padding: 1.25rem 0;
   background: #fff;
 }
+
 @media screen and (max-width: 480px) {
-  .footer__conteiner {
+  .footer__conteiner-second {
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -1993,6 +2002,10 @@ span[class^=description__img] {
   transform: translate(-50%, -50%);
 }
 
+.fixed-menu.fixed-menu--color .fixed-menu__link::before {
+  background: white;
+}
+
 .hide-menu {
   position: relative;
   position: fixed;
@@ -2083,7 +2096,7 @@ span[class^=description__img] {
 
 .colors {
   position: relative;
-  height: 100vh;
+  height: 100%;
   background: url(./img/color_bg.png) center no-repeat;
   background-size: cover;
 }
@@ -2115,12 +2128,24 @@ span[class^=description__img] {
   font-weight: 700;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .color__link {
+    width: 50px;
+    font-size: 18px;
+  }
+}
 
 .color__item-title {
   transform: rotate(-90deg);
   position: absolute;
   bottom: 175px;
   left: -93px;
+}
+@media screen and (max-width: 480px) {
+  .color__item-title {
+    bottom: 81px;
+    left: -48px;
+  }
 }
 
 .color__item-desc {
@@ -2138,6 +2163,11 @@ span[class^=description__img] {
   font-weight: 400;
   opacity: 0;
   transition: 1s;
+}
+@media screen and (max-width: 480px) {
+  .colors__hidden-conteiner {
+    font-size: 12px;
+  }
 }
 
 .bg-grey {

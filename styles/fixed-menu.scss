@@ -41,3 +41,6 @@
         transform: translate(-50%, -50%);       
     }
 }
+.fixed-menu.fixed-menu--color .fixed-menu__link::before{
+    background: white;
+}

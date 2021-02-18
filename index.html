@@ -19,9 +19,9 @@
   <body>
     <div class="wrapper">
       <div class="wrapper__conteiner">
-        <section class="section hero" data-section-id="hero">
+        <section class="section hero" data-color-theme="black" data-section-id="hero">
           <div class="conteiner hero__conteiner">
-            <header class="section header">
+            <header class="header">
               <img src="./img/Logo.png" alt="Logo" class="logo">
               <nav class="menu">
                 <ul class="menu__list">
@@ -41,15 +41,15 @@
                 <span class="hamburger__element"></span>
               </a>
             </header>
-            <section class="section main">
+            <section class="main">
               <div class="main__title-section">
                 <h1 class="main-title">Беспроводные наушники Beats Solo 3</h1>
                 <p class="main__desc">Встречайте новую версию наушников<br>
                   из линейки Powerbeats.</p>
-                <button class="button" data-scroll-to="form">Заказать</button>
+                <button class="button" data-scroll-to="form-section">Заказать</button>
               </div>             
             </section>
-            <section class="section description">
+            <section class="description">
               <ul class="description__list">
                 <li class="description__item">
                   <span class="description__img-noise"></span>
@@ -73,7 +73,7 @@
             </section>
           </div>
         </section>
-        <section class="section why-beats" data-section-id="why-beats">
+        <section class="section why-beats" data-color-theme="black" data-section-id="why-beats">
           <div class="conteiner why-beats__conteiner">
             <h2 class="second-title why-beats__title">почему beats solo 3?</h2>
             <p class="why-beats__desc">Процессор W1 работает невероятно эффективно и позволяет легко<br>
@@ -118,7 +118,7 @@
             </ul>
           </div>
         </section>
-        <section class="section offers" data-section-id="offers">
+        <section class="section offers" data-color-theme="black" data-section-id="offers">
           <div class="conteiner offers__conteiner">
             <div class="offers__arrows">
               <a href="#" class="arrow-left"></a>
@@ -196,7 +196,7 @@
                   </div>
                   <div class="prise">
                     <div class="prise__value">14 990 ₽</div>
-                    <button class="button" data-scroll-to="form">Заказать</button>
+                    <button class="button" data-scroll-to="form-section">Заказать</button>
                   </div>
                 </div>
               </li>
@@ -270,14 +270,14 @@
                   </div>
                   <div class="prise">
                     <div class="prise__value">14 990 ₽</div>
-                    <button class="button" data-scroll-to="form">Заказать</button>
+                    <button class="button" data-scroll-to="form-section">Заказать</button>
                   </div>
                 </div>
               </li>            
             </ul>
           </div>
         </section>
-        <section class="section team" data-section-id="team">
+        <section class="section team" data-color-theme="black" data-section-id="team">
           <div class="conteiner team__conteiner">
             <h3 class="second-title">команда</h3>
             <ul class="team__list">
@@ -354,7 +354,7 @@
             </ul>
           </div>
         </section>
-        <section class="section colors" data-section-id="colors">
+        <section class="section colors" data-color-theme="black" data-section-id="colors">
           <div class="colors__conteiner">
             <!-- <h3 class="second-title">Цвета</h3> -->
             <ul class="colors__list">
@@ -382,7 +382,7 @@
             </ul>
           </div>
         </section>
-        <section class="section reviews" data-section-id="reviews">
+        <section class="section reviews" data-color-theme="black" data-section-id="reviews">
           <div class="conteiner reviews__conteiner">
             <h2 class="second-title reviews__second-title">ОТЗЫВЫ</h2>
             <ul class="reviews__persons">
@@ -422,7 +422,7 @@
           </div>
 
         </section>
-        <section class="section video-section" data-section-id="video-section">
+        <section class="section video-section" data-color-theme="black" data-section-id="video-section">
           <div class="container video-section__conteiner">
             <h2 class="video-section__title">Как мы работаем</h2>
             <div class="player-section__container active">
@@ -446,9 +446,8 @@
                 </div>
               </div>
             </div>
-          <!-- </div> -->
         </section>
-        <section class="section form-section" data-section-id="form-section">
+        <section class="section form-section" data-color-theme="white" data-section-id="form-section">
           <div class="conteiner form-section__conteiner">
             <h2 class="second-title second-title--white">ЗАКАЖИТЕ ДОСТАВКУ</h2>
             <form action="" class="form">
@@ -516,18 +515,18 @@
                   </label>
                 </div>
                 <div class="form__button">
-                  <button class="button" data-scroll-to="form">Заказать</button>
+                  <button class="button">Заказать</button>
                   <input class="button button--reset" type="reset" value="Очистить">
                 </div>
               </div>
             </form>
           </div>
         </section>
-        <section class="section map-section" data-section-id="map-section">
+        <section class="section map-section" data-color-theme="black" data-section-id="map-section">
           <div id="map"></div>
           <footer class="footer">
-            <div class="footer__conteiner">
-              <div class="conteiner">
+            <div class="footer__conteiner-main">
+              <div class="conteiner footer__conteiner-second">
                 <div class="footer__contacts">
                   <div class="footer__element">Москва, ул.Новый Арбат, д.31/12</div>
                   <div class="footer__element telephone footer__telephone">8 800 903 90 90</div>
@@ -564,8 +563,8 @@
                     </li>
                   </ul>
                 </div>
-                            </div>
               </div>
+            </div>
           </footer>
         </section>
       </div>
@@ -606,7 +605,7 @@
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-
+    <script src="js/jquery.touchSwipe.min.js"></script>
     <script src="./main.js"></script>
     </body>
 </html>
