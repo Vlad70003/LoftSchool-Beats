@@ -381,6 +381,9 @@ let wrapper = $(".wrapper__conteiner");
 let sideMenu = $(".fixed-menu");
 let fixedMenu = sideMenu.find(".fixed-menu__element");
 
+// let mobileDetect = new MobileDetect(window.navigator.userAgent);
+// let isMobile = mobileDetect.mobile();
+
 let inScroll = false;
 
     // Функция "Смена Позиции"
@@ -500,11 +503,24 @@ $("[data-scroll-to]").click(e => {
 })
 
 //Свайп
+$(".wrapper").on("touchmove", e => {
+    e.preventDefault();
+})
 
-$(function() {
-    $("body").swipe( {
-      swipe:function(event, direction) {
-        alert(direction);
-      }
-    });
+$("body").swipe( {
+    swipe:function(event, direction) {
+      let scroller = viewportScroller();
+      let scrollDirection = "";
+
+      if (direction == "up") scrollDirection ="next";
+      if (direction == "down") scrollDirection ="prev";
+
+      scroller[scrollDirection]();
+    }
   });
+
+    // if(isMobile){
+        
+    // }
+
+    
