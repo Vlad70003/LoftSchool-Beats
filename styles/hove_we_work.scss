@@ -27,13 +27,19 @@
   max-height: 390px;
   background: none;
   position: relative;
-  @include tablets{
-    width: 300px;
-    height: 200px;
+}
+#yt-player{
+  @include tablets {
+    width: 500px;
+    height: 300px;
   }
-  @include phones{
-    width: 200px;
-    height: 140px;
+  @media screen and (max-width: 520px){
+    width: 450px;
+    height: 300px;
+  }
+  @include phones {
+    width: 360px;
+    height: 250px;
   }
 }
 .player__controls{
@@ -74,7 +80,17 @@
   cursor: pointer;
   top: 46%;
   left: 60px;
+  @include tablets{
+    width: 290px;
+  }
+  @media screen and (max-width: 520px){
+    width: 244px;
+  }
+  @include phones {
+    width: 160px;
+  }
 }
+
 .player.paused .player__start{
   background: transparent;
   position: relative;
@@ -113,42 +129,58 @@
 }
 .player__duration{
   position: absolute;
-  top: 25%;
-  right: 20px;
+  top: 36%;
+  right: 2px;
   color: white;
+  font-size: 10px;
+  @include tablets{
+    font-size: 8px;
+    top: 39.5%;
+  }
+  @media screen and (max-width: 520px){
+    display: none;
+  }
 }
-// .player__vol{
-//   display: flex;
-//   align-items: center;
-// }
-// .player__vol-headphones{
-//   width: 12px;
-//   height: 16px;
-//   background: url(../img/headphones-img.png) center no-repeat;
-//   background-size: cover;
-//   border: none;
-//   margin-right: 10px;
-//   outline: none;
-//   cursor: pointer;
-// }
-// .player__vol-line{
-//   width: 50px;
-//   height: 4px;
-//   background: #333333;
-//   border: none;
-//   position: relative;
-//   outline: none;
-//   cursor: pointer;
-// }
-// .player__vol-button{
-//   width: 10px;
-//   height: 10px;
-//   background: $red;
-//   border-radius: 50%;
-//   border: none;
-//   position: absolute;
-//   left: 0;
-//   bottom: -3px;
-//   outline: none;
-//   cursor: pointer;
-// }
+.player__vol-settings{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 27%;
+  right: 12%;
+}
+.player__vol{
+  display: flex;
+  align-items: center;
+}
+.player__vol-headphones{
+  width: 12px;
+  height: 16px;
+  background: url(../img/headphones-img.png) center no-repeat;
+  background-size: cover;
+  border: none;
+  margin-right: 10px;
+  outline: none;
+  cursor: pointer;
+}
+.player__vol-line{
+  width: 50px;
+  height: 4px;
+  background: #333333;
+  border: none;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+}
+.player__vol-button{
+  width: 10px;
+  height: 10px;
+  background: $red;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  left: 100%;
+  bottom: -3px;
+  outline: none;
+  cursor: pointer;
+}

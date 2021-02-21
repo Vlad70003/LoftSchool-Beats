@@ -1190,7 +1190,7 @@ span[class^=description__img] {
     justify-content: center;
     flex-direction: column;
     justify-content: start;
-    height: 400px;
+    height: 500px;
   }
 }
 
@@ -1523,16 +1523,23 @@ span[class^=description__img] {
   background: none;
   position: relative;
 }
+
 @media screen and (max-width: 768px) {
-  .player {
-    width: 300px;
-    height: 200px;
+  #yt-player {
+    width: 500px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 520px) {
+  #yt-player {
+    width: 450px;
+    height: 300px;
   }
 }
 @media screen and (max-width: 480px) {
-  .player {
-    width: 200px;
-    height: 140px;
+  #yt-player {
+    width: 360px;
+    height: 250px;
   }
 }
 
@@ -1577,6 +1584,21 @@ span[class^=description__img] {
   top: 46%;
   left: 60px;
 }
+@media screen and (max-width: 768px) {
+  .player__playback {
+    width: 290px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .player__playback {
+    width: 244px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .player__playback {
+    width: 160px;
+  }
+}
 
 .player.paused .player__start {
   background: transparent;
@@ -1617,9 +1639,69 @@ span[class^=description__img] {
 
 .player__duration {
   position: absolute;
-  top: 25%;
-  right: 20px;
+  top: 36%;
+  right: 2px;
   color: white;
+  font-size: 10px;
+}
+@media screen and (max-width: 768px) {
+  .player__duration {
+    font-size: 8px;
+    top: 39.5%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .player__duration {
+    display: none;
+  }
+}
+
+.player__vol-settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 27%;
+  right: 12%;
+}
+
+.player__vol {
+  display: flex;
+  align-items: center;
+}
+
+.player__vol-headphones {
+  width: 12px;
+  height: 16px;
+  background: url(../img/headphones-img.png) center no-repeat;
+  background-size: cover;
+  border: none;
+  margin-right: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.player__vol-line {
+  width: 50px;
+  height: 4px;
+  background: #333333;
+  border: none;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+}
+
+.player__vol-button {
+  width: 10px;
+  height: 10px;
+  background: #E01F3D;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  left: 100%;
+  bottom: -3px;
+  outline: none;
+  cursor: pointer;
 }
 
 .form-section {
@@ -2103,6 +2185,13 @@ span[class^=description__img] {
 
 .colors__conteiner {
   height: 100%;
+}
+
+.colors__second-title {
+  position: absolute;
+  color: white;
+  left: 20%;
+  top: 10%;
 }
 
 .colors__list {

@@ -114,13 +114,13 @@ let blockWidth = item => {
     let titleBlocks = conteiner.find(".color__link");
     let titleWidth = titleBlocks.width() * titleBlocks.length;
 
-    let textConteiner = item.find(".colors__hidden-conteiner");
-    let paddingLeft = parseInt(textConteiner.css("padding-left"));
-    let paddingRight = parseInt(textConteiner.css("padding-right"));
+    let textConteiner = item.find(".color__item-desc");
+    let marginLeft = parseInt(textConteiner.css("margin-left"));
+    let marginRight = parseInt(textConteiner.css("margin-right"));
 
-    let isMobile = window.matchMedia("(max-width: 850px)").matches;
+    let isTablets = window.matchMedia("(max-width: 850px)").matches;
 
-    if (isMobile){
+    if (isTablets){
         reqItemWidth =  screenWidth - titleWidth;
     }
     else{
@@ -129,7 +129,7 @@ let blockWidth = item => {
 
     return {
         conteiner: reqItemWidth,
-        textConteiner: reqItemWidth - paddingLeft - paddingRight
+        textConteiner: reqItemWidth - marginLeft - marginRight,
     }
     
 }
@@ -138,12 +138,12 @@ let openHiddenConteiner = conteiner => {
     conteiner.addClass("active");
     let hiddenConteiner = conteiner.find(".colors__hidden-conteiner");
     let reqWidth = blockWidth(conteiner);
-    let textBlock = conteiner.find(".colors__hidden-conteiner");
+    let textBlock = conteiner.find(".color__item-desc");
 
-    textBlock.width(reqWidth.textConteiner);
     hiddenConteiner.width(reqWidth.conteiner);
-    hiddenConteiner.width(reqWidth);
+    textBlock.width(reqWidth.textConteiner);
     hiddenConteiner.css("opacity", "0.8");
+
     
 }
 let closeHiddenConteiner = conteiner => {
@@ -252,10 +252,36 @@ $(".js-button").on("click", e => {
     $.fancybox.close();
 })
 
-// Видео- плеер
+    // Видео- плеер
 let player;
 const playerContainer = $(".player");
- 
+
+// Книпка Включения / Выключения громкости
+function editVolume () {
+    $(".player__vol-headphones").click(e => {
+        if (player.getVolume() == 0) {
+            player.setVolume('100');
+            $(".player__vol-button").css({
+                left: `${100}%`
+            })
+        } else {
+            player.setVolume('0');
+            $(".player__vol-button").css({
+                left: `${0}%`
+            })
+        }
+    });			
+	$(".player__vol-line").on("click", (e) => {
+        let $bar = $(e.currentTarget);
+        let clickPosition = e.originalEvent.layerX;
+        let newButtonPositionPer = (clickPosition / $bar.width()) * 100;
+        $(".player__vol-button").css({
+            left: `${newButtonPositionPer}%`
+        })
+        player.setVolume(newButtonPositionPer);
+    })
+}
+// Кнопка Пуск / Пауза
 let eventsInit = () => {
     $(".player__start").click(e => {
       e.preventDefault();
@@ -268,6 +294,7 @@ let eventsInit = () => {
         player.playVideo();
       }
     });
+
     $(".player__playback").on("click", (e) => {
         let $bar = $(e.currentTarget);
         let clickPosition = e.originalEvent.layerX;
@@ -339,6 +366,7 @@ function onYouTubeIframeAPIReady() {
   });
 }
 eventsInit();
+editVolume ();
 
 // Yandex map
 
@@ -381,8 +409,8 @@ let wrapper = $(".wrapper__conteiner");
 let sideMenu = $(".fixed-menu");
 let fixedMenu = sideMenu.find(".fixed-menu__element");
 
-// let mobileDetect = new MobileDetect(window.navigator.userAgent);
-// let isMobile = mobileDetect.mobile();
+let mobileDetect = new MobileDetect(window.navigator.userAgent);
+let isMobile = mobileDetect.mobile();
 
 let inScroll = false;
 
@@ -492,6 +520,11 @@ $(window).on("keydown", e => {
 
 })
 
+// Плавность перехода секций
+$(".wrapper").on("touchmove", e => {
+    e.preventDefault();
+})
+
 $("[data-scroll-to]").click(e => {
     e.preventDefault();
 
@@ -503,24 +536,23 @@ $("[data-scroll-to]").click(e => {
 })
 
 //Свайп
-$(".wrapper").on("touchmove", e => {
-    e.preventDefault();
-})
+if(isMobile){
+    $("body").swipe( {
+        swipe:function(event, direction) {
+          let scroller = viewportScroller();
+          let scrollDirection = "";
+    
+          if (direction == "up") scrollDirection ="next";
+          if (direction == "down") scrollDirection ="prev";
 
-$("body").swipe( {
-    swipe:function(event, direction) {
-      let scroller = viewportScroller();
-      let scrollDirection = "";
+    
+          scroller[scrollDirection]();
+        }
+      });  
+}
 
-      if (direction == "up") scrollDirection ="next";
-      if (direction == "down") scrollDirection ="prev";
 
-      scroller[scrollDirection]();
-    }
-  });
 
-    // if(isMobile){
-        
-    // }
+
 
     
