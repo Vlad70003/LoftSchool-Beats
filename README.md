@@ -8,3 +8,6 @@
     <li>Использование сторонних бибилиотек (например: bxSlider)</li>
     <li>Адаптивная верстка</li>
 </ul>
+<!-- <img src='./LionBank.jpg'></img> -->
+<!-- <img src='./LionBank.jpg'></img> -->
+<!-- <img src='./LionBank.jpg'></img> -->
