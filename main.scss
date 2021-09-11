@@ -1,0 +1,37 @@
+//screen
+$tablets: 768px;
+$phones: 480px;
+
+//FontSize
+$baseFontSize: 16px;
+
+
+// colors
+$black: #292929;
+$red: #E01F3D;
+$grey: #999999;
+
+@import "./media";
+@import "layout/base";
+@import "layout/normalize";
+@import "styles/wrapper";
+@import "styles/header";
+@import "styles/hamburger";
+@import "styles/button";
+@import "styles/main";
+@import "styles/why-beats";
+@import "styles/offers";
+@import "styles/team";
+@import "styles/reviews";
+@import "styles/hove_we_work";
+@import "styles/form-section";
+@import "styles/radio";
+@import "styles/hero";
+@import "styles/map";
+@import "styles/fixed-menu";
+@import "styles/hide-menu";
+@import "styles/send-complate";
+@import "styles/colors";
+
+
+

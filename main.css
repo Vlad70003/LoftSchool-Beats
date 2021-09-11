@@ -1,0 +1,2272 @@
+body, html {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #292929;
+  white-space: nowrap;
+}
+
+.conteiner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 940px;
+  width: 98%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.second-title {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.settings__gear.block .settings__list {
+  display: block;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+.wrapper {
+  font-family: "Alegreya Sans", sans-serif;
+  color: #292929;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapper__conteiner {
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
+}
+
+.header {
+  width: 100%;
+  padding: 1.5rem 0 3.125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu__item {
+  margin-right: 1.6875rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+  padding-top: 10px;
+}
+.menu__item:last-child() {
+  margin-right: 0px;
+}
+
+.menu__link:hover {
+  cursor: pointer;
+  color: #E01F3D;
+  transition: all ease-in-out 0.2s;
+}
+
+.telephone {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.125rem;
+  position: relative;
+  margin-right: 1.5625rem;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__telephone {
+    display: none;
+  }
+}
+
+.telephone:hover {
+  cursor: pointer;
+  color: #E01F3D;
+}
+
+.telephone::before {
+  content: "";
+  display: block;
+  width: 0.875rem;
+  height: 0.875rem;
+  background: url("./img/phohe.png") center no-repeat;
+  position: absolute;
+  right: 103%;
+  top: 40%;
+}
+@media screen and (max-width: 480px) {
+  .telephone::before {
+    width: 1rem;
+    height: 1rem;
+    right: 74%;
+  }
+}
+
+.hamburger {
+  width: 25px;
+  height: 25px;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+  margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: inline-flex;
+  }
+}
+
+.hamburger__element {
+  height: 5px;
+  background: #292929;
+  border-radius: 10px;
+}
+
+.button {
+  padding: 1.4375rem 3.125rem;
+  background-color: #E01F3D;
+  color: white;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  border-radius: 6.25rem;
+  outline: none;
+}
+.button:--close {
+  padding: 0.4375rem 1.875rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  transition: all ease-in-out 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .main::before {
+    content: "";
+    width: 22.9375rem;
+    height: 15.9375rem;
+    display: block;
+    background: url("./img/headphones_main.png") center no-repeat;
+    background-size: contain;
+    padding-bottom: 20px;
+  }
+}
+
+.main-title {
+  font-family: "Play", sans-serif;
+  width: 25rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  padding-top: 13px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .main-title {
+    width: 100%;
+    padding: 0 10%;
+    margin-bottom: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-title {
+    padding: 0 15%;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 36px;
+  }
+}
+
+.main__desc {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3125rem;
+  padding-bottom: 2.25rem;
+}
+@media screen and (max-width: 768px) {
+  .main__desc {
+    width: 100%;
+    padding: 0 25% 1.25rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main__desc {
+    padding: 0 10%;
+    margin-bottom: 23px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .description {
+    display: none;
+  }
+}
+
+.description__list {
+  padding: 4.375rem 0;
+  display: flex;
+}
+
+.description__item {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+}
+
+span[class^=description__img] {
+  width: 2.5625rem;
+  height: 2.5625rem;
+  display: block;
+}
+
+.description__text {
+  width: 7.125rem;
+  margin: 0 0.625rem;
+}
+
+.description__img-noise {
+  background-image: url("./img/noise-mini.png");
+}
+
+.description__img-battery {
+  background-image: url("./img/battery-mini.png");
+}
+
+.description__img-powersocket {
+  background-image: url("./img/powersocket-mini.png");
+}
+
+.why-beats {
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .why-beats__title {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .why-beats__title {
+    padding: 0 8%;
+    font-size: 32px;
+  }
+}
+
+.why-beats__conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+
+.why-beats__conteiner::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 98%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0.25rem 1.5rem 1.9375rem 0.75rem;
+  border-color: transparent transparent #E01F3D transparent;
+  transform: rotate(109deg);
+  z-index: 100;
+}
+
+.why-beats__desc {
+  font-family: "Play", sans-serif;
+  padding-top: 1.125rem;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  color: #666666;
+  padding-bottom: 3.75rem;
+}
+@media screen and (max-width: 480px) {
+  .why-beats__desc {
+    padding: 0 5%;
+    font-size: 16px;
+    padding-top: 1.125rem;
+    padding-bottom: 3.75rem;
+  }
+}
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 480px) {
+  .advantages {
+    flex-direction: column;
+  }
+}
+
+.advantages__element {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-right: 1.1875rem;
+}
+.advantages__element:last-child {
+  margin-right: 0;
+}
+.advantages__element:nth-child(2):before {
+  content: "";
+  width: 6.25rem;
+  height: 6.25rem;
+  display: block;
+  background: url("./img/combo_share.png") center no-repeat;
+  position: absolute;
+  left: -2.37rem;
+  top: 0.9375rem;
+}
+@media screen and (max-width: 768px) {
+  .advantages__element:nth-child(2):before {
+    display: none;
+  }
+}
+.advantages__element:last-child::before {
+  content: "";
+  width: 6.25rem;
+  height: 6.25rem;
+  display: block;
+  background: url("./img/combo_share.png") center no-repeat;
+  position: absolute;
+  left: -4.375rem;
+  top: 0.9375rem;
+}
+@media screen and (max-width: 768px) {
+  .advantages__element:last-child::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantages__element {
+    flex-direction: row;
+    margin-bottom: 1.5625rem;
+  }
+  .advantages__element:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__title {
+  font-weight: 700;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 0.4375rem;
+}
+@media screen and (max-width: 480px) {
+  .advantages__title {
+    text-align: left;
+  }
+}
+
+.advantages__title-desc {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  color: #666666;
+}
+@media screen and (max-width: 768px) {
+  .advantages__title-desc {
+    margin-top: 0.625rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantages__title-desc {
+    text-align: left;
+  }
+}
+
+.advantages__img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: #F2F5F4;
+}
+@media screen and (max-width: 480px) {
+  .advantages__img {
+    min-width: 8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .advantages__content {
+    margin-left: 0.625rem;
+  }
+}
+
+.advantages__battery {
+  background: url("./img/img_battery.png") center no-repeat, #F2F5F4;
+  position: relative;
+}
+
+.advantages__sound {
+  background: url("./img/img_sound.png") center no-repeat, #F2F5F4;
+  position: relative;
+}
+
+.advantages__stopwotch {
+  background: url("./img/img_stopwotch.png") center no-repeat, #F2F5F4;
+}
+
+.offers {
+  height: 100%;
+  background: #F8FAF9;
+  position: relative;
+  display: flex;
+}
+
+.bx-wrapper {
+  box-shadow: none;
+  border: 0;
+  background: transparent;
+}
+
+.bx-clone {
+  width: 475px;
+}
+
+.offers__conteiner {
+  height: 100%;
+  align-items: center;
+  width: 88%;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .offers__conteiner {
+    width: 95%;
+  }
+}
+
+.offer__img {
+  max-height: 27.5rem;
+}
+@media screen and (max-width: 1010px) {
+  .offer__img {
+    max-height: 22.75rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .offer__img {
+    max-height: 17.5rem;
+  }
+}
+
+.offers__content {
+  padding-right: 0.4375rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 3.125rem;
+}
+@media screen and (max-width: 865px) {
+  .offers__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1.875rem;
+  }
+}
+
+.offers__list {
+  position: relative;
+  align-items: center;
+  height: 100%;
+  margin: 0 50px;
+}
+@media screen and (max-width: 480px) {
+  .offers__list {
+    margin: 0;
+  }
+}
+
+.arrow-left {
+  display: block;
+  width: 1rem;
+  height: 1.875rem;
+  background: url(./img/vector_Before.png) center no-repeat;
+  position: absolute;
+  left: 3px;
+  top: 47%;
+  z-index: 200;
+}
+@media screen and (max-width: 1270px) {
+  .arrow-left {
+    left: -15px;
+    top: 47%;
+  }
+}
+@media screen and (max-width: 865px) {
+  .arrow-left {
+    top: 34%;
+    left: 8%;
+  }
+}
+@media screen and (max-width: 675px) {
+  .arrow-left {
+    left: 6%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .arrow-left {
+    top: 36%;
+    left: 6%;
+  }
+}
+
+.arrow-right {
+  display: block;
+  width: 1rem;
+  height: 1.875rem;
+  background: url(./img/vector_After.png) center no-repeat;
+  position: absolute;
+  right: -60px;
+  top: 47%;
+  z-index: 200;
+}
+@media screen and (max-width: 1270px) {
+  .arrow-right {
+    right: -20px;
+    top: 47%;
+  }
+}
+@media screen and (max-width: 865px) {
+  .arrow-right {
+    top: 34%;
+    right: 8%;
+  }
+}
+@media screen and (max-width: 675px) {
+  .arrow-right {
+    right: 6%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .arrow-right {
+    top: 36%;
+    right: 6px;
+  }
+}
+
+.offer__item {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 865px) {
+  .offer__item {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.prise {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding-right: 50px;
+}
+@media screen and (max-width: 865px) {
+  .prise {
+    flex-wrap: nowrap;
+    margin-left: -50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .prise {
+    margin-left: 0px;
+  }
+}
+
+.prise__value {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-size: 2.25rem;
+  margin-right: 1.0625rem;
+  white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  .prise__value {
+    margin-right: 1.875rem;
+  }
+}
+
+.offer__title {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  margin: 1.5625rem 0;
+  padding-right: 36px;
+}
+@media screen and (max-width: 865px) {
+  .offer__title {
+    font-size: 28px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .offer__title {
+    font-size: 1.375rem;
+    text-align: center;
+  }
+}
+
+.offer__title-desc {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 1.5625rem;
+  padding-right: 43px;
+}
+@media screen and (max-width: 865px) {
+  .offer__title-desc {
+    font-size: 13px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .offer__title-desc {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+}
+
+.offer__information {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 1.5625rem;
+}
+@media screen and (max-width: 864px) {
+  .offer__information {
+    width: 45%;
+    justify-content: space-around;
+  }
+}
+
+.parameters {
+  margin-right: 5.3125rem;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 864px) {
+  .parameters {
+    margin-right: 0.3125rem;
+  }
+}
+
+.parameters__element-name {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #666666;
+}
+
+.parameters__element {
+  font-weight: 700;
+  font-style: normal;
+  font-style: 1.125rem;
+  white-space: nowrap;
+}
+
+.settings__gear {
+  width: 5.6875rem;
+  height: 5.6875rem;
+  background: url("./img/gear.png") center no-repeat;
+  position: relative;
+}
+.settings__gear:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 865px) {
+  .settings__gear {
+    display: none;
+  }
+}
+
+.settings {
+  display: flex;
+}
+
+.settings__list {
+  background: white;
+  opacity: 0.9;
+  position: absolute;
+  left: 100%;
+  padding-bottom: 1.75rem;
+  display: none;
+  padding-left: 1.25rem;
+  padding-top: 1.75rem;
+  padding-right: 1.25rem;
+  border-radius: 5px;
+}
+.settings__list::before {
+  content: "";
+  display: block;
+  width: 5.6875rem;
+  height: 4.375rem;
+  background: transparent;
+  position: absolute;
+  top: 34%;
+  right: 100%;
+  z-index: 100;
+}
+
+.settings__item {
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.settings__item:last-child {
+  margin-bottom: 0px;
+}
+
+.settings__img {
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+}
+
+.settings__text {
+  width: 127px;
+  height: 24px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Play", sans-serif;
+  text-align: left;
+}
+
+.settings__value {
+  width: 50px;
+  height: 14px;
+}
+
+.team {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3.125rem;
+}
+@media screen and (max-width: 768px) {
+  .team__list {
+    display: none;
+  }
+}
+
+.team__list--tablets {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .team__list--tablets {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
+    height: 500px;
+  }
+}
+
+.team__conteiner {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3.125rem;
+  justify-content: center;
+}
+.team__conteiner::before {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #292929;
+  position: absolute;
+  transform: rotate(20deg);
+  top: -26%;
+  left: 85%;
+}
+
+.team__img {
+  display: block;
+  max-width: 290px;
+}
+@media screen and (max-width: 1060px) {
+  .team__img {
+    max-width: 175px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team__img {
+    margin: 0 auto;
+  }
+}
+
+.team__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  margin-right: 15px;
+  position: relative;
+}
+.team__item:last-child {
+  margin-right: 0;
+}
+
+.team__link {
+  display: inline-block;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  padding-top: 1.5625rem;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.team__link:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0.5625rem 0.28125rem 0 0.28125rem;
+  border-color: #e01f3c transparent transparent transparent;
+  position: absolute;
+  left: 103%;
+  top: 70%;
+}
+@media screen and (max-width: 768px) {
+  .team__link {
+    margin-bottom: 15px;
+  }
+}
+
+.team__prof {
+  font-family: "Play", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-top: 0.8125rem;
+}
+
+.team__duties {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding-top: 0.5625rem;
+  color: #666666;
+}
+
+.team__transform-element {
+  position: relative;
+}
+
+.team__hidden-conteiner {
+  height: 0px;
+  overflow: hidden;
+  transition: all linear 0.5s 0.1s;
+  position: absolute;
+  top: 100%;
+}
+@media screen and (max-width: 768px) {
+  .team__hidden-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+  }
+}
+
+.team__hidden-conteiner__block {
+  max-height: 600px;
+}
+
+.team__item.active .team__link::after {
+  transform: rotateX(180deg);
+  transition: all linear 0.5s 0.1s;
+}
+
+.reviews {
+  height: 100%;
+  position: relative;
+}
+
+.reviews__conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.reviews__second-title {
+  font-size: 32px;
+}
+
+.reviews__persons {
+  padding-bottom: 0.625rem;
+  position: relative;
+  min-height: 380px;
+}
+@media screen and (max-width: 768px) {
+  .reviews__persons {
+    margin-top: 20px;
+  }
+}
+
+.rewiews__person {
+  display: flex;
+  padding: 2.1875rem 2.625rem 0.625rem 2.625rem;
+  margin-top: 1.875rem;
+  background: #F8FAF9;
+  margin-bottom: 16px;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.rewiews__person::after {
+  content: "";
+  display: block;
+  width: 5.1875rem;
+  height: 5.1875rem;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 47%;
+  top: -1%;
+  z-index: 50;
+}
+@media screen and (max-width: 768px) {
+  .rewiews__person::after {
+    width: 4.1875rem;
+    height: 4.1875rem;
+    left: 45%;
+    top: -4%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .rewiews__person::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .rewiews__person {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0.625rem 1.25rem 1.875rem;
+  }
+}
+
+.rewiews__img {
+  width: 15.8125rem;
+  height: 16.5rem;
+}
+@media screen and (max-width: 768px) {
+  .rewiews__img {
+    width: 8.4375rem;
+    max-height: 8.4375rem;
+    margin: 1.25rem auto 2.1875rem;
+  }
+}
+
+.reviews__list {
+  margin-left: 2.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  line-height: 1.15625rem;
+}
+
+.reviews__title {
+  font-family: "Play", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .reviews__title {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.reviews__title-perc {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #666;
+}
+@media screen and (max-width: 768px) {
+  .reviews__title-perc {
+    margin: 1.25rem -1.5625rem 2.5rem;
+    font-size: 0.9375rem;
+  }
+}
+
+.rewiews__name {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+@media screen and (max-width: 768px) {
+  .rewiews__name {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .rewiews__name {
+    font-size: 0.9375rem;
+  }
+}
+
+.pagginator {
+  display: flex;
+  justify-content: center;
+  margin: 0 0.375rem;
+}
+
+.pagginator__link {
+  box-sizing: content-box;
+  border: 3px solid transparent;
+  width: 4.625rem;
+  height: 4.625rem;
+  display: block;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 0.625rem;
+}
+
+.pagginator__link-one {
+  background: url("./img/photo_billy_ailish_mini.png") center no-repeat;
+}
+
+.pagginator__link-two {
+  background: url("./img/photo_vadim_grachev_mini.png") center no-repeat;
+}
+
+.pagginator__link-three {
+  background: url("./img/photo_maria_orlova_mini.png") center no-repeat;
+}
+
+.pagginator__element.active .pagginator__link {
+  border-color: #E01F3D;
+}
+
+.isActive {
+  position: static;
+  opacity: 1;
+}
+
+.video-section {
+  height: 100%;
+  background: #F8FAF9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-section__conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-section__title {
+  padding: 3.625rem 0 2.75rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 0.3125rem;
+  word-spacing: -0.3125rem;
+  padding-bottom: 50px;
+}
+
+.player {
+  max-width: 660px;
+  max-height: 390px;
+  background: none;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  #yt-player {
+    width: 500px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 520px) {
+  #yt-player {
+    width: 450px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #yt-player {
+    width: 360px;
+    height: 250px;
+  }
+}
+
+.player__controls {
+  position: absolute;
+  width: 100%;
+  height: 35px;
+  background: #151515;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.player__conteiner {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.player__start {
+  width: 0;
+  height: 0;
+  border-top: 10px solid #151515;
+  border-left: 15px solid #fff;
+  border-bottom: 10px solid #151515;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 27%;
+  left: 20px;
+}
+
+.player__playback {
+  width: 440px;
+  height: 4px;
+  background: #333333;
+  border: none;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  top: 46%;
+  left: 60px;
+}
+@media screen and (max-width: 768px) {
+  .player__playback {
+    width: 290px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .player__playback {
+    width: 244px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .player__playback {
+    width: 160px;
+  }
+}
+
+.player.paused .player__start {
+  background: transparent;
+  position: relative;
+  border: none;
+}
+.player.paused .player__start::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 5px;
+  height: 17px;
+  background: #fff;
+  left: 10px;
+}
+.player.paused .player__start::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 5px;
+  height: 17px;
+  background: #fff;
+  right: -5px;
+}
+
+.player__playback-button {
+  width: 10px;
+  height: 10px;
+  background: #E01F3D;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.player__duration {
+  position: absolute;
+  top: 36%;
+  right: 2px;
+  color: white;
+  font-size: 10px;
+}
+@media screen and (max-width: 768px) {
+  .player__duration {
+    font-size: 8px;
+    top: 39.5%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .player__duration {
+    display: none;
+  }
+}
+
+.player__vol-settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 27%;
+  right: 12%;
+}
+
+.player__vol {
+  display: flex;
+  align-items: center;
+}
+
+.player__vol-headphones {
+  width: 12px;
+  height: 16px;
+  background: url(../img/headphones-img.png) center no-repeat;
+  background-size: cover;
+  border: none;
+  margin-right: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.player__vol-line {
+  width: 50px;
+  height: 4px;
+  background: #333333;
+  border: none;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+}
+
+.player__vol-button {
+  width: 10px;
+  height: 10px;
+  background: #E01F3D;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  left: 100%;
+  bottom: -3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.form-section {
+  background: url("./img/bg_form.png") bottom no-repeat;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: content-box;
+}
+
+.second-title--white {
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .second-title--white {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 553px) {
+  .second-title--white {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .second-title--white {
+    font-size: 32px;
+  }
+}
+
+.form-section__conteiner {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  margin-top: 4.5rem;
+}
+@media screen and (max-width: 768px) {
+  .form {
+    flex-direction: column;
+    padding: 0 18%;
+    margin-top: 1.875rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form {
+    padding: 20px 2%;
+    margin-top: 0;
+  }
+}
+
+.form__column {
+  flex: 1;
+  margin-right: 1.875rem;
+}
+.form__column:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .form__column {
+    margin-right: 0;
+  }
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 1.125rem;
+}
+
+.form__label {
+  flex: 1;
+  margin-right: 1.25rem;
+}
+.form__label:last-child {
+  margin-right: 0;
+}
+
+.form__input {
+  width: 100%;
+  border: none;
+  padding: 1.125rem 0px 1.125rem 0.75rem;
+  border: 0.1875rem solid transparent;
+  border-radius: 0.25rem;
+}
+.form__input:focus {
+  border-color: #E01F3D;
+  outline: none;
+}
+@media screen and (max-width: 768px) {
+  .form__input {
+    padding: 0.5rem 0px 0.5rem 0.625rem;
+    margin-top: 0.3125rem;
+  }
+}
+
+.input-error {
+  border-color: #E01F3D;
+}
+
+.form__label-element {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+}
+
+.textarea {
+  height: 9.6875rem;
+  resize: none;
+  margin-bottom: 0.6875rem;
+}
+@media screen and (max-width: 768px) {
+  .textarea {
+    height: 5rem;
+    margin-bottom: 0.875rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .textarea {
+    height: 6.25rem;
+  }
+}
+
+.form__control {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 480px) {
+  .form__control {
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  padding-right: 0.625rem;
+  padding-bottom: 1.25rem;
+}
+.radio:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .radio {
+    padding-right: 1.5625rem;
+  }
+}
+
+.radio__elem {
+  display: none;
+}
+
+.radio__elem:checked ~ .radio__visible::before {
+  display: block;
+}
+
+.radio__visible {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  background: white;
+  border-radius: 50%;
+}
+.radio__visible::before {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 0.8125rem;
+  height: 0.8125rem;
+  border-radius: 50%;
+  background: #E01F3D;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+  .form__button {
+    text-align: center;
+  }
+}
+
+.checkbox {
+  border-radius: 0.25rem;
+}
+.checkbox::before {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 0.8125rem;
+  height: 0.8125rem;
+  border-radius: 50%;
+  background: url(./img/check_mark.png) center no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.radio__titile {
+  padding-left: 0.3125rem;
+}
+
+.button--reset {
+  background: transparent;
+  border: none;
+  font-weight: 400;
+  font-style: 1rem;
+}
+.button--reset:hover {
+  color: #E01F3D;
+  transition: all ease-in-out 0.2s;
+}
+
+.hero {
+  height: 100%;
+  background: url("./img/headphones_main.png") left 70% top 66% no-repeat, #F5F5F5;
+  background-size: 60vh 60vh;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    background: none, #F5F5F5;
+  }
+}
+
+.hero__conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  width: 2.875rem;
+  height: 0.625rem;
+  background: #C4C4C4;
+  transform: rotate(-45deg);
+  position: absolute;
+  right: 12%;
+  top: 100%;
+}
+
+.map-section {
+  height: 100%;
+  position: relative;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer__conteiner-main {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem 0;
+  background: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  .footer__conteiner-second {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer__contacts {
+  justify-content: start;
+}
+
+.footer__element {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  font-style: normal;
+}
+@media screen and (max-width: 768px) {
+  .footer__element {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__element {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .footer__element:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.socials__list {
+  display: flex;
+}
+
+.footer__telephone {
+  margin-left: 20px;
+}
+@media screen and (max-width: 768px) {
+  .footer__telephone {
+    font-size: 18px;
+  }
+}
+
+.socials__item {
+  margin-right: 5px;
+}
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.vk-icon, .fb-icon, .inst-icon, .telegramm-icon {
+  width: 30px;
+  height: 30px;
+  fill: #B3B3B3;
+}
+.vk-icon:hover, .fb-icon:hover, .inst-icon:hover, .telegramm-icon:hover {
+  fill: black;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.fixed-menu {
+  display: block;
+  position: fixed;
+  right: 3%;
+  top: 32%;
+}
+@media screen and (max-width: 865px) {
+  .fixed-menu {
+    display: none;
+  }
+}
+
+.fixed-menu__element {
+  margin-bottom: 0.75rem;
+}
+.fixed-menu__element--active .fixed-menu__link {
+  border-color: #E01F3D;
+}
+.fixed-menu__element--active .fixed-menu__link::before {
+  background: #E01F3D;
+  opacity: 1;
+}
+
+.fixed-menu__link {
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  border: 0.0625rem solid transparent;
+  display: block;
+  position: relative;
+}
+.fixed-menu__link::before {
+  content: "";
+  width: 0.5625rem;
+  height: 0.5625rem;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  background: #000;
+  opacity: 0.6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fixed-menu.fixed-menu--color .fixed-menu__link::before {
+  background: white;
+}
+
+.hide-menu {
+  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  z-index: 200;
+}
+
+.hide-menu__list {
+  width: 100%;
+  height: 100%;
+  background: #313131;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 155px;
+}
+
+.hide-menu__item {
+  padding-bottom: 15px;
+}
+.hide-menu__item:last-child {
+  padding-bottom: 0;
+}
+
+.hide-menu__link {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: white;
+}
+
+.hide-menu__close {
+  width: 20px;
+  height: 20px;
+  background: url(./img/hide-menu__close.png) center no-repeat;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  cursor: pointer;
+}
+
+.send-complate {
+  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+}
+
+.send-complate__conteiner {
+  width: 18.75rem;
+  height: 10.625rem;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 37px;
+}
+
+.send-complate__title {
+  font-family: "Play", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: black;
+  padding-bottom: 18px;
+}
+
+.colors {
+  position: relative;
+  height: 100%;
+  background: url(./img/color_bg.png) center no-repeat;
+  background-size: cover;
+}
+
+.colors__conteiner {
+  height: 100%;
+}
+
+.colors__second-title {
+  position: absolute;
+  color: white;
+  left: 20%;
+  top: 10%;
+}
+
+.colors__list {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.color__item {
+  display: flex;
+  height: 100%;
+}
+
+.color__link {
+  width: 100px;
+  height: 100%;
+  display: block;
+  text-align: center;
+  display: block;
+  font-family: "Alegreya Sans", sans-serif;
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+}
+@media screen and (max-width: 480px) {
+  .color__link {
+    width: 50px;
+    font-size: 18px;
+  }
+}
+
+.color__item-title {
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 175px;
+  left: -93px;
+}
+@media screen and (max-width: 480px) {
+  .color__item-title {
+    bottom: 81px;
+    left: -48px;
+  }
+}
+
+.color__item-desc {
+  margin: 20px;
+  line-height: 24px;
+}
+
+.colors__hidden-conteiner {
+  width: 0px;
+  background: #333537;
+  overflow: hidden;
+  font-family: "Alegreya Sans", sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0;
+  transition: 1s;
+}
+@media screen and (max-width: 480px) {
+  .colors__hidden-conteiner {
+    font-size: 12px;
+  }
+}
+
+.bg-grey {
+  background: #999999;
+}
+
+.bg-black {
+  background: #292929;
+}
+
+.bg-red {
+  background: #E01F3D;
+}
